@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Agua y Sal</title>
+    <title>{{setting('site.title')}}</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/images/favicons/apple-touch-icon.png') }}" />
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/favicons/favicon-32x32.png') }}" />
@@ -44,51 +44,7 @@
 
     </div><!-- /.page-wrapper -->
 
-    <div class="mobile-nav__wrapper">
-        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
-        <!-- /.mobile-nav__overlay -->
-        <div class="mobile-nav__content">
-            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
-
-            <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="{{ asset('assets/images/logo-dark.png') }}" width="155"
-                        alt="" /></a>
-            </div>
-            <!-- /.logo-box -->
-            <div class="mobile-nav__container"></div>
-            <!-- /.mobile-nav__container -->
-
-            <ul class="mobile-nav__contact list-unstyled">
-                <li>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:needhelp@trevlo.com">needhelp@trevlo.com</a>
-                </li>
-                <li>
-                    <i class="fa fa-phone-alt"></i>
-                    <a href="tel:(303)5550105">(303) 555-0105</a>
-                </li>
-            </ul><!-- /.mobile-nav__contact -->
-            <div class="mobile-nav__social">
-                <a href="https://twitter.com/">
-                    <i class="fab fa-twitter" aria-hidden="true"></i>
-                    <span class="sr-only">Twitter</span>
-                </a>
-                <a href="https://facebook.com/">
-                    <i class="fab fa-facebook" aria-hidden="true"></i>
-                    <span class="sr-only">Facebook</span>
-                </a>
-                <a href="https://pinterest.com/">
-                    <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                    <span class="sr-only">Pinterest</span>
-                </a>
-                <a href="https://instagram.com/">
-                    <i class="fab fa-instagram" aria-hidden="true"></i>
-                    <span class="sr-only">Instagram</span>
-                </a>
-            </div><!-- /.mobile-nav__social -->
-        </div>
-        <!-- /.mobile-nav__content -->
-    </div>
+    
     <!-- /.mobile-nav__wrapper -->
     <div class="search-popup">
         <div class="search-popup__overlay search-toggler"></div>

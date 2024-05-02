@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\Menu;
 
 class UpdateBreadSeeder extends Seeder
 {
@@ -16,6 +17,7 @@ class UpdateBreadSeeder extends Seeder
         $this->call([
             DataTypesTableSeeder::class,
             DataRowsTableSeeder::class,
+            MenusTableSeeder::class,
             MenuItemsTableSeeder::class,
         ]);
     }

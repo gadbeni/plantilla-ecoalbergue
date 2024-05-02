@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +20,13 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::controller(PostController::class)->group(
+    function () {
+        Route::get('blog', [PostController::class, 'index'])->name('post.index');
+        Route::get('blog/{slug}', [PostController::class, 'show'])->name('post.show');
+    }
+);
 
 Route::get('maintenance', function () {
     return view('errors.maintenance');

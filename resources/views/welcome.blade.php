@@ -8,42 +8,26 @@
     <div class="main-slider-two__shape-two" style="background-image: url(assets/images/shapes/slider-2-shape-2.png);">
     </div>
     <div class="main-slider-two__carousel trevlo-owl__carousel owl-carousel owl-theme" data-owl-options='{
-"items": 1,
-"margin": 0,
-"loop": true,
-"smartSpeed": 700,
-"animateOut": "fadeOut",
-"autoplayTimeout": 5000,
-"nav": false,
-"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
-"dots": false,
-"autoplay": true
-}'>
+    "items": 1,
+    "margin": 0,
+    "loop": true,
+    "smartSpeed": 700,
+    "animateOut": "fadeOut",
+    "autoplayTimeout": 5000,
+    "nav": false,
+    "navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+    "dots": false,
+    "autoplay": true
+    }'>
         <div class="item">
             <div class="main-slider-two__image"
-                style="background-image: url(assets/images/backgrounds/slider-2-1.jpg);"></div>
+                style="background-image: url({{Voyager::image(setting('site.main_img'))}})"></div>
             <div class="container">
                 <div class="main-slider-two__content">
-                    <div class="main-slider-two__text-one">Let’s Travel</div>
-                    <div class="main-slider-two__text-two">Last Minutes Deals</div>
-                    <h5 class="main-slider-two__sub-title">Amazing places to relax</h5>
-                    <h3 class="main-slider-two__title">Travel Journey <br>Begins Here</h3>
-                    <div class="main-slider-two__btn">
-                        <a href="contact.html" class="trevlo-btn trevlo-btn--base"><span>Start
-                                Booking</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="main-slider-two__image"
-                style="background-image: url(assets/images/backgrounds/slider-2-2.jpg);"></div>
-            <div class="container">
-                <div class="main-slider-two__content">
-                    <div class="main-slider-two__text-one">Let’s Travel</div>
-                    <div class="main-slider-two__text-two">Last Minutes Deals</div>
-                    <h5 class="main-slider-two__sub-title">Amazing places to relax</h5>
-                    <h3 class="main-slider-two__title">Travel Journey <br>Begins Here</h3>
+                    <div class="main-slider-two__text-one">{{setting('site.title')}}</div>
+                    <div class="main-slider-two__text-two">Visitanos</div>
+                    <h5 class="main-slider-two__sub-title">{{setting('site.subtitle')}}</h5>
+                    <h3 class="main-slider-two__title" style="max-width: 450px">{{setting('site.description')}}</h3>
                     <div class="main-slider-two__btn">
                         <a href="contact.html" class="trevlo-btn trevlo-btn--base"><span>Start
                                 Booking</span></a>
@@ -1355,132 +1339,92 @@
     <div class="container">
         <div class="sec-title text-center">
 
-            <p class="sec-title__tagline">Articles</p><!-- /.sec-title__tagline -->
-
-            <h2 class="sec-title__title">Latest News & Articles from<br> the Blog Posts</h2>
+            <p class="sec-title__tagline">ARTÍCULOS</p><!-- /.sec-title__tagline -->
+            
+            <h2 class="sec-title__title">Últimas noticias y artículos de<br> las publicaciones del blog</h2>
             <!-- /.sec-title__title -->
         </div><!-- /.sec-title -->
         <div class="blog-page__carousel trevlo-owl__carousel trevlo-owl__carousel--basic-nav owl-theme owl-carousel"
             data-owl-options='{
-    "items": 5,
-    "margin": 30,
-    "smartSpeed": 700,
-    "loop":false,
-    "autoplay": 6000,
-    "nav":false,
-    "dots":true,
-    "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-    "responsive":{
-        "0":{
-            "items": 1
-        },
-        "768":{
-            "items": 2
-        },
-        "1200":{
-            "items": 3
+        "items": 5,
+        "margin": 30,
+        "smartSpeed": 700,
+        "loop":false,
+        "autoplay": 6000,
+        "nav":false,
+        "dots":true,
+        "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+        "responsive":{
+            "0":{
+                "items": 1
+            },
+            "768":{
+                "items": 2
+            },
+            "1200":{
+                "items": 3
+            }
         }
-    }
-    }'>
-            <div class="item">
-                <div class="blog-card">
-                    <a href="blog-details-right.html" class="blog-card__image-link">
-                        <img src="assets/images/blog/blog-1-7.jpg" alt="You Should See Things when visiting Japan"
-                            class="blog-card__image">
-                        <div class="blog-card__overlay">
-                            <span class="blog-card__plus icon-plus"></span>
-                        </div><!-- /.blog-card__overlay -->
-                    </a><!-- /.blog-card__image-link -->
-                    <div class="blog-card__content">
-                        <div class="blog-card__date">
-                            <h4 class="blog-card__date-number">30</h4>
-                            <h4 class="blog-card__date-month">aug</h4>
-                        </div><!-- /.blog-card__date -->
-                        <ul class="blog-card__meta">
-                            <li>
-                                <span class="blog-card__meta-icon icon-user"></span>
-                                <span class="blog-card__meta-author">By Admin</span>
-                            </li>
-                            <li>
-                                <span class="blog-card__meta-icon icon-chat"></span>
-                                <span class="blog-card__meta-author">2 Comment</span>
-                            </li>
-                        </ul><!-- /.blog-card__meta -->
-                        <h3 class="blog-card__title"><a href="blog-details-right.html">You Should See Things
-                                when visiting Japan</a></h3><!-- /.blog-card__title -->
-                        <a href="blog-details-right.html" class="blog-card__link">
-                            Read more
-                            <i class="fas fa-arrow-right"></i>
-                        </a><!-- /.blog-card__link -->
-                    </div><!-- /.blog-card__content -->
-                </div><!-- /.blog-card -->
-            </div><!-- /.col-md-6 col-xl-4 -->
-            <div class="item">
-                <div class="blog-card">
-                    <a href="blog-details-right.html" class="blog-card__image-link">
-                        <img src="assets/images/blog/blog-1-8.jpg" alt="You Should See Things when visiting Japan"
-                            class="blog-card__image">
-                        <div class="blog-card__overlay">
-                            <span class="blog-card__plus icon-plus"></span>
-                        </div><!-- /.blog-card__overlay -->
-                    </a><!-- /.blog-card__image-link -->
-                    <div class="blog-card__content">
-                        <div class="blog-card__date">
-                            <h4 class="blog-card__date-number">15</h4>
-                            <h4 class="blog-card__date-month">sep</h4>
-                        </div><!-- /.blog-card__date -->
-                        <ul class="blog-card__meta">
-                            <li>
-                                <span class="blog-card__meta-icon icon-user"></span>
-                                <span class="blog-card__meta-author">By Admin</span>
-                            </li>
-                            <li>
-                                <span class="blog-card__meta-icon icon-chat"></span>
-                                <span class="blog-card__meta-author">2 Comment</span>
-                            </li>
-                        </ul><!-- /.blog-card__meta -->
-                        <h3 class="blog-card__title"><a href="blog-details-right.html">You Should See Things
-                                when visiting Japan</a></h3><!-- /.blog-card__title -->
-                        <a href="blog-details-right.html" class="blog-card__link">
-                            Read more
-                            <i class="fas fa-arrow-right"></i>
-                        </a><!-- /.blog-card__link -->
-                    </div><!-- /.blog-card__content -->
-                </div><!-- /.blog-card -->
-            </div><!-- /.col-md-6 col-xl-4 -->
-            <div class="item">
-                <div class="blog-card">
-                    <a href="blog-details-right.html" class="blog-card__image-link">
-                        <img src="assets/images/blog/blog-1-9.jpg" alt="You Should See Things when visiting Japan"
-                            class="blog-card__image">
-                        <div class="blog-card__overlay">
-                            <span class="blog-card__plus icon-plus"></span>
-                        </div><!-- /.blog-card__overlay -->
-                    </a><!-- /.blog-card__image-link -->
-                    <div class="blog-card__content">
-                        <div class="blog-card__date">
-                            <h4 class="blog-card__date-number">12</h4>
-                            <h4 class="blog-card__date-month">oct</h4>
-                        </div><!-- /.blog-card__date -->
-                        <ul class="blog-card__meta">
-                            <li>
-                                <span class="blog-card__meta-icon icon-user"></span>
-                                <span class="blog-card__meta-author">By Admin</span>
-                            </li>
-                            <li>
-                                <span class="blog-card__meta-icon icon-chat"></span>
-                                <span class="blog-card__meta-author">2 Comment</span>
-                            </li>
-                        </ul><!-- /.blog-card__meta -->
-                        <h3 class="blog-card__title"><a href="blog-details-right.html">You Should See Things
-                                when visiting Japan</a></h3><!-- /.blog-card__title -->
-                        <a href="blog-details-right.html" class="blog-card__link">
-                            Read more
-                            <i class="fas fa-arrow-right"></i>
-                        </a><!-- /.blog-card__link -->
-                    </div><!-- /.blog-card__content -->
-                </div><!-- /.blog-card -->
-            </div><!-- /.col-md-6 col-xl-4 -->
+        }'>
+            {{-- para mostrar el mes en letra (Español) --}}
+            @php
+                $meses = [
+                    1 => 'Ene',
+                    2 => 'Feb',
+                    3 => 'Mar',
+                    4 => 'Abr',
+                    5 => 'May',
+                    6 => 'Jun',
+                    7 => 'Jul',
+                    8 => 'Ago',
+                    9 => 'Sep',
+                    10 => 'Oct',
+                    11 => 'Nov',
+                    12 => 'Dic',
+                ];
+            @endphp
+            @foreach ( $posts as $post )
+
+                <div class="item">
+                    <div class="blog-card">
+                        <a href="{{ route('post.show', $post->slug) }}" class="blog-card__image-link">
+                            <img height="450px" src="{{Voyager::image($post->image)}}" alt="You Should See Things when visiting Japan"
+                                class="blog-card__image">
+                            <div class="blog-card__overlay">
+                                <span class="blog-card__plus icon-plus"></span>
+                            </div><!-- /.blog-card__overlay -->
+                        </a><!-- /.blog-card__image-link -->
+                        <div class="blog-card__content">
+                            <div class="blog-card__date">
+                                <h4 class="blog-card__date-number">{{ $post->created_at->format('d') }}</h4>
+                                <h4 class="blog-card__date-month">{{ $post->created_at ? $meses[$post->created_at->format('n')] : '' }}</h4>
+                            </div><!-- /.blog-card__date -->
+                            {{-- <ul class="blog-card__meta">
+                                <li>
+                                    <span class="blog-card__meta-icon icon-user"></span>
+                                    <span class="blog-card__meta-author">By Admin</span>
+                                </li>
+                                <li>
+                                    <span class="blog-card__meta-icon icon-chat"></span>
+                                    <span class="blog-card__meta-author">2 Comment</span>
+                                </li>
+                            </ul> --}}
+                            <!-- /.blog-card__meta -->
+                            <h3 class="blog-card__title">
+                                <a href="{{ route('post.show', $post->slug) }}">
+                                    {{$post->title}}
+                                </a>
+                            </h3><!-- /.blog-card__title -->
+                            <a href="{{ route('post.show', $post->slug) }}" class="blog-card__link">
+                                Leer más
+                                <i class="fas fa-arrow-right"></i>
+                            </a><!-- /.blog-card__link -->
+                        </div><!-- /.blog-card__content -->
+                    </div><!-- /.blog-card -->
+                </div><!-- /.col-md-6 col-xl-4 -->
+            @endforeach
+            
+
         </div><!-- /.row -->
     </div><!-- /.container -->
 </div><!-- /.blog-one -->

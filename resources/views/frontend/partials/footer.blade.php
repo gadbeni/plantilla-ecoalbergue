@@ -5,7 +5,7 @@
         <div class="main-footer__top row">
             <div class="col-lg-4 col-sm-5">
                 <div class="main-footer__logo-box">
-                    <img src="./assets/images/logoecoalbergue.png" alt="logo-dark" class="main-footer__logo">
+                    <img src="{{ Voyager::image(setting('site.logo')) }}" alt="logo-dark" class="main-footer__logo">
                 </div><!-- /.main-footer__logo-box -->
             </div>
             <div class="col-lg-8 col-sm-7">
@@ -61,38 +61,25 @@
             <div class="col-lg-6 col-md-4 col-xl-4 wow animated fadeInUp" data-wow-delay="0.5s"
                 data-wow-duration="1500ms">
                 <div class="footer-widget footer-widget--contact">
-                    <h2 class="footer-widget__title">Contact</h2><!-- /.footer-widget__title -->
+                    <h2 class="footer-widget__title">Contacto</h2><!-- /.footer-widget__title -->
                     <p class="footer-widget__address">6391 Elgin St. Celina, Delaware
                         New York. USA</p>
                     <ul class="footer-widget__info">
-                        <li> <span class="icon-phone-1"></span> <a href="tel:(303)555-0105">(303) 555-0105</a>
+                        <li> <span class="icon-phone-1"></span> <a href="tel:{{setting('contacto.phone')}}">{{setting('contacto.phone')}}</a>
                         </li>
                         <li> <span class="icon-envelope"></span> <a
-                                href="mailto:michael.mitc@example.com">michael.mitc@example.com</a></li>
+                                href="mailto:{{setting('contacto.email')}}">{{setting('contacto.email')}}</a></li>
                     </ul><!-- /.footer-widget__info -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
-            <div class="col-lg-7 col-xl-4 wow animated fadeInUp" data-wow-delay="0.7s"
-                data-wow-duration="1500ms">
-                <div class="footer-widget footer-widget--newsletter">
-                    <h2 class="footer-widget__title">Newsletter</h2><!-- /.footer-widget__title -->
-                    <form action="#" data-url="MAILCHIMP_FORM_URL"
-                        class="footer-widget__newsletter-form mc-form">
-                        <input type="email" name="EMAIL" id="footer-widget-newsletter-input"
-                            placeholder="Email Address" class="footer-widget__newsletter-input">
-                        <button type="submit"
-                            class="footer-widget__newsletter-btn trevlo-btn trevlo-btn--base-three"><span>Subscribe</span></button>
-                    </form><!-- /.footer-widget__newsletter-form -->
-                    <div class="mc-form__response"></div><!-- /.mc-form__response -->
-                </div><!-- /.footer-widget -->
-            </div><!-- /.col-md-6 -->
+            
         </div><!-- /.row -->
     </div><!-- /.container -->
     <div class="main-footer__bottom">
         <div class="container">
             <div class="main-footer__bottom-inner">
                 <p class="main-footer__copyright">
-                    &copy; Copyright <span class="dynamic-year"></span> by Trevlo HTML Template.
+                    &copy; Copyright GADBENI <span class="dynamic-year"></span>. Todos los derechos reservados
                 </p>
             </div><!-- /.main-footer__inner -->
         </div><!-- /.container -->
