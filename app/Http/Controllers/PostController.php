@@ -22,8 +22,4 @@ class PostController extends Controller
         }
         return view('posts.show', compact('post'));
     }
-    public function blogRight()
-    {
-        return view('posts.right');
-    }
 }

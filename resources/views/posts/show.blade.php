@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xl-8 col-lg-7">
                 <div class="blog-details">
-                    @component('posts.componentsRight.blog-card-three')
+                    @component('posts.componentsRight.blog-card-three', ['post' => $post])
 
                     @endcomponent
                 </div><!-- /.blog-details -->

@@ -25,8 +25,6 @@ Route::controller(PostController::class)->group(
     function () {
         Route::get('blog', [PostController::class, 'index'])->name('post.index');
         Route::get('blog/{slug}', [PostController::class, 'show'])->name('post.show');
-        Route::get('/blogRight', [PostController::class, 'blogRight'])->name('post.right');
-
     }
 );
 
