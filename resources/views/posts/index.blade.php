@@ -7,11 +7,13 @@
     <div class="blog-page section-space">
         <div class="container">
             <div class="row">
-                @component('posts.components.blog-card')
+                @foreach ($posts as $post)
+                    @component('posts.components.blog-card', ['post' => $post])
 
-                @endcomponent
+                    @endcomponent
+                @endforeach
             </div><!-- /.row -->
-            @component('posts.components.post-pagination')
+            @component('posts.components.post-pagination', ['posts' => $posts])
             @endcomponent
         </div><!-- /.container -->
     </div><!-- /.blog-page -->
