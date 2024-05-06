@@ -27,15 +27,16 @@
         <div class="blog__card-content wow animated fadeInUp" data-wow-delay="0.1s"
             data-wow-duration="1500ms">
             <ul class="blog__card-meta">
-                <li>
+                {{-- <li>
                     <span class="blog__card-meta-icon icon-user"></span>
                     <span class="blog__card-meta-author">By Admin</span>
                 </li>
                 <li>
                     <span class="blog__card-meta-icon icon-bubble-chat-1"></span>
                     <span class="blog__card-meta-author">2 Comment</span>
-                </li>
-            </ul><!-- /.blog__card-meta -->
+                </li> --}}
+            </ul>
+            <!-- /.blog__card-meta -->
             <h3 class="blog__card-title">{{$post->title}}</h3>
             {!! $post->body !!}
         </div><!-- /.blog-details__card-content -->

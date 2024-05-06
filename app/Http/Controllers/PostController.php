@@ -21,6 +21,9 @@ class PostController extends Controller
             // O puedes mostrar un mensaje de error
             return abort(404, 'Post no encontrado.');
         }
-        return view('posts.show', compact('post'));
+        //ultimos posts
+        $latestPosts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(3)->get();
+
+        return view('posts.show', compact('post', 'latestPosts'));
     }
 }
