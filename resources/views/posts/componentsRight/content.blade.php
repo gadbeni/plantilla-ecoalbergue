@@ -1,4 +1,3 @@
-
 <section class="page-header">
     <div class="page-header__bg"></div>
     <!-- /.page-header__bg -->
@@ -13,3 +12,4 @@
         </div><!-- /.page-header__breadcrumb-box -->
     </div><!-- /.container -->
 </section><!-- /.page-header -->
+
