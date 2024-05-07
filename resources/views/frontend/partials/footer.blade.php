@@ -11,21 +11,17 @@
             <div class="col-lg-8 col-sm-7">
                 <ul class="main-footer__social">
                     <li class="main-footer__social-item">
-                        <a href="https://facebook.com/" class="main-footer__social-link"><i
+                        <a href="https://www.facebook.com/Aguaysalecoalbergue" class="main-footer__social-link"><i
                                 class="fab fa-facebook-f"></i></a>
                     </li>
-                    <li class="main-footer__social-item">
-                        <a href="https://linkedin.com/" class="main-footer__social-link"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li class="main-footer__social-item">
+                    {{-- <li class="main-footer__social-item">
                         <a href="https://twitter.com/" class="main-footer__social-link"><i
                                 class="fab fa-twitter"></i></a>
                     </li>
                     <li class="main-footer__social-item">
                         <a href="https://youtube.com/" class="main-footer__social-link"><i
                                 class="fab fa-youtube"></i></a>
-                    </li>
+                    </li> --}}
                 </ul><!-- /.main-footer__logo-box -->
             </div>
             <div class="col-12">
@@ -36,25 +32,25 @@
             <div class="col-lg-3 col-md-4 col-sm-6 col-xl-2 wow animated fadeInUp" data-wow-delay="0.1s"
                 data-wow-duration="1500ms">
                 <div class="footer-widget footer-widget--links">
-                    <h2 class="footer-widget__title">Company</h2><!-- /.footer-widget__title -->
+                    <h2 class="footer-widget__title">Institución</h2><!-- /.footer-widget__title -->
                     <ul class="footer-widget__links">
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="destinations.html">Destino</a></li>
+                        {{-- <li><a href="about.html">About Us</a></li>
                         <li><a href="blog.html">Community Blog</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
                         <li><a href="our-guide.html">Meet the Guide</a></li>
-                        <li><a href="contact.html">Contact Now</a></li>
+                        <li><a href="contact.html">Contact Now</a></li> --}}
                     </ul><!-- /.footer-widget__links -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
             <div class="col-lg-3 col-md-4 col-sm-6 col-xl-2 wow animated fadeInUp" data-wow-delay="0.3s"
                 data-wow-duration="1500ms">
                 <div class="footer-widget footer-widget--links">
-                    <h2 class="footer-widget__title">Explore</h2><!-- /.footer-widget__title -->
+                    <h2 class="footer-widget__title">Explorar</h2><!-- /.footer-widget__title -->
                     <ul class="footer-widget__links">
-                        <li><a href="login.html">Account</a></li>
-                        <li><a href="tour-listing-1.html">Tour Listings</a></li>
+                        <li><a href="tour-listing-1.html">Listados de Tours</a></li>
+                        {{-- <li><a href="login.html">Account</a></li>
                         <li><a href="contact.html">Privacy Policy</a></li>
-                        <li><a href="faq.html">Help</a></li>
+                        <li><a href="faq.html">Help</a></li> --}}
                     </ul><!-- /.footer-widget__links -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
@@ -62,8 +58,7 @@
                 data-wow-duration="1500ms">
                 <div class="footer-widget footer-widget--contact">
                     <h2 class="footer-widget__title">Contacto</h2><!-- /.footer-widget__title -->
-                    <p class="footer-widget__address">6391 Elgin St. Celina, Delaware
-                        New York. USA</p>
+                    <p class="footer-widget__address">Departamento del Beni</p>
                     <ul class="footer-widget__info">
                         <li> <span class="icon-phone-1"></span> <a href="tel:{{setting('contacto.phone')}}">{{setting('contacto.phone')}}</a>
                         </li>
@@ -72,7 +67,7 @@
                     </ul><!-- /.footer-widget__info -->
                 </div><!-- /.footer-widget -->
             </div><!-- /.col-md-6 -->
-            
+
         </div><!-- /.row -->
     </div><!-- /.container -->
     <div class="main-footer__bottom">
