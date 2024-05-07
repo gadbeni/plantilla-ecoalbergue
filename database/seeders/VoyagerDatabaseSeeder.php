@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use TCG\Voyager\Models\Page;
 
 class VoyagerDatabaseSeeder extends Seeder
 {
@@ -22,6 +23,7 @@ class VoyagerDatabaseSeeder extends Seeder
             PermissionsTableSeeder::class,
             PermissionRoleTableSeeder::class,
             SettingsTableSeeder::class,
+            PagesTableSeeder::class,
         ]);
     }
 }
