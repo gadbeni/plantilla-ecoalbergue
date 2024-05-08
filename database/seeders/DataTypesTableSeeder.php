@@ -111,10 +111,10 @@ class DataTypesTableSeeder extends Seeder
             ),
             5 => 
             array (
-                'controller' => '',
+                'controller' => NULL,
                 'created_at' => '2024-04-30 14:55:33',
-                'description' => '',
-                'details' => NULL,
+                'description' => NULL,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"desc","default_search_key":null,"scope":null}',
                 'display_name_plural' => 'Posts',
                 'display_name_singular' => 'Post',
                 'generate_permissions' => 1,
@@ -125,7 +125,7 @@ class DataTypesTableSeeder extends Seeder
                 'policy_name' => 'TCG\\Voyager\\Policies\\PostPolicy',
                 'server_side' => 0,
                 'slug' => 'posts',
-                'updated_at' => '2024-04-30 14:55:33',
+                'updated_at' => '2024-05-08 09:54:22',
             ),
             6 => 
             array (
@@ -143,7 +143,7 @@ class DataTypesTableSeeder extends Seeder
                 'policy_name' => NULL,
                 'server_side' => 0,
                 'slug' => 'pages',
-                'updated_at' => '2024-04-30 15:01:00',
+                'updated_at' => '2024-05-08 09:53:24',
             ),
         ));
         
