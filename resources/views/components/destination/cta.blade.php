@@ -12,7 +12,7 @@
                     <div class="cta-one__content">
                         <h5 class="cta-one__sub-title">Oferta especial para ti</h5>
                         <h3 class="cta-one__title">Comience su viaje con un solo clic</h3>
-                        <a href="contact.html" class="trevlo-btn trevlo-btn--primary"><span>Empezar
+                        <a href="{{ route('about') }}" class="trevlo-btn trevlo-btn--primary"><span>Empezar
                             Reserva</span></a>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="cta-one__counter" style="background-image: url(assets/images/shapes/cta-1-shape-offer.png);">
-                <div class="cta-one__counter__number count-box"><span class="count-text" data-stop="30"
+                <div class="cta-one__counter__number count-box"><span class="count-text" data-stop="10"
                         data-speed="1500"></span>%</div><!-- /.counter__number -->
                 <p class="cta-one__counter__title">Descuento</p><!-- /.counter__title -->
             </div><!-- /.counter__offer -->

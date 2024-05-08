@@ -3,7 +3,7 @@
         <div class="main-header__inner">
             <div class="main-header__left">
                 <div class="main-header__logo">
-                    <a href="index.html">
+                    <a href="{{ route('login') }}">
                         <img src="{{ Voyager::image(setting('site.logo')) }}" alt="Logo" width="146">
                     </a>
                 </div><!-- /.main-header__logo -->
@@ -77,22 +77,22 @@
             </li>
         </ul><!-- /.mobile-nav__contact -->
         <div class="mobile-nav__social">
-            <a href="https://twitter.com/">
+            {{-- <a href="https://twitter.com/">
                 <i class="fab fa-twitter" aria-hidden="true"></i>
                 <span class="sr-only">Twitter</span>
-            </a>
-            <a href="https://facebook.com/">
+            </a> --}}
+            <a href="https://www.facebook.com/Aguaysalecoalbergue">
                 <i class="fab fa-facebook" aria-hidden="true"></i>
                 <span class="sr-only">Facebook</span>
             </a>
-            <a href="https://pinterest.com/">
+            {{-- <a href="https://pinterest.com/">
                 <i class="fab fa-pinterest-p" aria-hidden="true"></i>
                 <span class="sr-only">Pinterest</span>
             </a>
             <a href="https://instagram.com/">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
                 <span class="sr-only">Instagram</span>
-            </a>
+            </a> --}}
         </div><!-- /.mobile-nav__social -->
     </div>
     <!-- /.mobile-nav__content -->

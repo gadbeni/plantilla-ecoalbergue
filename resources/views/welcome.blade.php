@@ -17,7 +17,7 @@
 
     {{-- @include('components.destination.testimonial') --}}
 
-    @include('components.destination.counter')
+    {{-- @include('components.destination.counter') --}}
 
     @include('components.destination.why-choose')
 

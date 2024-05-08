@@ -33,68 +33,8 @@
                             data-wow-duration="1500ms">{!! $page->body !!}</p>
                     </div><!-- /.destination-details__card-content -->
                 </div><!-- /.destination-details__card -->
-                <div class="destination-details__overview">
-                    <h3 class="destination-details__overview-title destination-details__title">Visión general</h3>
-                    <ul class="destination-details__overview-content wow animated fadeInUp" data-wow-delay="0.1s"
-                        data-wow-duration="1500ms">
-                        <li>
-                            <p>País</p>
-                            <p>Bolivia</p>
-                        </li>
-                        <li>
-                            <p>Idiomas hablados</p>
-                            <p>Español</p>
-                        </li>
-                        <li>
-                            <p>Moneda utilizada</p>
-                            <p>Boliviano</p>
-                        </li>
-
-                    </ul><!-- /.destination-details__overview-content -->
-                </div><!-- /.destination-details__overview -->
-                <div class="destination-details__faq">
-                    <div class="trevlo-accrodion destination-details__faq-box"
-                        data-grp-name="destination-details__faq-box">
 
 
-                        <div class="accrodion active wow animated fadeInUp" data-wow-delay="0.2s"
-                            data-wow-duration="1500ms">
-                            <div class="accrodion-title">
-                                <h4>Why are your Tours so Expensive?</h4>
-                            </div>
-                            <div class="accrodion-content" style="">
-                                <div class="inner">
-                                    <p>There are many variations of passages of available but majority have alteration
-                                        in some by inject humour or random words. Lorem ipsum dolor sit amet, error
-                                        insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.</p>
-                                    <ul class="accrodion-content-bottom">
-                                        <li>Free Drinks</li>
-                                        <li>Awesome Breakfast</li>
-                                        <li>5 Star Accommodation</li>
-                                    </ul><!-- /.accrodion-content__bottom -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="accrodion wow animated fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                            <div class="accrodion-title">
-                                <h4>Why are your Tours so Expensive?</h4>
-                            </div>
-                            <div class="accrodion-content" style="display: none;">
-                                <div class="inner">
-                                    <p>There are many variations of passages of available but majority have alteration
-                                        in some by inject humour or random words. Lorem ipsum dolor sit amet, error
-                                        insolens reprimique no quo, ea pri verterem phaedr vel ea iisque aliquam.</p>
-                                    <ul class="accrodion-content-bottom">
-                                        <li>Free Drinks</li>
-                                        <li>Awesome Breakfast</li>
-                                        <li>5 Star Accommodation</li>
-                                    </ul><!-- /.accrodion-content__bottom -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div><!-- /.col-xl-8 col-lg-7 -->
         </div><!-- /.row -->
     </div>
