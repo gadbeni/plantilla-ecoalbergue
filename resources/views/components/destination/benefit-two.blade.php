@@ -8,8 +8,9 @@
                 <div class="benefit-two__left-content"
                     style="background-image: url(assets/images/resources/benefit-2-1.jpg);">
                     <div class="benefit-two__left-content__inner wow fadeInUp" data-wow-delay="200ms">
-                        <h2 class="benefit-two__left-content__title">The Best Travel<br> & Adventure</h2>
-                        <a href="about.html" class="trevlo-btn"><span>Learn More</span></a><!-- /.button -->
+                        <h2 class="benefit-two__left-content__title">Los Mejores Viajes
+                             <br> y Aventuras</h2>
+                        <a href="{{ route('post.index') }}" class="trevlo-btn"><span>Aprender Más en el blog</span></a><!-- /.button -->
                     </div>
                 </div>
             </div>
@@ -29,16 +30,14 @@
                         <h3 class="benefit-two__box__title">Mejor Precio Garantizado
                         </h3>
                         <p class="benefit-two__box__text">
-                            There are many variations of passages of Lorem<br> Ipsum avagtilable, but the
-                            majority
+                            Hay muchas variaciones de pasajes <br>
                         </p>
                     </div><!-- /.benefit-box -->
                     <div class="benefit-two__box">
                         <div class="benefit-two__box__icon"><span class="icon-ticket-1"></span></div>
                         <h3 class="benefit-two__box__title">Reserva fácil y rápida</h3>
                         <p class="benefit-two__box__text">
-                            There are many variations of passages of Lorem<br> Ipsum avagtilable, but the
-                            majority
+                        Contactanos     <br>
                         </p>
                     </div><!-- /.benefit-box -->
                 </div>

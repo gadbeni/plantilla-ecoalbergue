@@ -6,7 +6,7 @@
                 <div class="about-two__image">
                     <div class="about-two__image__one trevlo-tilt"
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 3, "speed": 700, "scale": 1 }'>
-                        <img src="assets/images/resources/about-2-1.jpg" alt="trevlo">
+                        <img src="{{asset('assets/images/resources/about-2-1.jpg') }}" alt="trevlo">
                     </div>
                     <div class="about-two__image__two trevlo-tilt"
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 2, "speed": 700, "scale": 1 }'>
@@ -17,8 +17,8 @@
                     </div>
                     <div class="about-two__image__content">
                         <img src="{{asset('assets/images/shapes/about-2-shape.png') }}" alt="trevlo">
-                        <h5 class="about-two__image__content__title">We have more than<br> 10 years of
-                            experience</h5>
+                        <h5 class="about-two__image__content__title">Contamos con más
+                            de <br> 10 años de experiencia</h5>
                     </div>
                 </div><!-- /.about-two__image -->
             </div><!-- /.col-xl-6 col-lg-6 -->
@@ -33,19 +33,13 @@
                     </div><!-- /.sec-title -->
                     <!-- /.sec-title -->
                     <p class="about-two__content__text">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have
-                        passages of suffered
-                        alteration in There are many variations of passages.
+                        Hay muchas variaciones de pasajes disponibles, pero la mayoría tienen pasajes de sufrimiento Hay muchas variaciones de pasajes.
                     </p>
-                    <h5 class="about-two__content__heading">An Excellent Opportunity to Travel and Experience
-                        Adventure</h5>
+                    <h5 class="about-two__content__heading">AUna excelente oportunidad para viajar y experimentar Aventura</h5>
                     <ul class="about-two__content__list">
-                        <li><span class="fas fa-check-circle"></span>Many variations of passages of Lorem Ipsum
-                        </li>
-                        <li><span class="fas fa-check-circle"></span>Many variations of passages of Lorem</li>
-                        <li><span class="fas fa-check-circle"></span>Expert Many variations Teacher</li>
+                        <li><span class="fas fa-check-circle"></span>Experto Muchas variaciones</li>
                     </ul>
-                    <a href="about.html" class="trevlo-btn trevlo-btn--base"><span>Discover More</span></a>
+                    <a href="{{ route('about') }}" class="trevlo-btn trevlo-btn--base"><span>Mas Información Sobre Nosotros</span></a>
                 </div><!-- /.about-four__content -->
             </div><!-- /.col-xl-6 col-lg-6 -->
         </div><!-- /.row -->

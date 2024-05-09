@@ -26,8 +26,8 @@
                     <h5 class="main-slider-two__sub-title">{{setting('site.subtitle')}}</h5>
                     <h3 class="main-slider-two__title" style="max-width: 450px">{{setting('site.description')}}</h3>
                     <div class="main-slider-two__btn">
-                        <a href="contact.html" class="trevlo-btn trevlo-btn--base"><span>Start
-                                Booking</span></a>
+                        <a href="{{ route('about') }}" class="trevlo-btn trevlo-btn--base"><span>
+                            Empezar</span></a>
                     </div>
                 </div>
             </div>
