@@ -15,8 +15,6 @@
     </div><!-- /.container -->
 </section><!-- /.page-header -->
 
-
-
 <!-- Destination Details Page Start -->
 <section class="destination-details section-space">
     <div class="container">

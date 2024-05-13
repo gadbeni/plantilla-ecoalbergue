@@ -37,21 +37,21 @@
                     <div class="why-choose-two__img__one wow fadeInUp" data-wow-delay="200ms">
                         <div class="trevlo-tilt"
                             data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                            <img src="{{ asset('assets/images/why-choose/why-choose-2-1.jpg') }}" alt="why-choose">
+                            <img src="{{ asset('assets/images/why-choose/barbaazul.jpg') }}" alt="why-choose">
                         </div>
                         <div class="trevlo-tilt"
                             data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                            <img src="{{ asset('assets/images/why-choose/why-choose-2-2.jpg') }}" alt="why-choose">
+                            <img src="{{ asset('assets/images/why-choose/caldera.jpg') }}" alt="why-choose">
                         </div>
                     </div><!-- /.why-choose-two__img__one -->
                     <div class="why-choose-two__img__two wow fadeInUp" data-wow-delay="300ms">
                         <div class="trevlo-tilt"
                             data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                            <img src="{{ asset('assets/images/why-choose/why-choose-2-3.jpg') }}" alt="why-choose">
+                            <img src="{{ asset('assets/images/why-choose/lagunasmancornadas.jpg') }}" alt="why-choose">
                         </div>
                         <div class="trevlo-tilt"
                             data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                            <img src="{{ asset('assets/images/why-choose/why-choose-2-4.jpg') }}" alt="why-choose">
+                            <img src="{{ asset('assets/images/why-choose/luchachi.jpg') }}" alt="why-choose">
                         </div>
                     </div><!-- /.why-choose-two__img__two -->
                 </div><!-- /.why-choose-two__img-box -->

@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-lg-6 noPadding">
                 <div class="benefit-two__left-content"
-                    style="background-image: url(assets/images/resources/benefit-2-1.jpg);">
+                    style="background-image: url(assets/images/resources/viaje.jpg);">
                     <div class="benefit-two__left-content__inner wow fadeInUp" data-wow-delay="200ms">
                         <h2 class="benefit-two__left-content__title">Los Mejores Viajes
                              <br> y Aventuras</h2>

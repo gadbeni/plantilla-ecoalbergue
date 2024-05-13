@@ -6,11 +6,11 @@
                 <div class="about-two__image">
                     <div class="about-two__image__one trevlo-tilt"
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 3, "speed": 700, "scale": 1 }'>
-                        <img src="{{asset('assets/images/resources/about-2-1.jpg') }}" alt="trevlo">
+                        <img src="{{asset('assets/images/resources/paraba.jpg') }}" alt="trevlo">
                     </div>
                     <div class="about-two__image__two trevlo-tilt"
                         data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 2, "speed": 700, "scale": 1 }'>
-                        <img src="{{asset('assets/images/resources/about-2-2.jpg')  }}" alt="trevlo">
+                        <img src="{{asset('assets/images/resources/beniTurismo.jpg')  }}" alt="trevlo">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 196 76">
                             <path d="M1 0V4C1 43.2122 32.7878 75 72 75H196" />
                         </svg>
