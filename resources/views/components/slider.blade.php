@@ -2,7 +2,7 @@
 <section class="main-slider-two" id="home">
     <div class="main-slider-two__shape-one" style="background-image: url(assets/images/shapes/slider-2-shape-1.png);">
     </div>
-    <div class="main-slider-two__shape-two" style="background-image: url(assets/images/shapes/slider-2-shape-2.png);">
+    <div class="main-slider-two__shape-two" style="">   {{-- background-image: url(assets/images/shapes/slider-2-shape-2.png); --}}
     </div>
     <div class="main-slider-two__carousel trevlo-owl__carousel owl-carousel owl-theme" data-owl-options='{
     "items": 1,

@@ -13501,6 +13501,7 @@ body.megamenu-popup-active .mobile-nav__content {
   color: var(--trevlo-gray, #928496);
   margin: 0;
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .benefit-two__box__text br {
     display: none;

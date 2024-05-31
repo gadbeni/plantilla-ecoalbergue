@@ -10,10 +10,9 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                     <div class="cta-one__content">
-                        <h5 class="cta-one__sub-title">Oferta especial para ti</h5>
-                        <h3 class="cta-one__title">Comience su viaje con un solo clic</h3>
-                        <a href="{{ route('about') }}" class="trevlo-btn trevlo-btn--primary"><span>Empezar
-                            Reserva</span></a>
+                        <h5 class="cta-one__sub-title">Prepárate para la aventura</h5>
+                        <h3 class="cta-one__title">Explora nuevos horizontes</h3>
+                        <a href="{{ route('about') }}" class="trevlo-btn trevlo-btn--primary"><span>Empezar</span></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="200ms">
@@ -23,9 +22,9 @@
                 </div>
             </div>
             <div class="cta-one__counter" style="background-image: url(assets/images/shapes/cta-1-shape-offer.png);">
-                <div class="cta-one__counter__number count-box"><span class="count-text" data-stop="10"
-                        data-speed="1500"></span>%</div><!-- /.counter__number -->
-                <p class="cta-one__counter__title">Descuento</p><!-- /.counter__title -->
+                <div class="cta-one__counter__number count-box"><span class="count-text" data-stop="100"
+                        data-speed="1000"></span>%</div><!-- /.counter__number -->
+                <p class="cta-one__counter__title">Aventuras</p><!-- /.counter__title -->
             </div><!-- /.counter__offer -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 74 400">
                 <path

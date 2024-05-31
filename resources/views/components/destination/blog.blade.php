@@ -3,7 +3,7 @@
     <div class="container">
         <div class="sec-title text-center">
 
-            <p class="sec-title__tagline">ARTÍCULOS</p><!-- /.sec-title__tagline -->
+            <p class="sec-title__tagline" style="font-size:24px">ARTÍCULOS Y NOTICIAS</p><!-- /.sec-title__tagline -->
 
             <h2 class="sec-title__title">Últimas noticias y artículos de<br> las publicaciones del blog</h2>
             <!-- /.sec-title__title -->
