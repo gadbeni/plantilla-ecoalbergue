@@ -80,18 +80,18 @@
                 <div class="why-choose-two__img">
                   <div class="why-choose-two__img__one wow fadeInUp" data-wow-delay="200ms" style="padding-bottom: 5px;">
                     <div class="trevlo-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                      <img src="{{ asset('assets/images/why-choose/barbaazul.jpg') }}" alt="Why Choose Us - Barba Azul" class="thumbnail" rel="lightbox[why-choose]">
+                      <img src="{{ asset('assets/images/why-choose/barbaazul.webp') }}" alt="Why Choose Us - Barba Azul" class="thumbnail" rel="lightbox[why-choose]">
                     </div>
                     <div class="trevlo-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                      <img src="{{ asset('assets/images/why-choose/caldera.jpg') }}" alt="Why Choose Us - Caldera" class="thumbnail" rel="lightbox[why-choose]">
+                      <img src="{{ asset('assets/images/why-choose/caldera.webp') }}" alt="Why Choose Us - Caldera" class="thumbnail" rel="lightbox[why-choose]">
                     </div>
                   </div><!-- /.why-choose-two__img__one -->
                   <div class="why-choose-two__img__two wow fadeInUp" data-wow-delay="300ms" style="padding-bottom: 5px;">
                     <div class="trevlo-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                      <img src="{{ asset('assets/images/why-choose/lagunasmancornadas.jpg') }}" alt="Why Choose Us - Lagunas Mancornadas" class="thumbnail" rel="lightbox[why-choose]">
+                      <img src="{{ asset('assets/images/why-choose/lagunasmancornadas.webp') }}" alt="Why Choose Us - Lagunas Mancornadas" class="thumbnail" rel="lightbox[why-choose]">
                     </div>
                     <div class="trevlo-tilt" data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 7, "speed": 700, "scale": 1 }'>
-                      <img src="{{ asset('assets/images/why-choose/luchachi.jpg') }}" alt="Why Choose Us - Luchachi" class="thumbnail" rel="lightbox[why-choose]">
+                      <img src="{{ asset('assets/images/why-choose/luchachi.webp') }}" alt="Why Choose Us - Luchachi" class="thumbnail" rel="lightbox[why-choose]">
                     </div>
                   </div><!-- /.why-choose-two__img__two -->
                 </div><!-- /.why-choose-two__img-box -->

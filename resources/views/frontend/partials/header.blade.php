@@ -4,7 +4,7 @@
             <div class="main-header__left">
                 <div class="main-header__logo">
                     <a href="{{ route('login') }}">
-                        <img src="{{ Voyager::image(setting('site.logo')) }}" alt="Logo" width="146">
+                        <img src="{{ Voyager::image(setting('site.logo')) }}" alt="Logo" width="116">
                     </a>
                 </div><!-- /.main-header__logo -->
                 {{menu('main', 'frontend.partials.menu')}}
@@ -22,7 +22,7 @@
                     <span>Start
                         Booking</span>
                 </a> --}}
-                    <!-- /.main-header__btn -->
+                <!-- /.main-header__btn -->
                 <div class="main-header__right-right">
                     <div class="main-header__phone">
                         <div class="main-header__phone-icon">
@@ -30,7 +30,8 @@
                         </div>
                         <div class="main-header__phone-text">
                             <p class="main-header__phone-title">Contáctanos ya</p>
-                            <h4 class="main-header__phone-number"><a href="tel:{{ setting('contacto.phone') }}">{{setting('contacto.phone')}}</a>
+                            <h4 class="main-header__phone-number"><a
+                                    href="tel:{{ setting('contacto.phone') }}">{{setting('contacto.phone')}}</a>
                             </h4>
                         </div>
                     </div><!-- /.main-header__phone -->
@@ -59,8 +60,8 @@
         <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
         <div class="logo-box">
-            <a href="index.html" aria-label="logo image"><img src="{{ Voyager::image(setting('site.logo')) }}" width="155"
-                    alt="" /></a>
+            <a href="{{route('login')}}" aria-label="logo image"><img src="{{ Voyager::image(setting('site.logo')) }}"
+                    width="155" alt="login" /></a>
         </div>
         <!-- /.logo-box -->
         <div class="mobile-nav__container"></div>
@@ -70,10 +71,24 @@
             <li>
                 <i class="fa fa-envelope"></i>
                 <a href="mailto:{{setting('contacto.email')}}">{{setting('contacto.email')}}</a>
+                <span>Email</span>
             </li>
             <li>
                 <i class="fa fa-phone-alt"></i>
                 <a href="tel:{{ setting('contacto.phone') }}">{{ setting('contacto.phone') }}</a>
+                <span>Telefono</span>
+            </li>
+            <li>
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/59171124428">
+                    <span>WhatsApp</span>
+                </a>
+            </li>
+            <li>
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+                <a href="https://www.facebook.com/Aguaysalecoalbergue">
+                    <span>Facebook</span>
+                </a>
             </li>
         </ul><!-- /.mobile-nav__contact -->
         <div class="mobile-nav__social">
@@ -81,15 +96,11 @@
                 <i class="fab fa-twitter" aria-hidden="true"></i>
                 <span class="sr-only">Twitter</span>
             </a> --}}
-            <a href="https://www.facebook.com/Aguaysalecoalbergue">
-                <i class="fab fa-facebook" aria-hidden="true"></i>
-                <span class="sr-only">Facebook</span>
-            </a>
-            {{-- <a href="https://pinterest.com/">
-                <i class="fab fa-pinterest-p" aria-hidden="true"></i>
-                <span class="sr-only">Pinterest</span>
-            </a>
-            <a href="https://instagram.com/">
+
+            {{-- <li> <span class="icon-phone-1"></span><a href="https://wa.me/59171124428"target="_blank">WhatsApp: (591) 71124428</a>
+            </li> --}}
+
+        {{--<a href="https://instagram.com/">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
                 <span class="sr-only">Instagram</span>
             </a> --}}

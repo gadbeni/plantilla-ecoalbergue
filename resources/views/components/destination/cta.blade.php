@@ -17,7 +17,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6 wow fadeInRight" data-wow-delay="200ms">
                     <div class="cta-one__thumb">
-                        <img src="assets/images/resources/aguaysal.jpg" alt="trevlo" />
+                        <img src="assets/images/resources/aguaysal.webp" alt="trevlo" />
                     </div><!-- /.cta-thumb-one -->
                 </div>
             </div>

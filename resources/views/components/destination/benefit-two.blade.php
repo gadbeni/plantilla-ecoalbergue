@@ -2,7 +2,7 @@
     .benefit-two__box__text a:hover {
     color: #faf8f0; /* change the color to a bright orange */
     }
-</style>    
+</style>
 
 <!-- Benefit Two Start -->
 <section class="benefit-two">
@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-lg-6 noPadding">
                 <div class="benefit-two__left-content"
-                    style="background-image: url(assets/images/resources/viaje.jpg);">
+                    style="background-image: url(assets/images/resources/viaje.webp);">
                     <div class="benefit-two__left-content__inner wow fadeInUp" data-wow-delay="200ms">
                         <h2 class="benefit-two__left-content__title text-center">Aventuras Inolvidables <br> a Tu Alcance</h2>
                         <a href="{{ route('post.index') }}" class="trevlo-btn"><span>Descubre Más sobre Nuestras Aventuras</span></a><!-- /.button -->
