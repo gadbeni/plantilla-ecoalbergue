@@ -6,7 +6,7 @@
     }
 
     .thumbnail:hover {
-    transform: scale(1.5); /* agrandar la imagen al pasar el cursor por encima */
+    transform: scale(1.6); /* agrandar la imagen al pasar el cursor por encima */
     }
 
     /* agregar un evento click para agrandar la imagen */

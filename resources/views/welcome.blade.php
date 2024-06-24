@@ -21,7 +21,8 @@
 
     @include('components.destination.why-choose')
 
-    {{-- @include('components.destination.gallery') --}}
+    @include('components.destination.gallery')
+
 
     {{-- @include('components.destination.tab') --}}
 

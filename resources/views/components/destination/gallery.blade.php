@@ -31,9 +31,9 @@
             <div class="item">
                 <div class="gallery-single">
                     <div class="gallery-single__img-box">
-                        <img src="assets/images/gallery/gallery-1-1.jpg" alt="gallery" class="gallery-single__img">
+                        <img src="{{ asset('assets/images/gallery/DJI_0014.webp') }}" alt="gallery" class="gallery-single__img">
                         <div class="gallery-single__overlay">
-                            <a href="assets/images/gallery/gallery-1-1.jpg"
+                            <a href="{{ asset('assets/images/gallery/DJI_0014.webp') }}"
                                 class="gallery-single__btn trevlo-btn trevlo-btn--base-three img-popup"><span
                                     class="icon-plus"></span></a>
                         </div><!-- /.gallery-single__overlay -->
@@ -43,9 +43,9 @@
             <div class="item">
                 <div class="gallery-single">
                     <div class="gallery-single__img-box">
-                        <img src="assets/images/gallery/gallery-1-2.jpg" alt="gallery" class="gallery-single__img">
+                        <img src="{{ asset('assets/images/gallery/IMG_3144.webp') }}" alt="gallery" class="gallery-single__img">
                         <div class="gallery-single__overlay">
-                            <a href="assets/images/gallery/gallery-1-2.jpg"
+                            <a href="{{ asset('assets/images/gallery/IMG_3144.webp') }}"
                                 class="gallery-single__btn trevlo-btn trevlo-btn--base-three img-popup"><span
                                     class="icon-plus"></span></a>
                         </div><!-- /.gallery-single__overlay -->
@@ -55,9 +55,9 @@
             <div class="item">
                 <div class="gallery-single">
                     <div class="gallery-single__img-box">
-                        <img src="assets/images/gallery/gallery-1-3.jpg" alt="gallery" class="gallery-single__img">
+                        <img src="{{ asset('assets/images/gallery/IMG_3166.webp') }}" alt="gallery" class="gallery-single__img">
                         <div class="gallery-single__overlay">
-                            <a href="assets/images/gallery/gallery-1-3.jpg"
+                            <a href="{{ asset('assets/images/gallery/IMG_3166.webp') }}"
                                 class="gallery-single__btn trevlo-btn trevlo-btn--base-three img-popup"><span
                                     class="icon-plus"></span></a>
                         </div><!-- /.gallery-single__overlay -->
@@ -67,9 +67,9 @@
             <div class="item">
                 <div class="gallery-single">
                     <div class="gallery-single__img-box">
-                        <img src="assets/images/gallery/gallery-1-4.jpg" alt="gallery" class="gallery-single__img">
+                        <img src="{{ asset('assets/images/gallery/IMG_3516.webp') }}" alt="gallery" class="gallery-single__img">
                         <div class="gallery-single__overlay">
-                            <a href="assets/images/gallery/gallery-1-4.jpg"
+                            <a href="{{ asset('assets/images/gallery/IMG_3516.webp') }}"
                                 class="gallery-single__btn trevlo-btn trevlo-btn--base-three img-popup"><span
                                     class="icon-plus"></span></a>
                         </div><!-- /.gallery-single__overlay -->
@@ -79,9 +79,9 @@
             <div class="item">
                 <div class="gallery-single">
                     <div class="gallery-single__img-box">
-                        <img src="assets/images/gallery/gallery-1-5.jpg" alt="gallery" class="gallery-single__img">
+                        <img src="{{ asset('assets/images/gallery/DJI_0083.webp') }}" alt="gallery" class="gallery-single__img">
                         <div class="gallery-single__overlay">
-                            <a href="assets/images/gallery/gallery-1-5.jpg"
+                            <a href="{{ asset('assets/images/gallery/DJI_0083.webp') }}"
                                 class="gallery-single__btn trevlo-btn trevlo-btn--base-three img-popup"><span
                                     class="icon-plus"></span></a>
                         </div><!-- /.gallery-single__overlay -->
