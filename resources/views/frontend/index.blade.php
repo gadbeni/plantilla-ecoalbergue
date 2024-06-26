@@ -103,12 +103,14 @@
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                         @for ($i = 0; $i < 3; $i++)
                         <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
-                            <div class="card" style="">
-                                <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="...">
+                            <div class="card ms-1 me-1" style="">
+                                {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="..."> --}}
+                                <img src="{{ asset('assets/img/prueba.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título de la Tarjeta {{$i+1}}</h5>
                                     <p class="card-text">Descripción breve de la tarjeta {{$i+1}}.</p>
@@ -117,7 +119,21 @@
                                 </div>
                             </div>
                         </div>
+                        
                         @endfor
+                        <div class="carousel-item ">
+                            <div class="card ms-1 me-1" style="">
+                                {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="..."> --}}
+                                <img src="https://images.pexels.com/photos/17436220/pexels-photo-17436220/free-photo-of-planta-hojas-lluvia-mojado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Título de la Tarjeta 4</h5>
+                                    <p class="card-text">Descripción breve de la tarjeta 4.</p>
+                                    <a href="#" class="btn btn-primary">Ver Detalle</a>
+                                    <a href="#" class="btn btn-secondary">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
