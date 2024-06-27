@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <title>AGUAYSAL</title>
 </head>
+
 <body>
-    
-    
+
+
     <header>
         <div class="container">
             <div class="navbar">
@@ -80,13 +83,20 @@
                     <div>
                         <h4>MISIÓN </h4>
                         <p>
-                            Somos una empresa enfocada a proporcionar un servicio personalizado al huésped para satisfacer sus necesidades de alojamiento, alimento y sobrepasar sus expectativas a través del trabajo en equipo y el compromiso de nuestros colaboradores para ofrecer lo mejor en su estadía de manera sustentable con un compromiso y respeto hacia nuestro medio ambiente, social y cultural. 
+                            Somos una empresa enfocada a proporcionar un servicio personalizado al huésped para
+                            satisfacer sus necesidades de alojamiento, alimento y sobrepasar sus expectativas a través
+                            del trabajo en equipo y el compromiso de nuestros colaboradores para ofrecer lo mejor en su
+                            estadía de manera sustentable con un compromiso y respeto hacia nuestro medio ambiente,
+                            social y cultural.
                         </p>
                     </div>
                     <div>
                         <h4>VISIÓN </h4>
-                        <p> 
-                            Reconocernos nacional e internacionalmente por ser un lugar íntimo, privado y confiable para el huésped, ofreciéndole un alojamiento de calidad y nuestra variedad de alimentos locales, así como una experiencia única e inolvidable al involucrarlo en actividades al aire libre con un paisaje natural entregando una sensación de paz y bienestar.
+                        <p>
+                            Reconocernos nacional e internacionalmente por ser un lugar íntimo, privado y confiable para
+                            el huésped, ofreciéndole un alojamiento de calidad y nuestra variedad de alimentos locales,
+                            así como una experiencia única e inolvidable al involucrarlo en actividades al aire libre
+                            con un paisaje natural entregando una sensación de paz y bienestar.
                         </p>
                     </div>
                 </div>
@@ -106,10 +116,10 @@
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
-                        @for ($i = 0; $i < 3; $i++)
-                        <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                        @for ($i = 0; $i < 3; $i++) <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
                             <div class="card ms-1 me-1" style="">
-                                {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="..."> --}}
+                                {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top"
+                                    alt="..."> --}}
                                 <img src="{{ asset('assets/img/prueba.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Título de la Tarjeta {{$i+1}}</h5>
@@ -118,39 +128,121 @@
                                     <a href="#" class="btn btn-secondary">Reservar</a>
                                 </div>
                             </div>
-                        </div>
-                        
-                        @endfor
-                        <div class="carousel-item ">
-                            <div class="card ms-1 me-1" style="">
-                                {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="..."> --}}
-                                <img src="https://images.pexels.com/photos/17436220/pexels-photo-17436220/free-photo-of-planta-hojas-lluvia-mojado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Título de la Tarjeta 4</h5>
-                                    <p class="card-text">Descripción breve de la tarjeta 4.</p>
-                                    <a href="#" class="btn btn-primary">Ver Detalle</a>
-                                    <a href="#" class="btn btn-secondary">Reservar</a>
-                                </div>
+                    </div>
+
+                    @endfor
+                    <div class="carousel-item ">
+                        <div class="card ms-1 me-1" style="">
+                            {{-- <img src="{{ asset('assets/img/card-'.$i.'.jpg') }}" class="card-img-top" alt="...">
+                            --}}
+                            <img src="https://images.pexels.com/photos/17436220/pexels-photo-17436220/free-photo-of-planta-hojas-lluvia-mojado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Título de la Tarjeta 4</h5>
+                                <p class="card-text">Descripción breve de la tarjeta 4.</p>
+                                <a href="#" class="btn btn-primary">Ver Detalle</a>
+                                <a href="#" class="btn btn-secondary">Reservar</a>
                             </div>
                         </div>
-                        
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Siguiente</span>
-                    </a>
+
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
             </div>
         </section>
+
+
+        <br>
+        <style>
+            .header-carousel {
+                background-image: url('assets/img/textura.jpg');
+            }
+        </style>
+
+        <section id="carousel-section">
+            <div class="header-carousel">
+                <h1>Paquetes Especiales</h1>
+            </div>
+
+            <div class="container">
+                <h2 class="text-center">Título de la Sección</h2>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        @for ($i = 0; $i < 4; $i++) <div class="carousel-item {{ $i == 0 ? 'active' : '' }}">
+                            <div class="row">
+                                <div class="col-md-6 col-12">
+                                    <div class="card mb-4">
+                                        @php
+                                        $image1 = $i == 0 ? 'a.webp' : ($i == 1 ? 'b.webp' : ($i == 2 ? 'a.webp' :
+                                        'b.webp'));
+                                        $altText1 = $i == 0 ? 'Luna de Miel en Los Tajibos' : ($i == 1 ? 'Escapada
+                                        Romántica en Los Tajibos' : ($i == 2 ? 'Luna de Miel en Los Tajibos' : 'Escapada
+                                        Romántica en Los Tajibos'));
+                                        @endphp
+                                        <img src="assets/img/{{ $image1 }}" class="card-img-top" alt="{{ $altText1 }}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                            <a href="#" class="btn btn-primary">Ver detalle</a>
+                                            <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-12">
+                                    <div class="card mb-4">
+                                        @php
+                                        $image2 = $i == 0 ? 'c.webp' : ($i == 1 ? 'd.webp' : ($i == 2 ? 'c.webp' :
+                                        'd.webp'));
+                                        $altText2 = $i == 0 ? 'Luna de Miel en Los Tajibos' : ($i == 1 ? 'Escapada
+                                        Romántica en Los Tajibos' : ($i == 2 ? 'Luna de Miel en Los Tajibos' : 'Escapada
+                                        Romántica en Los Tajibos'));
+                                        @endphp
+                                        <img src="assets/img/{{ $image2 }}" class="card-img-top" alt="{{ $altText2 }}">
+                                        <div class="card-body">
+                                            <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                            <a href="#" class="btn btn-primary">Ver detalle</a>
+                                            <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    @endfor
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </a>
+            </div>
+            </div>
+        </section>
+
     </main>
     <footer>
 
     </footer>
     <script src="{{ asset('assets/js/script.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

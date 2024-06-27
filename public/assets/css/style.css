@@ -221,7 +221,7 @@ p{
     padding-bottom: 6rem;
 }
 #second-section .right{
-    
+
 }
 #second-section .right img{
     display: block;
@@ -232,7 +232,30 @@ p{
     border-radius: 10px;
 }
 
-@media (min-width: 576px) {  
+.header-carousel {
+    background-image: url('/public/assets/img/textura.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 10rem;
+    margin-bottom: 3rem;
+
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    /* Centra la imagen */
+    width: 60%;
+    /* Ajusta el tamaño de la imagen */
+    position: relative;
+    top: -250px;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 576px) {
     .container{
         max-width: 540px;
     }
