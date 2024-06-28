@@ -24,6 +24,7 @@
     --dark-color: #000000;
     --light-color: #FFFFFF;
     --gray-color: #D7D9DC;
+    --light-green: #ccffcc;
 }
 *{
     box-sizing: border-box;
@@ -232,6 +233,7 @@ p{
     border-radius: 10px;
 }
 
+
 .header-carousel {
     background-image: url('/public/assets/img/textura.jpg');
     background-size: cover;
@@ -252,6 +254,51 @@ p{
     position: relative;
     top: -250px;
     border-radius: 10px;
+}
+
+.main-footer {
+    background-color: var(--light-green); /* Verde claro */
+    padding-top: 70px;
+    z-index: 1;
+}
+
+.main-footer .text-reset {
+    color: #333333; /* Color del texto */
+}
+
+.main-footer .text-reset:hover {
+    color: #007bff; /* Color del texto al pasar el ratón */
+}
+
+.main-footer .fw-bold {
+    font-weight: bold;
+}
+
+.main-footer .fab {
+    font-size: 1.25rem;
+}
+
+.main-footer .fa-home,
+.main-footer .fa-envelope,
+.main-footer .fa-phone,
+.main-footer .fa-print {
+    margin-right: 10px;
+}
+
+
+.fixed-btn {
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.dropdown-menu {
+    top: -100%;
+    /* Posiciona el menú arriba del botón */
+    transform: translateY(-100%);
+    /* Ajusta la posición vertical */
 }
 
 

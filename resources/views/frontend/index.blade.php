@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <title>AGUAYSAL</title>
 </head>
-
 <body>
-
-
     <header>
         <div class="container">
             <div class="navbar">
@@ -105,6 +102,7 @@
                 </div>
             </div>
         </section>
+
         <section id="carousel-section">
             <div class="container">
                 <h2 class="text-center">Título de la Sección</h2>
@@ -159,8 +157,6 @@
             </div>
         </section>
 
-
-        <br>
         <style>
             .header-carousel {
                 background-image: url('assets/img/textura.jpg');
@@ -171,9 +167,7 @@
             <div class="header-carousel">
                 <h1>Paquetes Especiales</h1>
             </div>
-
-            <div class="container">
-                <h2 class="text-center">Título de la Sección</h2>
+            <div class="container"><br>
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
@@ -232,13 +226,152 @@
                     <span class="visually-hidden">Siguiente</span>
                 </a>
             </div>
-            </div>
         </section>
 
-    </main>
-    <footer>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-lg-8 hero-image">
+                    <img src="{{ asset('assets/img/aventura.jpg') }}" alt="Los Tajibos Hotel" class="img-fluid">
+                </div>
 
+                <div class="col-lg-4 hero-content">
+                    <h2>Disfrute de sus beneficios</h2>
+                    <p>Reserve ahora y obtenga acceso exclusivo a ofertas especiales.</p>
+
+                    <a href="#" class="btn btn-primary">Reserve ahora</a>
+                </div>
+            </div>
+        </section>
+        <br>
+    </main>
+
+    <div class="container mt-5">
+        <div class="dropdown dropup">
+            <button class="btn btn-primary  fixed-btn" type="button" id="msg-btn" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-wechat fs-1x display-7  rounded-circle mx-1"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="msg-btn">
+                <li><a class="dropdown-item"  href="https://www.facebook.com/Aguaysalecoalbergue"
+                    target="_blank"><i
+                            class="bi bi-messenger fs-1x display-7 rounded-circle mx-1"></i></a></li>
+                <li><a class="dropdown-item" href="https://wa.me/59171124428" target="_blank"><i
+                            class="bi bi-whatsapp fs-1x display-7 rounded-circle mx-1"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark main-footer">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+            <!-- Left -->
+            <div class="me-5">
+                <span>Conéctate con nosotros en las redes sociales:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-3 ">
+                    <i class="bi bi-facebook fs-2x display-6"></i>
+                </a>
+                {{-- <a href="https://twitter.com" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a> --}}
+                <a href="https://plus.google.com" class="text-white me-4">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="https://www.instagram.com" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <div class=" text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold">Nombre de la Empresa</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        Aquí puedes utilizar filas y columnas para organizar el contenido de tu pie de página. Lorem
+                        ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Institución</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="destinations.html" class="text-dark">Destino</a>
+                    </p>
+                    <p>
+                        <a href="{{ route('about') }}" class="text-dark">Sobre Nosotros</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Explorar</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="tour-listing-1.html" class="text-dark">Listados de Tours</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold">Contacto</h6>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>
+                        <a href="mailto:{{setting('contacto.email')}}"
+                            class="text-dark">Email{{setting('contacto.email')}}</a>
+                    </p>
+                    <p><i class="fas fa-phone mr-3"></i> <a href="tel:{{setting('contacto.phone')}}"
+                            class="text-dark">Teléfono{{setting('contacto.phone')}}</a></p>
+                    <p><i class="fas fa-print mr-3"></i> <a href="https://wa.me/59171124428" target="_blank"
+                            class="text-dark">WhatsApp: (591) 71124428</a></p>
+                    <p><i class="fas fa-phone mr-3"></i> <a href="https://www.facebook.com/Aguaysalecoalbergue"
+                            target="_blank" class="text-dark">Agua y sal ecoalbergue</a></p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            &copy; <span class="dynamic-year"></span> Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">GADBENI</a>. Todos los derechos reservados.
+        </div>
+        <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+
     <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
