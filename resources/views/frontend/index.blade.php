@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <title>AGUAYSAL</title>
 </head>
 <body>
-    
-    
+
+
     <header>
         <div class="container">
             <div class="navbar">
@@ -57,6 +58,7 @@
                 </div>
             </div>
         </div>
+
     </header>
     <main>
         <section id="hero">
@@ -72,6 +74,7 @@
                 <p>Este es un ejemplo de video de fondo.</p>
             </div>
         </section>
+
         <section id="second-section">
             <div class="full-container flex">
                 <div class="left">
@@ -80,12 +83,12 @@
                     <div>
                         <h4>MISIÓN </h4>
                         <p>
-                            Somos una empresa enfocada a proporcionar un servicio personalizado al huésped para satisfacer sus necesidades de alojamiento, alimento y sobrepasar sus expectativas a través del trabajo en equipo y el compromiso de nuestros colaboradores para ofrecer lo mejor en su estadía de manera sustentable con un compromiso y respeto hacia nuestro medio ambiente, social y cultural. 
+                            Somos una empresa enfocada a proporcionar un servicio personalizado al huésped para satisfacer sus necesidades de alojamiento, alimento y sobrepasar sus expectativas a través del trabajo en equipo y el compromiso de nuestros colaboradores para ofrecer lo mejor en su estadía de manera sustentable con un compromiso y respeto hacia nuestro medio ambiente, social y cultural.
                         </p>
                     </div>
                     <div>
                         <h4>VISIÓN </h4>
-                        <p> 
+                        <p>
                             Reconocernos nacional e internacionalmente por ser un lugar íntimo, privado y confiable para el huésped, ofreciéndole un alojamiento de calidad y nuestra variedad de alimentos locales, así como una experiencia única e inolvidable al involucrarlo en actividades al aire libre con un paisaje natural entregando una sensación de paz y bienestar.
                         </p>
                     </div>
@@ -95,16 +98,12 @@
                 </div>
             </div>
         </section>
-        
+
         <section id="carousel-section">
             <div class="container">
                 <span class="pre-title-section">Sea nuestro</span>
                 <span class="title-section">Huésped</span>
-                
             </div>
-            
-                
-              
         </section>
         <section>
             <div id="carouselExample" class="carousel slide">
@@ -112,7 +111,7 @@
                     <div class="carousel-item active">
                         <div class="card">
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title h4 text-center">Card title</h5>
@@ -126,7 +125,7 @@
                     <div class="carousel-item">
                         <div class="card" >
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title h4 text-center">Card title</h5>
@@ -140,7 +139,7 @@
                     <div class="carousel-item">
                         <div class="card" >
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title h4 text-center">Card title</h5>
@@ -154,7 +153,7 @@
                     <div class="carousel-item">
                         <div class="card" >
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                               <h5 class="card-title h4 text-center">Card title</h5>
@@ -168,7 +167,7 @@
                     <div class="carousel-item">
                         <div class="card" >
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title h4 text-center">Card title</h5>
@@ -182,7 +181,7 @@
                     <div class="carousel-item">
                         <div class="card">
                             <div class="img-wrapper">
-                                <img src="{{asset('assets/img/prueba.jpg')}}"" class="card-img-top" alt="...">
+                                <img src="{{asset('assets/img/prueba.jpg')}}" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title h4 text-center">Card title</h5>
@@ -204,7 +203,24 @@
                 </button>
             </div>
         </section>
+
+
+
     </main>
+    <nav class="social-media-nav">
+        <input type="checkbox" id="social-media-toggle">
+        <div class="social-media-links">
+            <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
+            <a href="#" class="bi bi-whatsapp" aria-label="WhatsApp"></a>
+            <a href="#" class="bi bi-messenger" aria-label="Messenger"></a>
+        </div>
+        <div class="social-media-toggle">
+            <label for="social-media-toggle">
+                <i class="bi bi-wechat"></i>
+                <i class="bi bi-x"></i>
+            </label>
+        </div>
+    </nav>
     <footer>
 
     </footer>

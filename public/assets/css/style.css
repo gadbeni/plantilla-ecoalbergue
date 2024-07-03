@@ -221,7 +221,7 @@ p{
     padding-bottom: 6rem;
 }
 #second-section .right{
-    
+
 }
 #second-section .right img{
     display: block;
@@ -268,7 +268,91 @@ p{
     width: 100%;
     height: 100%;
 }
-@media (min-width: 576px) {  
+
+
+
+/*BOTONES DE REDES SOCIALES*/
+#social-media-toggle {
+    display: none;
+}
+
+.social-media-nav {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.social-media-links a,
+.social-media-toggle label {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.social-media-links a:hover {
+    background: #fff;
+    color: #cc2b2b;
+}
+
+.social-media-links a {
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#social-media-toggle:checked~.social-media-links a {
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.social-media-toggle label {
+    cursor: pointer;
+    background: #25d366;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-wechat,
+.bi-x,
+.bi.bi-facebook,
+.bi.bi.bi.bi-messenger,
+.bi.bi-whatsapp {
+    font-size: 30px;
+}
+
+#social-media-toggle:checked~.social-media-toggle label .bi-wechat {
+    display: none;
+}
+
+#social-media-toggle:checked~.social-media-toggle label .bi-x {
+    display: block;
+}
+
+.social-media-toggle label .bi-x {
+    display: none;
+}
+.bi.bi-whatsapp{
+    background: #25d366;
+}
+.bi.bi-facebook,
+.bi.bi.bi.bi-messenger{
+    background: #3b5998;
+}
+
+
+
+@media (min-width: 576px) {
     .container{
         max-width: 540px;
     }
