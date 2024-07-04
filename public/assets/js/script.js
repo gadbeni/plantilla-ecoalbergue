@@ -39,7 +39,7 @@ if(window.matchMedia('(min-width: 576px)').matches){
             scrollPosition = scrollPosition + cardWidth;
             $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
         }
-        
+
     });
     $('.carousel-control-prev').on('click', function() {
         if (scrollPosition  > 0) {
@@ -47,7 +47,7 @@ if(window.matchMedia('(min-width: 576px)').matches){
             scrollPosition -= cardWidth;
             $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
         }
-        
+
     });
 }
 $(document).ready(function() {
@@ -65,3 +65,92 @@ $(document).ready(function() {
     // Ejecutar al cambiar el tamaño de la ventana
     $(window).resize(adjustCarousel);
 });
+
+
+
+// Owlcarousel
+$(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        loop:true,
+      margin:10,
+      nav:true,
+      autoplay:true,
+      autoplayTimeout:3000,
+      autoplayHoverPause:true,
+      center: true,
+      navText: [
+          "<i class='fa fa-angle-left'></i>",
+          "<i class='fa fa-angle-right'></i>"
+      ],
+      responsive:{
+          0:{
+              items:1
+          },
+          600:{
+              items:1
+          },
+          1000:{
+              items:3
+          }
+      }
+    });
+  });
+
+  (function ($) {
+    "use strict";
+
+    $(".add").on("click", function (e) {
+      e.preventDefault();
+      if ($(this).prev().val() < 999) {
+        $(this)
+          .prev()
+          .val(+$(this).prev().val() + 1);
+      }
+    });
+    $(".sub").on("click", function (e) {
+      e.preventDefault();
+      if ($(this).next().val() > 0) {
+        if ($(this).next().val() > 0)
+          $(this)
+          .next()
+          .val(+$(this).next().val() - 1);
+      }
+    });
+    function thmOwlInit() {
+      // owl slider
+      let trevloowlCarousel = $(".trevlo-owl__carousel");
+      if (trevloowlCarousel.length) {
+        trevloowlCarousel.each(function () {
+          let elm = $(this);
+          let options = elm.data("owl-options");
+          let thmOwlCarousel = elm.owlCarousel(
+            "object" === typeof options ? options : JSON.parse(options)
+          );
+          elm.find("button").each(function () {
+            $(this).attr("aria-label", "carousel button");
+          });
+        });
+      }
+      let trevloowlCarouselNav = $(".trevlo-owl__carousel--custom-nav");
+      if (trevloowlCarouselNav.length) {
+        trevloowlCarouselNav.each(function () {
+          let elm = $(this);
+          let owlNavPrev = elm.data("owl-nav-prev");
+          let owlNavNext = elm.data("owl-nav-next");
+          $(owlNavPrev).on("click", function (e) {
+            elm.trigger("prev.owl.carousel");
+            e.preventDefault();
+          });
+
+          $(owlNavNext).on("click", function (e) {
+            elm.trigger("next.owl.carousel");
+            e.preventDefault();
+          });
+        });
+      }
+    }
+
+    $(window).on("resize", function () {
+      trevlo_stretch();
+    });
+  })(jQuery);
