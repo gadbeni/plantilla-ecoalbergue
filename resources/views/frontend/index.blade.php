@@ -9,10 +9,8 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!-- template styles -->
-    <link rel="stylesheet" href="{{ asset('assets/css/trevlo.css')}}" />
-
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css')}}">
+
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <title>AGUAYSAL</title>
 </head>
@@ -221,7 +219,6 @@
         </section>
         <br>
 
-
         {{-- PACKAGE --}}
         <style>
             .header-package {
@@ -229,37 +226,57 @@
             }
         </style>
 
+       
         <section>
             <div class="header-package">
             </div>
-            <div class="package container">
+            <div class="carousel slide package " id="carouselExample1">
                 <div class="row">
                     <h2 style="text-align: center;">Paquetes Especiales</h2>
-                    <div class="col-md-6 col-12">
-                        <div class="card text-bg-white">
-                            <img src="assets/img/a.webp" class="card-img" alt="">
-                            <div class="card-body">
-                                <h5 class="card-title">You can adjust the colors and gradient</h5>
-                                <a href="#" class="btn btn-primary">Ver detalle</a>
-                                <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                    <div class="carousel-inner ">
+
+                        <div class="carousel-item active">
+                            <div class="col-12">
+                                <div class="card ">
+                                    <div class="img-wrapper">
+                                        <img src="{{asset('assets/img/a.webp')}}" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                                        <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="card text-bg-white">
-                            <img src="assets/img/a.webp" class="card-img" alt="">
-
-                            <div class="card-body">
-                                <h5 class="card-title">You can adjust the colors and gradient</h5>
-                                <a href="#" class="btn btn-primary">Ver detalle</a>
-                                <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                        <div class="carousel-item">
+                            <div class="col-12">
+                                <div class="card ">
+                                    <div class="img-wrapper">
+                                        <img src="{{asset('assets/img/b.webp')}}" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                        <a href="#" class="btn btn-primary">Ver detalle</a>
+                                        <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> --}}
             </div>
         </section>
 
+    
         {{-- <section class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 hero-image">
@@ -275,7 +292,7 @@
             </div>
         </section> --}}
 
-        {{-- s --}}
+        {{-- SLIDER --}}
         <section id="slider" class="pt-5">
             <div class="container-fluid">
                 <h1 class="text-center"><b>Responsive Owl Carousel</b></h1>
@@ -378,7 +395,7 @@
                             </div><!-- /.tour-listing-two__card-show-title-box -->
 
                         </div><!-- /.tour-listing__card-show-content -->
-                        <div class="tour-listing-two__card-hover-content tour-listing__card-content">
+                        <div class="tour-listing-two__card-hover-content tour-listing__card-content  bg-opacity-50 bg-white">
                             <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
                                     Boat & Enjoy</a></h3>
                             <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
@@ -640,7 +657,6 @@
     </footer>
     <!-- Footer -->
 
-    <script src="{{ asset('assets/js/jquery-3.7.0.min.js') }}"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -650,8 +666,8 @@
     <script src="{{ asset('assets/js/script.js') }}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-</script>
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
