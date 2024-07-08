@@ -352,25 +352,25 @@ p{
 
 
 /*PACKAGE*/
-.header-package {
+/* .header-package {
     background-image: url('assets/img/textura.jpg');
     height: 300px;
-    /* Ajusta la altura según sea necesario */
+
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 10rem;
-    margin-bottom: 3rem;
+    padding: 4rem;
+    margin-bottom: 12rem;
 }
 
 .package {
     display: block;
     margin: 0 auto;
-    /* Ajusta el tamaño de la imagen */
+   
     position: relative;
-    top: -250px;
+    top: -50px;
     border-radius: 10px;
-}
+} */
 
 /*SLIDER*/
 .slider {
@@ -432,10 +432,10 @@ p{
 
 
 /*HEADER TEXTURA*/
-.header-textura {
+/* .header-textura {
     background-image: url('assets/img/textura.jpg');
-    height: 400px;
-    /* Ajusta la altura según sea necesario */
+    height:  60vh;
+   
     background-size: cover;
     background-position: center;
 }
@@ -443,13 +443,12 @@ p{
 .event {
     display: block;
     margin: 0 auto;
-    /* Centra la imagen */
     width: 85%;
-    /* Ajusta el tamaño de la imagen */
+   
     position: relative;
     top: -450px;
     border-radius: 10px;
-}
+} */
 
 
 /*TOUR*/
@@ -500,7 +499,7 @@ p{
     padding: 32px 40px 39px;
     position: relative;
     z-index: 1;
-    background-color: var(--trevlo-white, #ffffff);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
   }
   @media (max-width: 991px) {
@@ -590,7 +589,7 @@ p{
       padding-left: 20px;
       padding-right: 20px;
       padding-bottom: 20px;
-      
+
     }
   }
   .tour-listing-two__card:hover .tour-listing-two__card-show-content {
@@ -610,7 +609,7 @@ p{
   .tour-listing-two__card-hover-content {
     border-radius: 20px;
     padding: 23px 30px 25px;
-    
+
     position: absolute;
     width: calc(100% - 30px);
     left: 0;
@@ -681,11 +680,18 @@ p{
     margin-right: 10px;
 }
 
+@media (min-width: 276px) {
+  .container{
+      max-width: 540px;
+  }
 
+
+}
 @media (min-width: 576px) {
     .container{
         max-width: 540px;
     }
+
     .carousel-inner{
         display: flex;
     }
@@ -719,6 +725,7 @@ p{
     .container{
         max-width: 720px;
     }
+
 }
 @media (min-width: 992px) {
     .container{
@@ -730,4 +737,6 @@ p{
     .container{
         max-width: 1140px;
     }
+
+
 }

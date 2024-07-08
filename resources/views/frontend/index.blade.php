@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {{--
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css')}}">
+
+    <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png')}}">
+
+
+    <meta name="description"
+        content="Escapate a un paraíso tropical de relajación y rejuvenecimiento. Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
+
+    <!--facebook open graph-->
+    <meta property="og:title" content="Escapate a un paraíso tropical de relajación y rejuvenecimiento" />
+    <meta property="og:description" content="Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
+    <meta property="og:image" content="{{ asset('assets/images/logo.png') }}" />
+
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
     <title>AGUAYSAL</title>
@@ -218,66 +231,77 @@
             </div>
         </section>
         <br>
-
         {{-- PACKAGE --}}
         <style>
             .header-package {
                 background-image: url('assets/img/textura.jpg');
+                height: 300px;
+
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding: 4rem;
+                margin-bottom: 20rem;
             }
         </style>
-
-       
-        <section>
+        <section aria-label="Paquetes Especiales">
             <div class="header-package">
-            </div>
-            <div class="carousel slide package " id="carouselExample1">
-                <div class="row">
+                <div class="carousel slide" id="carouselExample1">
                     <h2 style="text-align: center;">Paquetes Especiales</h2>
-                    <div class="carousel-inner ">
-
+                    <div class=" carousel-inner">
                         <div class="carousel-item active">
                             <div class="col-12">
-                                <div class="card ">
-                                    <div class="img-wrapper">
-                                        <img src="{{asset('assets/img/a.webp')}}" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">You can adjust the colors and gradient</h5>
-                                        <a href="#" class="btn btn-primary">Ver detalle</a>
-                                        <a href="#" class="btn btn-secondary">Reservar ahora</a>
-                                    </div>
+                                <div class="card">
+                                    <figure>
+                                        <div class="img-wrapper">
+                                            <img src="{{asset('assets/img/a.webp')}}" class="card-img-top img-fluid"
+                                                alt="..." aria-label="Imagen del paquete especial">
+                                        </div>
+                                        <figcaption>
+                                            <div class="card-body">
+                                                <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                                <a href="#" class="btn btn-primary">Ver detalle</a>
+                                                <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="col-12">
-                                <div class="card ">
-                                    <div class="img-wrapper">
-                                        <img src="{{asset('assets/img/b.webp')}}" class="card-img-top" alt="...">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">You can adjust the colors and gradient</h5>
-                                        <a href="#" class="btn btn-primary">Ver detalle</a>
-                                        <a href="#" class="btn btn-secondary">Reservar ahora</a>
-                                    </div>
+                                <div class="card">
+                                    <figure>
+                                        <div class="img-wrapper">
+                                            <img src="{{asset('assets/img/b.webp')}}" class="card-img-top img-fluid"
+                                                alt="..." aria-label="Imagen del paquete especial">
+                                        </div>
+                                        <figcaption>
+                                            <div class="card-body">
+                                                <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                                <a href="#" class="btn btn-primary">Ver detalle</a>
+                                                <a href="#" class="btn btn-secondary">Reservar ahora</a>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a> --}}
                 </div>
-                {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExample1" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a> --}}
             </div>
+
         </section>
 
-    
-        {{-- <section class="container-fluid">
+        <section class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 hero-image">
                     <img src="{{ asset('assets/img/aventura.jpg') }}" alt="Los Tajibos Hotel" class="img-fluid">
@@ -290,70 +314,131 @@
                     <a href="#" class="btn btn-primary">Reserve ahora</a>
                 </div>
             </div>
-        </section> --}}
+        </section>
 
         {{-- SLIDER --}}
         <section id="slider" class="pt-5">
             <div class="container-fluid">
-                <h1 class="text-center"><b>Responsive Owl Carousel</b></h1>
+                <h2 class="text-center"><b>Responsive Owl Carousel</b></h2>
                 <div class="slider">
                     <div class="owl-carousel">
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <img src="{{ asset('assets/img/a.webp') }}" alt="">
-                            </div>
+                            <figure>
+                                <img src="{{ asset('assets/img/a.webp') }}" alt="Imagen del paquete especial"
+                                    aria-label="Imagen del paquete especial">
+                                <figcaption>
+                                    <p>Contacto: <a href="mailto:info@example.com">info@example.com</a></p>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <img src="{{ asset('assets/img/b.webp') }}" alt="">
-                            </div>
+                            <figure>
+                                <img src="{{ asset('assets/img/b.webp') }}" alt="Imagen del paquete especial"
+                                    aria-label="Imagen del paquete especial">
+                                <figcaption>
+                                    <p>Contacto: <a href="mailto:info@example.com">info@example.com</a></p>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <img src="{{ asset('assets/img/c.webp') }}" alt="">
-                            </div>
+                            <figure>
+                                <img src="{{ asset('assets/img/c.webp') }}" alt="Imagen del paquete especial"
+                                    aria-label="Imagen del paquete especial">
+                                <figcaption>
+                                    <p>Contacto: <a href="mailto:info@example.com">info@example.com</a></p>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <img src="{{ asset('assets/img/d.webp') }}" alt="">
-                            </div>
+                            <figure>
+                                <img src="{{ asset('assets/img/d.webp') }}" alt="Imagen del paquete especial"
+                                    aria-label="Imagen del paquete especial">
+                                <figcaption>
+                                    <p>Contacto: <a href="mailto:info@example.com">info@example.com></a></p>
+                                </figcaption>
+                            </figure>
                         </div>
                         <div class="slider-card">
-                            <div class="d-flex justify-content-center align-items-center mb-4">
-                                <img src="images/slide-5.jpg" alt="">
-                            </div>
+                            <figure>
+                                <img src="{{ asset('assets/img/e.webp') }}" alt="Imagen del paquete especial"
+                                    aria-label="Imagen del paquete especial">
+                                <figcaption>
+                                    <p>Contacto: <a href="mailto:info@example.com">info@example.com></a></p>
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <br>
+
 
         <style>
             .header-textura {
                 background-image: url('assets/img/textura.jpg');
+                height: 68vh;
+
+                background-size: cover;
+                background-position: center;
+                color: white;
+                padding: 10rem;
+                margin-top: 10rem;
+                margin-bottom: 16rem;
+            }
+
+            .event {
+                display: block;
+                margin: 0 auto;
+                width: 55%;
+                right: 12rem;
+                position: relative;
+                top: -250px;
+                border-radius: 10px;
+            }
+            
+
+            @media (max-width: 768px) {
+                .event {
+                    width: 100%;
+                    right: 2rem;
+                    top: 10px;
+                    /* Ocupa el 90% del ancho en dispositivos medianos */
+                }
+            }
+
+            @media (max-width: 576px) {
+                .event {
+                    width: 100%;
+                    right: 2rem;
+                    top: 10px;
+                    /* Ocupa el 100% del ancho en dispositivos pequeños */
+                }
+             
             }
         </style>
 
         <section>
-            <div class="header-textura"></div>
-            <div class="event container">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="card text-bg-dark">
-                            <img src="assets/img/a.webp" class="card-img" alt="">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Eventos Sociales y Corporativos</h5>
-                                <p class="card-text">Organice su próximo evento en el Centro de Convenciones más grande
-                                    situado en un hotel en Bolivia, con instalaciones y espacios sociales vibrantes.
-                                    Cualquiera que sea su evento, le ayudaremos a hacerlo realidad.</p>
-                                <p class="card-text"><small>Última actualización hace 3 minutos</small></p>
-                                <a href="#" class="btn btn-primary">Ver todos los salones</a>
+            <div class="header-textura">
+                {{-- <div class="container"> --}}
+                    {{-- <div class="row"> --}}
+                        {{-- <div class="event"> --}}
+                            <div class="event card text-bg-dark">
+                                <img src="assets/img/imgtextura.webp" class="card-img"
+                                    alt="Imagen del evento social y corporativo">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Eventos Sociales y Corporativos</h5>
+                                    <p class="card-text">Organice su próximo evento en el Centro de Convenciones más
+                                        grande
+                                        situado en un hotel en Bolivia, con instalaciones y espacios sociales vibrantes.
+                                        Cualquiera que sea su evento, le ayudaremos a hacerlo realidad.</p>
+                                    <p class="card-text"><small>Última actualización hace 3 minutos</small></p>
+                                    <a href="#" class="btn btn-primary">Ver todos los salones</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                </div>
+                        {{--
+                    </div> --}}
+                    {{-- </div> --}}
             </div>
         </section>
 
@@ -395,30 +480,6 @@
                             </div><!-- /.tour-listing-two__card-show-title-box -->
 
                         </div><!-- /.tour-listing__card-show-content -->
-                        <div class="tour-listing-two__card-hover-content tour-listing__card-content  bg-opacity-50 bg-white">
-                            <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                    Boat & Enjoy</a></h3>
-                            <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
-                                Ipsum agtilable</p>
-                        </div><!-- /.tour-listing__card-content -->
-                    </div><!-- /.tour-listing__card -->
-                </div><!-- /.tour-listing-two__carousel-item item -->
-
-                <div class="tour-listing-two__carousel-item item">
-                    <div class="tour-listing-two__card tour-listing__card">
-                        <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                            <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                                class="tour-listing__card-image">
-                            <div class="tour-listing__card-image-overlay"></div>
-                            <!-- /.tour-listing__card-image-overlay -->
-                        </a><!-- /.tour-listing__card-image-box -->
-                        <div class="tour-listing-two__card-show-content">
-                            <div class="tour-listing-two__card-show-title-box">
-                                <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                        href="#">Travel by Boat & Enjoy</a></h3>
-                            </div><!-- /.tour-listing-two__card-show-title-box -->
-
-                        </div><!-- /.tour-listing__card-show-content -->
                         <div class="tour-listing-two__card-hover-content tour-listing__card-content">
                             <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
                                     Boat & Enjoy</a></h3>
@@ -476,7 +537,6 @@
                     </div><!-- /.tour-listing__card -->
                 </div><!-- /.tour-listing-two__carousel-item item -->
 
-
                 <div class="tour-listing-two__carousel-item item">
                     <div class="tour-listing-two__card tour-listing__card">
                         <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
@@ -496,6 +556,31 @@
                             <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
                                     Boat & Enjoy</a></h3>
                             <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
+                                Ipsum agtilable</p>
+                        </div><!-- /.tour-listing__card-content -->
+                    </div><!-- /.tour-listing__card -->
+                </div><!-- /.tour-listing-two__carousel-item item -->
+
+
+                <div class="tour-listing-two__carousel-item item">
+                    <div class="tour-listing-two__card tour-listing__card">
+                        <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
+                            <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
+                                class="tour-listing__card-image">
+                            <div class="tour-listing__card-image-overlay"></div>
+                            <!-- /.tour-listing__card-image-overlay -->
+                        </a><!-- /.tour-listing__card-image-box -->
+                        <div class="tour-listing-two__card-show-content">
+                            <div class="tour-listing-two__card-show-title-box">
+                                <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
+                                        href="#">Travel by Boat & Enjoy</a></h3>
+                            </div><!-- /.tour-listing-two__card-show-title-box -->
+
+                        </div><!-- /.tour-listing__card-show-content -->
+                        <div class="tour-listing-two__card-hover-content tour-listing__card-content">
+                            <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
+                                    Boat & Enjoy</a></h3>
+                            <p class="tour-listing__card-text text-small">There are of Lorem
                                 Ipsum agtilable</p>
                         </div><!-- /.tour-listing__card-content -->
                     </div><!-- /.tour-listing__card -->
@@ -545,6 +630,7 @@
             </label>
         </div>
     </nav>
+
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark main-footer">
