@@ -37,21 +37,23 @@
     <header>
         <div class="container">
             <div class="navbar">
-                <div class="container-btn-menu lateral-header">
-                    <div id="btn-menu">
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
+                <div class="container  full-container-max" style="max-width: 1925px;">
+                    <div class="container-btn-menu lateral-header">
+                        <div id="btn-menu">
+                            <span class="bar1"></span>
+                            <span class="bar2"></span>
+                            <span class="bar3"></span>
+                        </div>
+                        <span class="title-btn">
+                            MENU
+                        </span>
                     </div>
-                    <span class="title-btn">
-                        MENU
-                    </span>
-                </div>
-                <div>
-                    <img class="logo-white" src="{{ asset('assets/img/white-logo.png')}}" alt="Logo" width="100px">
-                    <img class="logo" src="{{ asset('assets/img/logo.png')}}" alt="Logo" width="100px">
-                </div>
-                <div class="lateral-header">
+                    <div>
+                        <img class="logo-white" src="{{ asset('assets/img/white-logo.png')}}" alt="Logo" width="100px">
+                        <img class="logo" src="{{ asset('assets/img/logo.png')}}" alt="Logo" width="100px">
+                    </div>
+                    <div class="lateral-header">
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,12 +86,12 @@
     </header>
     <main>
         <section id="hero">
-            <div class="video-container">
-                <video autoplay muted loop class="background-video">
+            <div class="video-container ">
+                <video autoplay muted loop class="background-video full-container-max">
                     <source src="{{ asset('assets/video/portada.mp4')}}" type="video/mp4">
                     Tu navegador no soporta el video HTML5.
                 </video>
-                <div class="overlay"></div>
+                <div class="overlay full-container-max"></div>
             </div>
             <div class="content">
                 <h1>Bienvenido a Mi Sitio Web</h1>
@@ -98,7 +100,7 @@
         </section>
 
         <section id="second-section">
-            <div class="full-container flex">
+            <div class="full-container-max flex">
                 <div class="left">
                     <h2>Bienvenidos al ecoalbergue turístico aguaysal</h2>
                     <h3>Sentí la emoción única de la aventura</h3>
@@ -136,8 +138,8 @@
         </section>
 
         <section>
-            <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
+            <div id="carouselExample" class="carousel slide full-container-max">
+                <div id="carousel-inner" class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="card">
                             <div class="img-wrapper">
@@ -228,7 +230,7 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                <button id="carousel-control-next" class="carousel-control-next" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -238,7 +240,7 @@
         <br>
         {{-- PACKAGE --}}
         <section aria-label="Paquetes Especiales">
-            <div class="header-package"  style="background-image: url('assets/img/textura.jpg');">
+            <div class="header-package full-container-max"  style="background-image: url('assets/img/textura.jpg');">
                 <div class="carousel slide" id="carouselExample1">
                     <h2 style="text-align: center;">Paquetes Especiales</h2>
                     <div class=" carousel-inner">
@@ -294,7 +296,7 @@
 
         </section>
 
-        <section class="container-fluid">
+        <section class="container-fluid full-container-max">
             <div class="row">
                 <div class="col-lg-8 hero-image">
                     <img src="{{ asset('assets/img/aventura.jpg') }}" alt="Los Tajibos Hotel" class="img-fluid">
@@ -311,7 +313,7 @@
 
         {{-- SLIDER --}}
         <section id="slider" class="pt-5">
-            <div class="container-fluid">
+            <div class="container-fluid  full-container-max">
                 <h2 class="text-center"><b>Responsive Owl Carousel</b></h2>
                 <div class="slider">
                     <div class="owl-carousel">
@@ -398,7 +400,7 @@
         </style>
 
         <section>
-            <div class="header-textura" style="background-image: url('assets/img/textura.jpg');">
+            <div class="header-textura  full-container-max" style="background-image: url('assets/img/textura.jpg');">
                 {{-- <div class="container"> --}}
                     {{-- <div class="row"> --}}
                         {{-- <div class="event"> --}}
@@ -422,7 +424,7 @@
             </div>
         </section>
 
-        <div class="container-fluid">
+        <div class="container-fluid  full-container-max">
             <div class="tour-listing-two__carousel trevlo-owl__carousel trevlo-owl__carousel--basic-nav owl-theme owl-carousel"
                 data-owl-options='{
                             "items": 3,
@@ -593,7 +595,7 @@
             </div><!-- /.tour-listing-two__carousel -->
         </div><!-- /.container -->
 
-        <div class="container1">
+        <div class="container1  full-container-max">
             <div class="slider1">
                 <div class="slides" style="background-image: url('assets/img/img1.webp');">
                     <div class="content1">
@@ -779,11 +781,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script src="{{ asset('assets/js/script.js') }}"></script>
 </body>
 
 </html>
