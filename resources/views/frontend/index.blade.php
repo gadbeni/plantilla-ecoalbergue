@@ -15,6 +15,11 @@
     <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png')}}">
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <meta name="description"
         content="Escapate a un paraíso tropical de relajación y rejuvenecimiento. Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
 
@@ -232,20 +237,8 @@
         </section>
         <br>
         {{-- PACKAGE --}}
-        <style>
-            .header-package {
-                background-image: url('assets/img/textura.jpg');
-                height: 300px;
-
-                background-size: cover;
-                background-position: center;
-                color: white;
-                padding: 4rem;
-                margin-bottom: 20rem;
-            }
-        </style>
         <section aria-label="Paquetes Especiales">
-            <div class="header-package">
+            <div class="header-package"  style="background-image: url('assets/img/textura.jpg');">
                 <div class="carousel slide" id="carouselExample1">
                     <h2 style="text-align: center;">Paquetes Especiales</h2>
                     <div class=" carousel-inner">
@@ -374,18 +367,6 @@
 
 
         <style>
-            .header-textura {
-                background-image: url('assets/img/textura.jpg');
-                height: 68vh;
-
-                background-size: cover;
-                background-position: center;
-                color: white;
-                padding: 10rem;
-                margin-top: 10rem;
-                margin-bottom: 16rem;
-            }
-
             .event {
                 display: block;
                 margin: 0 auto;
@@ -395,7 +376,6 @@
                 top: -250px;
                 border-radius: 10px;
             }
-            
 
             @media (max-width: 768px) {
                 .event {
@@ -413,12 +393,12 @@
                     top: 10px;
                     /* Ocupa el 100% del ancho en dispositivos pequeños */
                 }
-             
+
             }
         </style>
 
         <section>
-            <div class="header-textura">
+            <div class="header-textura" style="background-image: url('assets/img/textura.jpg');">
                 {{-- <div class="container"> --}}
                     {{-- <div class="row"> --}}
                         {{-- <div class="event"> --}}
@@ -613,8 +593,58 @@
             </div><!-- /.tour-listing-two__carousel -->
         </div><!-- /.container -->
 
-
+        <div class="container1">
+            <div class="slider1">
+                <div class="slides" style="background-image: url('assets/img/img1.webp');">
+                    <div class="content1">
+                        <div class="name">Alemania</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <button>ver mas</button>
+                    </div>
+                </div>
+                <div class="slides" style="background-image: url('assets/img/img2.webp');">
+                    <div class="content1">
+                        <div class="name">Flinandia</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <button>ver mas</button>
+                    </div>
+                </div>
+                <div class="slides" style="background-image: url('assets/img/img3.webp');">
+                    <div class="content1">
+                        <div class="name">Islandia</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <button>ver mas</button>
+                    </div>
+                </div>
+                <div class="slides" style="background-image: url('assets/img/img4.webp');">
+                    <div class="content1">
+                        <div class="name">Australia</div>
+                        <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
+                        <button>ver mas</button>
+                    </div>
+                </div>
+                <div class="slides" style="background-image: url('assets/img/img5.webp');">
+                    <div class="content1">
+                        <div class="name">Netherland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div class="slides" style="background-image: url('assets/img/img6.webp');">
+                    <div class="content1">
+                        <div class="name">Ireland</div>
+                        <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <span class="prev1"></span>
+                <span class="next1"></span>
+            </div>
+        </div>
     </main>
+
     {{-- BOTON REDES SOCIALES --}}
     <nav class="social-media-nav">
         <input type="checkbox" id="social-media-toggle">

@@ -1,3 +1,18 @@
+let next = document.querySelector(".next1");
+let prev = document.querySelector(".prev1");
+let slider = document.querySelector(".slider1");
+
+next.addEventListener('click', () => {
+    let slides = document.querySelectorAll(".slides");
+    slider.appendChild(slides[0]);
+});
+
+prev.addEventListener('click', () => {
+    let slides = document.querySelectorAll(".slides");
+    slider.prepend(slides[slides.length - 1]);
+});
+
+
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) { // Ajusta este valor si es necesario
@@ -155,8 +170,3 @@ $(document).ready(function() {
     // Ejecutar al cambiar el tamaño de la ventana
     $(window).resize(adjustCarousel);
 });
-
-
-
-
-
