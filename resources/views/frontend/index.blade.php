@@ -236,6 +236,11 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
+            <div class="container">
+                <div class="text-center my-5">
+                    <a href="#" class="btn btn-outline-aguysal">Ver más</a>
+                </div>
+            </div>
         </section>
         <br>
         {{-- PACKAGE --}}
@@ -293,7 +298,11 @@
                     </a> --}}
                 </div>
             </div>
-
+            <div class="container">
+                <div class="text-center my-5">
+                    <a href="#" class="btn btn-outline-aguysal">Ver más</a>
+                </div>
+            </div>
         </section>
 
         <section class="container-fluid full-container-max">
