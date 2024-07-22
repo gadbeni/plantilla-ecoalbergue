@@ -14,8 +14,8 @@ yarn-error.log
 /.idea
 /.vscode
 /video/*
-/img/*
+/images/*
+/public/assets/img/
 *.png
 *.jpg
 *.mp4
-*.webp

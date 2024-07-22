@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="{{asset('assets/img/prueba.jpg')}}" alt="">
+                <img src="{{asset('img/ecoalbergue.webp')}}" alt="">
             </div>
         </div>
     </section>
@@ -73,7 +73,7 @@
                                         @if ($room->capacity > 1)
                                         Personas
                                         @else
-                                        Personas
+                                        Persona
                                         @endif
                                     </span>
                                 </div>
@@ -87,7 +87,7 @@
                         <div class="card-body">
                             <h5 class="card-title h4 text-center">{{$room->title}}</h5>
                             <div class="card-btns">
-                                <a href="#" class="btn">Ver Detalles</a>
+                                <a href="{{route('room.public.show', $room->id)}}" class="btn">Ver Detalles</a>
                                 <a href="#" class="btn">Reservar</a>
                             </div>
                         </div>
@@ -115,7 +115,7 @@
 
     {{-- PACKAGE --}}
     <section aria-label="Paquetes Especiales">
-        <div class="header-package full-container-max" style="background-image: url('assets/img/textura.jpg');">
+        <div class="header-package full-container-max" style="background-image: url('img/textura_alrga_verde.png');">
             <div class="carousel slide" id="carouselExample1">
                 <h2 style="text-align: center;">Paquetes Especiales</h2>
                 <div class=" carousel-inner">
@@ -148,7 +148,7 @@
                                     </div>
                                     <figcaption>
                                         <div class="card-body">
-                                            <h5 class="card-title">You can adjust the colors and gradient</h5>
+                                            <h5 class="card-title text-center">You can adjust the colors and gradient</h5>
                                             <a href="#" class="btn btn-primary">Ver detalle</a>
                                             <a href="#" class="btn btn-secondary">Reservar ahora</a>
                                         </div>

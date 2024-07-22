@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\RoomController;
 use App\Http\Controller\PackageController;
 
 /*
@@ -29,6 +30,12 @@ Route::controller(PostController::class)->group(
     function () {
         Route::get('blog', [PostController::class, 'index'])->name('post.index');
         Route::get('blog/{slug}', [PostController::class, 'show'])->name('post.show');
+    }
+);
+Route::controller(RoomController::class)->group(
+    function () {
+        Route::get('habitaciones', [RoomController::class, 'index'])->name('room.public.index');
+        Route::get('habitaciones/{id}', [RoomController::class, 'showPublicRoom'])->name('room.public.show');
     }
 );
 
