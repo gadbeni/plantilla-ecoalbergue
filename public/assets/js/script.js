@@ -37,12 +37,12 @@ btnMenu.addEventListener('click', function() {
 // Owlcarousel
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
-        loop:true,
+      loop:true,
       margin:10,
       nav:true,
-      autoplay:true,
+      autoplay:false,
       autoplayTimeout:3000,
-      autoplayHoverPause:true,
+      autoplayHoverPause:false,
       center: true,
       navText: [
           "<i class='fa fa-angle-left'></i>",
@@ -82,6 +82,7 @@ $(document).ready(function(){
           .val(+$(this).next().val() - 1);
       }
     });
+
     function thmOwlInit() {
       // owl slider
       let trevloowlCarousel = $(".trevlo-owl__carousel");

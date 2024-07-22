@@ -3,7 +3,7 @@
 @section('content')
 <main>
     <section id="hero">
-        <div class="video-container ">
+        <div class="video-container">
             <video autoplay muted loop class="background-video full-container-max">
                 <source src="{{ asset('assets/video/portada.mp4')}}" type="video/mp4">
                 Tu navegador no soporta el video HTML5.
@@ -57,28 +57,27 @@
         <div id="carouselExample" class="carousel slide full-container-max">
             <div id="carousel-inner" class="carousel-inner">
                 @foreach ($rooms as $room)
-                <div 
-                    @if ($loop->first)
-                        class="carousel-item active"
+                <div @if ($loop->first)
+                    class="carousel-item active"
                     @else
-                        class="carousel-item"
+                    class="carousel-item"
                     @endif
-                >
+                    >
                     <div class="card">
                         <div class="img-wrapper">
                             <img src="{{Voyager::image($room->image)}}" class="card-img-top" alt="...">
                             <div class="icons-image">
                                 <div class="item-image">
                                     <i class="fa-solid fa-user"></i>
-                                    <span>{{$room->capacity}} 
+                                    <span>{{$room->capacity}}
                                         @if ($room->capacity > 1)
-                                            Personas
+                                        Personas
                                         @else
-                                            Personas
+                                        Personas
                                         @endif
                                     </span>
                                 </div>
-                                
+
                                 <div class="item-image">
                                     <i class="fa-solid fa-bed"></i>
                                     <span>{{$room->bed_type}} </span>
@@ -96,13 +95,12 @@
                 </div>
                 @endforeach
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button id="carousel-control-next" class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="next">
+            <button id="carousel-control-next" class="carousel-control-next" type="button"
+                data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -114,9 +112,10 @@
         </div>
     </section>
     <br>
+
     {{-- PACKAGE --}}
     <section aria-label="Paquetes Especiales">
-        <div class="header-package full-container-max"  style="background-image: url('assets/img/textura.jpg');">
+        <div class="header-package full-container-max" style="background-image: url('assets/img/textura.jpg');">
             <div class="carousel slide" id="carouselExample1">
                 <h2 style="text-align: center;">Paquetes Especiales</h2>
                 <div class=" carousel-inner">
@@ -171,7 +170,7 @@
         </div>
         <div class="container">
             <div class="text-center my-5">
-                <a href="#" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
+                <a href="{{ route('about') }}" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
             </div>
         </div>
     </section>
@@ -199,7 +198,7 @@
                 <div class="owl-carousel">
                     <div class="slider-card">
                         <figure>
-                            <img src="{{ asset('assets/img/prueba.jpg') }}" alt="Imagen del paquete especial"
+                            <img src="{{ asset('assets/img/b.webp') }}" alt="Imagen del paquete especial"
                                 aria-label="Imagen del paquete especial">
                             <figcaption>
                                 <p>Contacto: <a href="mailto:info@example.com">info@example.com</a></p>
@@ -208,7 +207,7 @@
                     </div>
                     <div class="slider-card">
                         <figure>
-                            <img src="{{ asset('assets/img/b.webp') }}" alt="Imagen del paquete especial"
+                            <img src="{{ asset('assets/img/c.webp') }}" alt="Imagen del paquete especial"
                                 aria-label="Imagen del paquete especial">
                             <figcaption>
                                 <p>Contacto: <a href="mailto:info@example.com">info@example.com</a></p>
@@ -233,15 +232,7 @@
                             </figcaption>
                         </figure>
                     </div>
-                    <div class="slider-card">
-                        <figure>
-                            <img src="{{ asset('assets/img/e.webp') }}" alt="Imagen del paquete especial"
-                                aria-label="Imagen del paquete especial">
-                            <figcaption>
-                                <p>Contacto: <a href="mailto:info@example.com">info@example.com></a></p>
-                            </figcaption>
-                        </figure>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -275,7 +266,6 @@
                 top: 10px;
                 /* Ocupa el 100% del ancho en dispositivos pequeños */
             }
-
         }
     </style>
 
@@ -283,7 +273,7 @@
         <div class="header-textura  full-container-max" style="background-image: url('assets/img/textura.jpg');">
             {{-- <div class="container"> --}}
                 {{-- <div class="row"> --}}
-                    {{-- <div class="event"> --}}
+                        {{-- <div class="event"> --}}
                         <div class="event card text-bg-dark">
                             <img src="assets/img/palmeras_naranja.png" class="card-img"
                                 alt="Imagen del evento social y corporativo">
@@ -304,15 +294,23 @@
         </div>
     </section>
 
+    <style>
+        .fa.fa-angle-left,
+        .fa.fa-angle-right
+        {
+            background: #ffffff;
+        }
+    </style>
+
     <div class="container-fluid  full-container-max">
         <div class="tour-listing-two__carousel trevlo-owl__carousel trevlo-owl__carousel--basic-nav owl-theme owl-carousel"
             data-owl-options='{
                         "items": 3,
                         "margin": 30,
                         "smartSpeed": 700,
-                        "loop":false,
+                        "loop":true,
                         "autoplay": 6000,
-                        "nav":false,
+                        "nav":true,
                         "dots":true,
                         "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
                         "responsive":{
@@ -327,25 +325,26 @@
                             }
                         }
                         }'>
+
             <div class="tour-listing-two__carousel-item item">
                 <div class="tour-listing-two__card tour-listing__card">
                     <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/prueba.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
+                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
                             class="tour-listing__card-image">
                         <div class="tour-listing__card-image-overlay"></div>
                         <!-- /.tour-listing__card-image-overlay -->
                     </a><!-- /.tour-listing__card-image-box -->
                     <div class="tour-listing-two__card-show-content">
                         <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
+                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
+                                    Boat & Enjoy</a></h3>
                         </div><!-- /.tour-listing-two__card-show-title-box -->
 
                     </div><!-- /.tour-listing__card-show-content -->
                     <div class="tour-listing-two__card-hover-content tour-listing__card-content">
                         <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
                                 Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
+                        <p class="tour-listing__card-text text-small">1There are many variations of passages of Lorem
                             Ipsum agtilable</p>
                     </div><!-- /.tour-listing__card-content -->
                 </div><!-- /.tour-listing__card -->
@@ -361,83 +360,9 @@
                     </a><!-- /.tour-listing__card-image-box -->
                     <div class="tour-listing-two__card-show-content">
                         <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
+                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
+                                    Boat & Enjoy</a></h3>
                         </div><!-- /.tour-listing-two__card-show-title-box -->
-
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-
-
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-
                     </div><!-- /.tour-listing__card-show-content -->
                     <div class="tour-listing-two__card-hover-content tour-listing__card-content">
                         <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
@@ -447,7 +372,6 @@
                     </div><!-- /.tour-listing__card-content -->
                 </div><!-- /.tour-listing__card -->
             </div><!-- /.tour-listing-two__carousel-item item -->
-
             <div class="tour-listing-two__carousel-item item">
                 <div class="tour-listing-two__card tour-listing__card">
                     <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
@@ -458,22 +382,26 @@
                     </a><!-- /.tour-listing__card-image-box -->
                     <div class="tour-listing-two__card-show-content">
                         <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a
-                                    href="#">Travel by Boat & Enjoy</a></h3>
+                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
+                                    Boat & Enjoy</a></h3>
                         </div><!-- /.tour-listing-two__card-show-title-box -->
-
                     </div><!-- /.tour-listing__card-show-content -->
                     <div class="tour-listing-two__card-hover-content tour-listing__card-content">
                         <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
                                 Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are many variations of passages of Lorem
+                        <p class="tour-listing__card-text text-small">There are of Lorem
                             Ipsum agtilable</p>
                     </div><!-- /.tour-listing__card-content -->
                 </div><!-- /.tour-listing__card -->
             </div><!-- /.tour-listing-two__carousel-item item -->
-
         </div><!-- /.tour-listing-two__carousel -->
-    </div><!-- /.container -->
+
+        <div class="container">
+            <div class="text-center my-5">
+                <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
+            </div>
+        </div>
+    </div>
 
     <div class="container1  full-container-max">
         <div class="slider1">

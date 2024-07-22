@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,6 +29,7 @@
 
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+
     <!-- Para pantallas de ancho ≥768px -->
     <link rel="stylesheet" href="{{ asset('assets/css/medium.css')}}" media="(min-width: 768px)">
     <!-- Para pantallas de ancho ≥992px -->
@@ -57,7 +57,7 @@
                         <img class="logo" src="{{ asset('assets/img/logo.png')}}" alt="Logo" width="100px">
                     </div>
                     <div class="lateral-header">
-                    
+
                     </div>
                 </div>
             </div>
@@ -107,9 +107,8 @@
         </div>
     </nav>
 
-
     <!-- Footer -->
-    <footer class="text-center text-lg-start text-dark main-footer">
+    <footer class="text-center text-lg-start text-dark">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
             <!-- Left -->
@@ -121,22 +120,16 @@
             <!-- Right -->
             <div>
                 <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-3 ">
-                    <i class="bi bi-facebook fs-2x display-6"></i>
+                    <i class="fab bi-facebook fs-2x display-6"></i>
                 </a>
-                {{-- <a href="https://twitter.com" class="text-white me-4">
-                    <i class="fab fa-twitter"></i>
-                </a> --}}
+                <a href="https://twitter.com" class="text-white me-4">
+                    <i class="fab fa-twitter fs-2x display-6"></i>
+                </a>
                 <a href="https://plus.google.com" class="text-white me-4">
-                    <i class="bi bi-whatsapp"></i>
+                    <i class="fab bi-whatsapp fs-2x display-6"></i>
                 </a>
                 <a href="https://www.instagram.com" class="text-white me-4">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://www.linkedin.com" class="text-white me-4">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com" class="text-white me-4">
-                    <i class="fab fa-github"></i>
+                    <i class="fab fa-instagram fs-2x display-6"></i>
                 </a>
             </div>
             <!-- Right -->
@@ -219,13 +212,19 @@
     </footer>
     <!-- Footer -->
 
+    {{-- <script>
+        const label = document.querySelector(".social-media-toggle label");
+        label.addEventListener("mouseover", function() {
+          label.click();
+        });
+    </script> --}}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
@@ -234,3 +233,4 @@
 </body>
 
 </html>
+

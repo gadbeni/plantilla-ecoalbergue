@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
+use App\Http\Controller\PackageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +22,8 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('sobre-nosotros', [PagesController::class, 'about'])->name('about');
+Route::get('paquetes-especiales', [PagesController::class, 'about'])->name('about');
+
 
 Route::controller(PostController::class)->group(
     function () {

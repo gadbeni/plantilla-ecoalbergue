@@ -243,7 +243,7 @@ p{
     /* background: var(--green-color); */
 }
 #second-section .right{
-    
+
 }
 #second-section .right img{
     display: block;
@@ -353,8 +353,8 @@ p{
     transition: all 500ms ease;
     cursor: pointer;
 }
-
-/* .social-media-links a:hover {
+/*
+.social-media-links a:hover {
     background: #fff;
     color: #cc2b2b;
 } */
@@ -379,6 +379,7 @@ p{
     align-items: center;
     justify-content: center;
 }
+
 
 .bi-wechat,
 .bi-x,
@@ -445,11 +446,9 @@ p{
     position: relative;
   }
 .slider .owl-item.active.center .slider-card {
-    transform: scale(1.15);
+    transform: scaleX(1.50) scaleY(1.10);
     opacity: 1;
     background: #ff9966; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
   }
 .slider-card {
@@ -459,7 +458,7 @@ p{
     border-radius: 5px;
     box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
     transform: scale(0.9);
-    opacity: 0.5;
+    opacity: 0.2;
     transition: all 0.3s;
   }
 .slider-card img {
@@ -502,7 +501,6 @@ p{
 .header-textura {
     background-image: url('assets/img/textura.jpg');
     height: 68vh;
-
     background-size: cover;
     background-position: center;
     color: white;
@@ -574,7 +572,7 @@ p{
     top: 0;
     height: 100%;
   }
-  .tour-listing__card-content {
+  /* .tour-listing__card-content {
     padding: 32px 40px 39px;
     position: relative;
     z-index: 1;
@@ -595,15 +593,16 @@ p{
     .tour-listing__card-content {
       padding: 32px 15px 20px;
     }
-  }
+  } */
 
   .tour-listing__card-title {
     font-size: var(--trevlo-size-5xl, 24px);
     line-height: 1.4;
     margin-bottom: 1px;
+    color: #ccc;
   }
   .tour-listing__card-title:hover {
-    color: var(--trevlo-base, #FF5956);
+    color: var(--trevlo-base, #119600);
   }
   .tour-listing__card-title a {
     color: inherit;
@@ -616,6 +615,7 @@ p{
   .tour-listing__card-text {
     line-height: 24px;
     margin-bottom: 18px;
+    color: #D7D9DC;
   }
 
 
@@ -650,18 +650,6 @@ p{
     transform-origin: bottom;
     transform-style: preserve-3d;
     transform: scaleY(1);
-  }
-  @media (max-width: 991px) {
-    .tour-listing-two__card-show-content {
-      padding-left: 20px;
-      padding-right: 20px;
-      padding-bottom: 20px;
-    }
-  }
-  @media (max-width: 767px) {
-    .tour-listing-two__card-show-content {
-      padding: 133px 30px 25px;
-    }
   }
   @media (max-width: 425px) {
     .tour-listing-two__card-show-content {
@@ -704,16 +692,7 @@ p{
     transform: scaleY(0);
     z-index: 2;
   }
-  @media (max-width: 991px) {
-    .tour-listing-two__card-hover-content {
-      padding: 18px 20px 20px;
-    }
-  }
-  @media (max-width: 767px) {
-    .tour-listing-two__card-hover-content {
-      padding: 23px 30px 25px;
-    }
-  }
+
   @media (max-width: 425px) {
     .tour-listing-two__card-hover-content {
       padding: 18px 20px 20px;
@@ -861,55 +840,19 @@ p{
 
 /* responsive */
 
-@media screen and (max-width: 900px) {
-    .slider1 {
-        inset: 40px 40px 200px 40px;
-    }
-
-    .slider1 .slides {
-        width: 100px;
-        height: 100px;
-        top: initial;
-        bottom: -170px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    }
-
-    .slider1 .slides:nth-child(1),
-    .slider1 .slides:nth-child(2) {
-        top: initial;
-        bottom: 0px;
-    }
-
-    .slider1 .slides:nth-child(3) {
-        left: 0px;
-    }
-
-    .slider1 .slides:nth-child(4) {
-        left: 120px;
-    }
-
-    .slider1 .slides:nth-child(5) {
-        left: 240px;
-    }
-
-    .slider1 .slides:nth-child(6) {
-        left: 360px;
-    }
-}
-
 /*FOOTER*/
 .main-footer {
-    background-color: var(--light-green); /* Verde claro */
+    background-color: var(--light-green);
     padding-top: 70px;
     z-index: 1;
 }
 
 .main-footer .text-reset {
-    color: #333333; /* Color del texto */
+    color: #333333;
 }
 
 .main-footer .text-reset:hover {
-    color: #007bff; /* Color del texto al pasar el ratón */
+    color: #007bff;
 }
 
 .main-footer .fw-bold {
@@ -931,7 +874,6 @@ p{
   .container{
       max-width: 540px;
   }
-
 
 }
 @media (min-width: 576px) {
@@ -968,9 +910,48 @@ p{
     transform: translateY(-50%);
 }
 
+@media screen and (max-width: 900px) {
+    .slider1 {
+        inset: 40px 40px 200px 40px;
+    }
+
+    .slider1 .slides {
+        width: 100px;
+        height: 100px;
+        top: initial;
+        bottom: -170px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .slider1 .slides:nth-child(1),
+    .slider1 .slides:nth-child(2) {
+        top: initial;
+        bottom: 0px;
+    }
+
+    .slider1 .slides:nth-child(3) {
+        left: 0px;
+    }
+
+    .slider1 .slides:nth-child(4) {
+        left: 120px;
+    }
+
+    .slider1 .slides:nth-child(5) {
+        left: 240px;
+    }
+
+    .slider1 .slides:nth-child(6) {
+        left: 360px;
+    }
+}
+
+
+
 @media (min-width: 768px) {
     .container{
         max-width: 720px;
     }
 }
+
 
