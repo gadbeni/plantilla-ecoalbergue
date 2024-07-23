@@ -115,48 +115,34 @@
 
     {{-- PACKAGE --}}
     <section aria-label="Paquetes Especiales">
-        <div class="header-package full-container-max" style="background-image: url('img/textura_alrga_verde.png');">
-            <div class="carousel slide" id="carouselExample1">
+        <div class="header-package full-container-max px-lg-5" style="background-image: url('img/textura_alrga_verde.png');">
+            <div class="carousel slide " id="carouselExample1">
                 <h2 style="text-align: center;">Paquetes Especiales</h2>
                 <div class=" carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="col-12">
+                    @foreach ( $specialPackages as $package )
+                        <div @if ($loop->first)
+                            class="carousel-item active"
+                            @else
+                            class="carousel-item"
+                            @endif
+                        >
                             <div class="card">
-                                <figure>
-                                    <div class="img-wrapper">
-                                        <img src="{{asset('assets/img/a.webp')}}" class="card-img-top img-fluid"
-                                            alt="..." aria-label="Imagen del paquete especial">
+                                <div class="img-wrapper">
+                                    <img src="{{Voyager::image($package->image)}}" class="card-img-top" alt="...">
+                                    
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
+                                    <div class="card-btns">
+                                        <a href="{{route('specialpackage.public.show', $package->id)}}" class="btn">Ver Detalles</a>
+                                        <a href="#" class="btn">Reservar</a>
                                     </div>
-                                    <figcaption>
-                                        <div class="card-body">
-                                            <h5 class="card-title">You can adjust the colors and gradient</h5>
-                                            <a href="#" class="btn btn-primary">Ver detalle</a>
-                                            <a href="#" class="btn btn-secondary">Reservar ahora</a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-12">
-                            <div class="card">
-                                <figure>
-                                    <div class="img-wrapper">
-                                        <img src="{{asset('assets/img/b.webp')}}" class="card-img-top img-fluid"
-                                            alt="..." aria-label="Imagen del paquete especial">
-                                    </div>
-                                    <figcaption>
-                                        <div class="card-body">
-                                            <h5 class="card-title text-center">You can adjust the colors and gradient</h5>
-                                            <a href="#" class="btn btn-primary">Ver detalle</a>
-                                            <a href="#" class="btn btn-secondary">Reservar ahora</a>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
+                    
                 </div>
                 {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -168,14 +154,14 @@
                 </a> --}}
             </div>
         </div>
-        <div class="container">
+        {{-- <div class="container">
             <div class="text-center my-5">
                 <a href="{{ route('about') }}" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
             </div>
-        </div>
+        </div> --}}
     </section>
 
-    <section class="container-fluid full-container-max">
+    {{-- <section class="container-fluid full-container-max">
         <div class="row">
             <div class="col-lg-8 hero-image">
                 <img src="{{ asset('assets/img/aventura.jpg') }}" alt="Los Tajibos Hotel" class="img-fluid">
@@ -188,10 +174,10 @@
                 <a href="#" class="btn btn-primary">Reserve ahora</a>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- SLIDER --}}
-    <section id="slider" class="pt-5">
+    {{-- <section id="slider" class="pt-5">
         <div class="container-fluid  full-container-max">
             <h2 class="text-center"><b>Responsive Owl Carousel</b></h2>
             <div class="slider">
@@ -236,7 +222,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <style>
@@ -269,31 +255,6 @@
         }
     </style>
 
-    <section>
-        <div class="header-textura  full-container-max" style="background-image: url('assets/img/textura.jpg');">
-            {{-- <div class="container"> --}}
-                {{-- <div class="row"> --}}
-                        {{-- <div class="event"> --}}
-                        <div class="event card text-bg-dark">
-                            <img src="assets/img/palmeras_naranja.png" class="card-img"
-                                alt="Imagen del evento social y corporativo">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Eventos Sociales y Corporativos</h5>
-                                <p class="card-text">Organice su próximo evento en el Centro de Convenciones más
-                                    grande
-                                    situado en un hotel en Bolivia, con instalaciones y espacios sociales vibrantes.
-                                    Cualquiera que sea su evento, le ayudaremos a hacerlo realidad.</p>
-                                <p class="card-text"><small>Última actualización hace 3 minutos</small></p>
-                                <a href="#" class="btn btn-primary">Ver todos los salones</a>
-                            </div>
-                        </div>
-                    </div>
-                    {{--
-                </div> --}}
-                {{-- </div> --}}
-        </div>
-    </section>
-
     <style>
         .fa.fa-angle-left,
         .fa.fa-angle-right
@@ -302,150 +263,51 @@
         }
     </style>
 
-    <div class="container-fluid  full-container-max">
-        <div class="tour-listing-two__carousel trevlo-owl__carousel trevlo-owl__carousel--basic-nav owl-theme owl-carousel"
-            data-owl-options='{
-                        "items": 3,
-                        "margin": 30,
-                        "smartSpeed": 700,
-                        "loop":true,
-                        "autoplay": 6000,
-                        "nav":true,
-                        "dots":true,
-                        "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
-                        "responsive":{
-                            "0":{
-                                "items": 1
-                            },
-                            "768":{
-                                "items": 2
-                            },
-                            "1200":{
-                                "items": 3
-                            }
-                        }
-                        }'>
-
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
-                                    Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">1There are many variations of passages of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
-                                    Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-            <div class="tour-listing-two__carousel-item item">
-                <div class="tour-listing-two__card tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
-                        <img src="{{ asset('assets/img/tour-4-2.jpg')}}" alt="assets/images/tours/tour-4-2.jpg"
-                            class="tour-listing__card-image">
-                        <div class="tour-listing__card-image-overlay"></div>
-                        <!-- /.tour-listing__card-image-overlay -->
-                    </a><!-- /.tour-listing__card-image-box -->
-                    <div class="tour-listing-two__card-show-content">
-                        <div class="tour-listing-two__card-show-title-box">
-                            <h3 class="tour-listing-two__card-show-title tour-listing__card-title"><a href="#">Travel by
-                                    Boat & Enjoy</a></h3>
-                        </div><!-- /.tour-listing-two__card-show-title-box -->
-                    </div><!-- /.tour-listing__card-show-content -->
-                    <div class="tour-listing-two__card-hover-content tour-listing__card-content">
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">Travel by
-                                Boat & Enjoy</a></h3>
-                        <p class="tour-listing__card-text text-small">There are of Lorem
-                            Ipsum agtilable</p>
-                    </div><!-- /.tour-listing__card-content -->
-                </div><!-- /.tour-listing__card -->
-            </div><!-- /.tour-listing-two__carousel-item item -->
-        </div><!-- /.tour-listing-two__carousel -->
-
-        <div class="container">
-            <div class="text-center my-5">
-                <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="container1  full-container-max">
         <div class="slider1">
             <div class="slides" style="background-image: url('assets/img/img1.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Alemania</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
                     <button>ver mas</button>
-                </div>
+                </div> --}}
             </div>
             <div class="slides" style="background-image: url('assets/img/img2.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Flinandia</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
                     <button>ver mas</button>
-                </div>
+                </div> --}}
             </div>
             <div class="slides" style="background-image: url('assets/img/img3.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Islandia</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
                     <button>ver mas</button>
-                </div>
+                </div> --}}
             </div>
             <div class="slides" style="background-image: url('assets/img/img4.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Australia</div>
                     <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
                     <button>ver mas</button>
-                </div>
+                </div> --}}
             </div>
             <div class="slides" style="background-image: url('assets/img/img5.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Netherland</div>
                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                     <button>See More</button>
-                </div>
+                </div> --}}
             </div>
             <div class="slides" style="background-image: url('assets/img/img6.webp');">
-                <div class="content1">
+                {{-- <div class="content1">
                     <div class="name">Ireland</div>
                     <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
                     <button>See More</button>
-                </div>
+                </div> --}}
             </div>
         </div>
         <div class="buttons">

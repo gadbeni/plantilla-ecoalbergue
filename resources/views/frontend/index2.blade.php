@@ -115,7 +115,7 @@
     <!-- Footer -->
     <footer class="text-center text-lg-start text-dark">
         <!-- Section: Social media -->
-        <section class="d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
+        <section class="full-container-max d-flex justify-content-between p-4 text-white" style="background-color: #21D192">
             <!-- Left -->
             <div class="me-5">
                 <span>Conéctate con nosotros en las redes sociales:</span>
@@ -141,9 +141,9 @@
         </section>
         <!-- Section: Social media -->
 
-        <div class=" text-center text-md-start mt-5">
+        <div class="full-container-max text-center text-md-start mt-5">
             <!-- Grid row -->
-            <div class="row mt-3">
+            <div class="row mt-3 me-0 ms-0">
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
@@ -209,7 +209,7 @@
         </div>
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="full-container-max text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
             &copy; <span class="dynamic-year"></span> Copyright:
             <a class="text-dark" href="https://mdbootstrap.com/">GADBENI</a>. Todos los derechos reservados.
         </div>

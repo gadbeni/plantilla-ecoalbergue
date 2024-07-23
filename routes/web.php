@@ -6,6 +6,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controller\PackageController;
+use App\Http\Controllers\SpecialPackageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,12 @@ Route::controller(RoomController::class)->group(
     function () {
         Route::get('habitaciones', [RoomController::class, 'index'])->name('room.public.index');
         Route::get('habitaciones/{id}', [RoomController::class, 'showPublicRoom'])->name('room.public.show');
+    }
+);
+Route::controller(SpecialPackageController::class)->group(
+    function () {
+        Route::get('paquetes-especialess', [SpecialPackageController::class, 'index'])->name('specialpackage.public.index');
+        Route::get('paquetes-especiales/{id}', [SpecialPackageController::class, 'showPublicPackage'])->name('specialpackage.public.show');
     }
 );
 

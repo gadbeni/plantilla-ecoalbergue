@@ -141,7 +141,7 @@
         </section>
         <!-- Section: Social media -->
 
-        <div class=" text-center text-md-start mt-5">
+        <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
             <div class="row mt-3">
                 <!-- Grid column -->
