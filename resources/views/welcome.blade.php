@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="right">
-                <img src="{{asset('assets/img/prueba.jpg')}}" alt="">
+                <img src="{{asset('assets/img/foto.webp')}}" alt="">
             </div>
         </div>
     </section>

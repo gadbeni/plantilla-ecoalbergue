@@ -12,4 +12,5 @@ class PackageController extends Controller
         $page = Page::where('slug', 'sobre-nosotros')->first();
         return view('pages.about', compact('page'));
     }
+
 }

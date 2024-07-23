@@ -32,6 +32,7 @@ Route::controller(PostController::class)->group(
     }
 );
 
+
 Route::get('maintenance', function () {
     return view('errors.maintenance');
 })->name('errors.maintenance');

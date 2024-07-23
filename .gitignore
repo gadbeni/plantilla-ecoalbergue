@@ -15,7 +15,9 @@ yarn-error.log
 /.vscode
 /video/*
 /img/*
+/images/*
 *.png
 *.jpg
 *.mp4
 *.webp
+*.gif
