@@ -9,7 +9,12 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+
+    <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css')}}">
+
+
     <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css')}}">
+
 
     <link rel="icon" type="image/png" href="{{ asset('assets/img/logo.png')}}">
 
@@ -218,6 +223,7 @@
           label.click();
         });
     </script> --}}
+    <script src="{{ asset('assets/js/lightbox-plus-jquery.min.js') }}" ></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -225,11 +231,13 @@
 
     <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
 
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+
     <script src="{{ asset('assets/js/script.js') }}"></script>
+
+
 </body>
 
 </html>

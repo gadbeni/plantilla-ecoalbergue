@@ -39,6 +39,7 @@ Route::controller(RoomController::class)->group(
     }
 );
 
+
 Route::get('maintenance', function () {
     return view('errors.maintenance');
 })->name('errors.maintenance');
