@@ -69,13 +69,15 @@
                             <div class="icons-image">
                                 <div class="item-image">
                                     <i class="fa-solid fa-user"></i>
-                                    <span>{{$room->capacity}}
-                                        @if ($room->capacity > 1)
-                                        Personas
-                                        @else
-                                        Persona
-                                        @endif
-                                    </span>
+                                    <div>
+                                        <span>{{$room->capacity}}
+                                            @if ($room->capacity > 1)
+                                            Personas
+                                            @else
+                                            Persona
+                                            @endif
+                                        </span>
+                                    </div>
                                 </div>
 
                                 <div class="item-image">

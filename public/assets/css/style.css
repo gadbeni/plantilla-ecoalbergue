@@ -981,3 +981,25 @@ p{
     color: var(--orange-color);
     text-decoration: none;
 }
+.icons-color-container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.icons-color-container *{
+    font-size: 25px;
+}
+.icons-color-container i{
+    color: var(--green-color);
+    padding: 1rem;
+    border: 3px solid var(--green-color);
+    border-radius: 50%;
+}
+.icons-color-container br{
+    height: 10px;
+}
+.icons-color-container span{
+    font-size: 16px;
+    line-height: 10px;
+}
