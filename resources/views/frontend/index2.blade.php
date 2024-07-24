@@ -34,6 +34,7 @@
 
 
     <link rel="stylesheet" href="{{ asset('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('assets/css/blog.css')}}">
 
     <!-- Para pantallas de ancho ≥768px -->
     <link rel="stylesheet" href="{{ asset('assets/css/medium.css')}}" media="(min-width: 768px)">
