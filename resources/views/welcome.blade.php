@@ -5,14 +5,14 @@
     <section id="hero">
         <div class="video-container">
             <video autoplay muted loop class="background-video full-container-max">
-                <source src="{{ asset('assets/video/portada.mp4')}}" type="video/mp4">
+                <source src="{{ asset('assets/video/portada.webm')}}" type="video/mp4">
                 Tu navegador no soporta el video HTML5.
             </video>
             <div class="overlay full-container-max"></div>
         </div>
         <div class="content">
             <h1>SENTÍ LA EMOCIÓN ÚNICA DE LA AVENTURA</h1>
-            <p>Bienvenidos al ecoalbergue turístico aguaysal</p>
+            <p>Bienvenidos a Aguaysal</p>
         </div>
     </section>
 
@@ -21,6 +21,16 @@
             <div class="left">
                 <h2></h2>
                 <div>
+                    <h4>DESCRIPCIÓN DEL ALOJAMIENTO</h4>
+                    <p>
+                        Aguaysal se encuentra en Santa Rosa del Yacuma, en la región del departamento del Beni, y está rodeado de naturaleza. El Albergue está dentro del Área Protegida Pampas del Yacuma, dispone de churrasqueras y parking privados gratis.
+                        <br>
+                        Las cabañas tienen acceso a un balcón de reposo con hamaqueros, cuenta con espacio para 3 personas, televisión y aire acondicionado. Hay toallas y ropa de cama en las cabañas.
+                        <br>
+                        El aeropuerto más cercano (Aeropuerto Regional y Turístico de Rurrenabaque) está a 222 km del alojamiento, que ofrece.
+                    </p>
+                </div>
+                {{-- <div>
                     <h4>MISIÓN </h4>
                     <p>
                         Somos una empresa enfocada a proporcionar un servicio personalizado al huésped para
@@ -38,7 +48,7 @@
                         así como una experiencia única e inolvidable al involucrarlo en actividades al aire libre
                         con un paisaje natural entregando una sensación de paz y bienestar.
                     </p>
-                </div>
+                </div> --}}
             </div>
             <div class="right">
                 <img src="{{asset('img/ecoalbergue.webp')}}" alt="">
@@ -131,7 +141,7 @@
                             <div class="card">
                                 <div class="img-wrapper">
                                     <img src="{{Voyager::image($package->image)}}" class="card-img-top" alt="...">
-                                    
+
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
@@ -144,7 +154,7 @@
                         </div>
 
                     @endforeach
-                    
+
                 </div>
                 {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -265,7 +275,7 @@
         }
     </style>
 
-    
+
 
     <div class="container1  full-container-max">
         <div class="slider1">

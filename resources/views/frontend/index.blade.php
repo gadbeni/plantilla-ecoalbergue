@@ -100,8 +100,8 @@
     <nav class="social-media-nav">
         <input type="checkbox" id="social-media-toggle">
         <div class="social-media-links">
-            <a href="#" class="bi bi-facebook" aria-label="Facebook"></a>
-            <a href="#" class="bi bi-whatsapp" aria-label="WhatsApp"></a>
+            <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_black" class="bi bi-facebook" aria-label="Facebook"></a>
+            <a href="https://wa.me/59171124428" target="_black" class="bi bi-whatsapp" aria-label="WhatsApp"></a>
             <a href="#" class="bi bi-messenger" aria-label="Messenger"></a>
         </div>
         <div class="social-media-toggle">
@@ -124,13 +124,10 @@
 
             <!-- Right -->
             <div>
-                <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-3 ">
+                <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-4 ">
                     <i class="fab bi-facebook fs-2x display-6"></i>
                 </a>
-                <a href="https://twitter.com" class="text-white me-4">
-                    <i class="fab fa-twitter fs-2x display-6"></i>
-                </a>
-                <a href="https://plus.google.com" class="text-white me-4">
+                <a href="https://wa.me/59171124428" target="_blank" class="text-white me-4">
                     <i class="fab bi-whatsapp fs-2x display-6"></i>
                 </a>
                 <a href="https://www.instagram.com" class="text-white me-4">
@@ -147,13 +144,11 @@
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <h6 class="text-uppercase fw-bold">Nombre de la Empresa</h6>
+                    <h6 class="text-uppercase fw-bold">Aguaysal</h6>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
                     <p>
-                        Aquí puedes utilizar filas y columnas para organizar el contenido de tu pie de página. Lorem
-                        ipsum
-                        dolor sit amet, consectetur adipisicing elit.
+                        Aguaysal se encuentra en Santa Rosa del Yacuma, e la región del departamento del Beni, y está rodeado de naturaleza. El albergue está dentro del Área Protegida  Pampas del Yacuma.
                     </p>
                 </div>
                 <!-- Grid column -->
@@ -168,7 +163,7 @@
                         <a href="destinations.html" class="text-dark">Destino</a>
                     </p>
                     <p>
-                        <a href="{{ route('about') }}" class="text-dark">Sobre Nosotros</a>
+                        <a href="#" class="text-dark">Sobre Nosotros</a>
                     </p>
                 </div>
                 <!-- Grid column -->

@@ -24,7 +24,7 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('paquetes-especiales', [PagesController::class, 'about'])->name('about');
+// Route::get('paquetes-especiales', [PagesController::class, 'about'])->name('about');
 
 
 Route::controller(PostController::class)->group(

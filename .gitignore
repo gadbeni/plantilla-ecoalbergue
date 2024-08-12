@@ -13,6 +13,7 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+/img/*
 /video/*
 /images/*
 /public/assets/img/
@@ -20,3 +21,5 @@ yarn-error.log
 *.jpg
 *.mp4
 *.gif
+*.webp
+*.webm

@@ -169,7 +169,7 @@
                         <a href="destinations.html" class="text-dark">Destino</a>
                     </p>
                     <p>
-                        <a href="{{ route('about') }}" class="text-dark">Sobre Nosotros</a>
+                        <a href="#" class="text-dark">Sobre Nosotros</a>
                     </p>
                 </div>
                 <!-- Grid column -->

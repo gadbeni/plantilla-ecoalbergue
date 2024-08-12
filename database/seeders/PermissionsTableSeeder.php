@@ -35,5 +35,7 @@ class PermissionsTableSeeder extends Seeder
         Permission::generateFor('pages');
         Permission::generateFor('posts');
         Permission::generateFor('categories');
+        Permission::generateFor('rooms');
+        Permission::generateFor('special_packages');
     }
 }
