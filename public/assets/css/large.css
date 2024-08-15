@@ -57,10 +57,15 @@
         top: 0;
         left: 0;
     }
+}
+
+
+@media (max-width: 1200px){
     .header-package{
-        margin-bottom: 35rem;
+        margin-bottom: 15em;
     }
 }
+
 @media (min-width: 992px) {
     .container{
         max-width: 960px;
