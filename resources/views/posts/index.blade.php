@@ -1,6 +1,5 @@
 @extends('frontend.index2')
 
-
 @section('content')
     @include('posts.components.content')
 

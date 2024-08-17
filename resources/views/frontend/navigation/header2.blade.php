@@ -1,6 +1,6 @@
 <div class="container">
-    <div class="navbar  header-scroll">
-        <div class="container  full-container-max" style="max-width: 1925px;">
+    <div class="header-scroll navbar">
+        <div class="container full-container-max" style="max-width: 1925px;">
             <div class="container-btn-menu lateral-header">
                 <div id="btn-menu">
                     <span class="bar1"></span>
@@ -46,3 +46,4 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('assets/js/scriptpage.js') }}"></script>

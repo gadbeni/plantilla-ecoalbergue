@@ -1,6 +1,6 @@
 @extends('frontend.index2')
 @section('content')
-<section class="section-top" style="position: relative; margin-bottom: 200px; min-height: 800px">
+<section class="section-top" style="position: relative; margin-bottom: 200px; min-height: 0px">
     <div class="container" >
         <div class="row mb-5 d-none d-lg-block">
             <div class="col ">
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row" style="background-color: white">
-            
+
             <div class="col-lg-6 mt-3 order-lg-2" >
                 <div class="ms-lg-5 details-text">
                     <h5>Habitación</h5>
@@ -26,7 +26,7 @@
             </div>
             <div class="col-lg-6" style="position: relative;">
                 <img src="{{ asset('storage/'.$room->image) }}" alt="" class="img-fluid img-float"
-                
+
                 >
             </div>
         </div>
@@ -73,5 +73,4 @@
         </div>
     </div>
 </section>
-
 @endsection

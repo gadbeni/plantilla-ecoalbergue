@@ -7,8 +7,6 @@
 
 
 <link rel="stylesheet" href="{{ asset('assets/css/lightbox.css')}}">
-
-
 <link rel="stylesheet" type="text/css" href="{{ asset('assets/css/owl.carousel.min.css')}}">
 
 

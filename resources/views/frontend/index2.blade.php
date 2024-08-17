@@ -8,14 +8,15 @@
     <header>
         @include('frontend.navigation.header2')
     </header>
-    @yield('content')
 
-    {{-- BOTON REDES SOCIALES --}}
-    @include('frontend.partials.button')
+    @yield('content')
 
     <!-- Footer -->
     <@include('frontend.partials.footer')
     <!-- Footer -->
+
+    {{-- BOTON REDES SOCIALES --}}
+    @include('frontend.partials.button')
 
 
     @include('frontend.partials.scripts')

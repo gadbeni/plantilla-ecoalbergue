@@ -1,3 +1,4 @@
+// btn menu header2
 let btnMenu = document.getElementById('btn-menu');
 let menu = document.getElementById('menu');
 let navbar = document.querySelector('.navbar');

@@ -100,7 +100,7 @@
         </div>
         <div class="container">
             <div class="text-center my-5">
-                <a href="#" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
+                <a href="{{ route('room.public.index') }}" class="btn btn-outline-aguysal">Ver más Habitaciones</a>
             </div>
         </div>
     </section>
@@ -108,7 +108,7 @@
 
     {{-- PACKAGE --}}
     <section aria-label="Paquetes Especiales">
-        <div class="header-package full-container-max px-lg-5" style="background-image: url('img/textura_alrga_verde.png');">
+        <div class="header-package full-container-max px-lg-5">
             {{-- <div class="carousel slide " id="carouselExample1"> --}}
                 <h2 style="text-align: center;">Paquetes Especiales</h2>
                 <div class="carousel-inner">
