@@ -5,14 +5,14 @@
     <section id="hero">
         <div class="video-container">
             <video autoplay muted loop class="background-video full-container-max">
-                <source src="{{ asset('assets/video/portada.webm')}}" type="video/mp4">
+                <source src="{{ asset('assets/video/portada.webm')}}" type="video/webm">
                 Tu navegador no soporta el video HTML5.
             </video>
             <div class="overlay full-container-max"></div>
         </div>
         <div class="content">
-            <h1>SENTÍ LA EMOCIÓN ÚNICA DE LA AVENTURA</h1>
-            <p>Bienvenidos a Aguaysal</p>
+            <h1>{{ setting('site.title') }}</h1>
+            <p>{{ setting('site.subtitle') }}</p>
         </div>
     </section>
 
@@ -21,18 +21,13 @@
             <div class="left">
                 <h2></h2>
                 <div>
+                    <h4>{{ $page->title }}</h4>
                     <h4>DESCRIPCIÓN DEL ALOJAMIENTO</h4>
-                    <p>
-                        Aguaysal se encuentra en Santa Rosa del Yacuma, en la región del departamento del Beni, y está rodeado de naturaleza. El Albergue está dentro del Área Protegida Pampas del Yacuma, dispone de churrasqueras y parking privados gratis.
-                        <br>
-                        Las cabañas tienen acceso a un balcón de reposo con hamaqueros, cuenta con espacio para 3 personas, televisión y aire acondicionado. Hay toallas y ropa de cama en las cabañas.
-                        <br>
-                        El aeropuerto más cercano (Aeropuerto Regional y Turístico de Rurrenabaque) está a 222 km del alojamiento, que ofrece.
-                    </p>
+                     <p>{!! $page->body !!}</p>
                 </div>
             </div>
             <div class="right">
-                <img src="{{asset('img/ecoalbergue.webp')}}" alt="">
+                    <img src="{{Voyager::image($page->image)}}" alt="{{ $page->title }}"/>
             </div>
         </div>
     </section>
@@ -113,26 +108,27 @@
                 <h2 style="text-align: center;">Paquetes Especiales</h2>
                 <div class="carousel-inner">
                     @foreach ( $specialPackages as $package )
-                        <div @if ($loop->first)
-                            class="carousel-item active"
-                            @else
-                            class="carousel-item"
-                            @endif
+                    <div @if ($loop->first)
+                        class="carousel-item active"
+                        @else
+                        class="carousel-item"
+                        @endif
                         >
-                            <div class="card">
-                                <div class="img-wrapper">
-                                    <img src="{{Voyager::image($package->image)}}" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="img-wrapper">
+                                <img src="{{Voyager::image($package->image)}}" class="card-img-top" alt="...">
 
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
-                                    <div class="card-btns">
-                                        <a href="{{route('specialpackage.public.show', $package->id)}}" class="btn">Ver Detalles</a>
-                                        <a href="#" class="btn">Reservar</a>
-                                    </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
+                                <div class="card-btns">
+                                    <a href="{{route('specialpackage.public.show', $package->id)}}" class="btn">Ver
+                                        Detalles</a>
+                                    <a href="#" class="btn">Reservar</a>
                                 </div>
                             </div>
                         </div>
+                    </div>
                     @endforeach
                 </div>
                 {{-- <a class="carousel-control-prev" href="#carouselExample1" role="button" data-slide="prev">
@@ -143,7 +139,8 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
                 </a> --}}
-            {{-- </div> --}}
+                {{--
+            </div> --}}
         </div>
         {{-- <div class="">
             <div class="text-center my-5">
@@ -154,28 +151,17 @@
 
     <div class="container1  full-container-max">
         <div class="slider1">
-            <div class="slides" style="background-image: url('assets/img/img1.webp');">
-                {{-- <div class="content1">
-                    <div class="name">Alemania</div>
-                    <div class="des">Lorem ipsum dolor sit amet consectetur, adipisicing elit. </div>
-                    <button>ver mas</button>
-                </div> --}}
+            @foreach ($posts as $post)
+            <div class="slides">
+                <img src="{{Voyager::image($post->image)}}" class="slides" alt="{{ $post->title }}">
+                <div class="content1">
+                    <div class="name">{{ $post->title }}</div>
+                    <div class="des">{!! $post->body !!} </div>
+                    <a href="{{ route('post.show', $post->slug) }}">ver mas</a>
+                </div>
             </div>
-            <div class="slides" style="background-image: url('assets/img/img2.webp');">
+            @endforeach
 
-            </div>
-            <div class="slides" style="background-image: url('assets/img/img3.webp');">
-
-            </div>
-            <div class="slides" style="background-image: url('assets/img/img4.webp');">
-
-            </div>
-            <div class="slides" style="background-image: url('assets/img/img5.webp');">
-
-            </div>
-            <div class="slides" style="background-image: url('assets/img/img6.webp');">
-
-            </div>
         </div>
         <div class="buttons">
             <span class="prev1"></span>

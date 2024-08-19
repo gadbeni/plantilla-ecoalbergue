@@ -15,7 +15,12 @@
     }
   }
 
-
+  @media (min-width: 901px) and (max-width: 1150px) {
+    .slider1 .slides:nth-child(3) {
+        left: calc(60% + 240px);
+        background-size: cover
+    }
+  }
 
   @media (min-width: 767px) and (max-width: 991px) {
     .header-package{

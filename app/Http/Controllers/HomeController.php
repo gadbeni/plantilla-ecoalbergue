@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Page;
 use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
 use App\Models\Room;
@@ -13,9 +14,11 @@ class HomeController extends Controller
     public function index()
     {
         // ultimos 3 post
-        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->take(3)->get();
+        $page = Page::where('slug', 'sobre-nosotros')->first();
+        $posts = Post::take(3)->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->get();
         $specialPackages = SpecialPackage::take(3)->get();
-        return view('welcome', compact(['posts','rooms','specialPackages']));
+
+        return view('welcome', compact(['page', 'posts','rooms','specialPackages']));
     }
 }

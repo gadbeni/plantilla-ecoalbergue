@@ -24,7 +24,7 @@ Route::get('login', function () {
 })->name('login');
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-// Route::get('paquetes-especiales', [PagesController::class, 'about'])->name('about');
+Route::get('sobre-nosotros', [PagesController::class, 'about'])->name('about');
 
 
 Route::controller(PostController::class)->group(
@@ -41,7 +41,7 @@ Route::controller(RoomController::class)->group(
 );
 Route::controller(SpecialPackageController::class)->group(
     function () {
-        Route::get('paquetes-especialess', [SpecialPackageController::class, 'index'])->name('specialpackage.public.index');
+        Route::get('paquetes-especiales', [SpecialPackageController::class, 'index'])->name('specialpackage.public.index');
         Route::get('paquetes-especiales/{id}', [SpecialPackageController::class, 'showPublicPackage'])->name('specialpackage.public.show');
     }
 );

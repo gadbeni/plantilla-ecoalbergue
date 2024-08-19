@@ -21,68 +21,6 @@ btnMenu.addEventListener('click', function() {
 });
 
 
-//   (function ($) {
-//     "use strict";
-
-//     $(".add").on("click", function (e) {
-//       e.preventDefault();
-//       if ($(this).prev().val() < 999) {
-//         $(this)
-//           .prev()
-//           .val(+$(this).prev().val() + 1);
-//       }
-//     });
-//     $(".sub").on("click", function (e) {
-//       e.preventDefault();
-//       if ($(this).next().val() > 0) {
-//         if ($(this).next().val() > 0)
-//           $(this)
-//           .next()
-//           .val(+$(this).next().val() - 1);
-//       }
-//     });
-
-//     function thmOwlInit() {
-//       // owl slider
-//       let trevloowlCarousel = $(".trevlo-owl__carousel");
-//       if (trevloowlCarousel.length) {
-//         trevloowlCarousel.each(function () {
-//           let elm = $(this);
-//           let options = elm.data("owl-options");
-//           let thmOwlCarousel = elm.owlCarousel(
-//             "object" === typeof options ? options : JSON.parse(options)
-//           );
-//           elm.find("button").each(function () {
-//             $(this).attr("aria-label", "carousel button");
-//           });
-//         });
-//       }
-//       let trevloowlCarouselNav = $(".trevlo-owl__carousel--custom-nav");
-//       if (trevloowlCarouselNav.length) {
-//         trevloowlCarouselNav.each(function () {
-//           let elm = $(this);
-//           let owlNavPrev = elm.data("owl-nav-prev");
-//           let owlNavNext = elm.data("owl-nav-next");
-//           $(owlNavPrev).on("click", function (e) {
-//             elm.trigger("prev.owl.carousel");
-//             e.preventDefault();
-//           });
-
-//           $(owlNavNext).on("click", function (e) {
-//             elm.trigger("next.owl.carousel");
-//             e.preventDefault();
-//           });
-//         });
-//       }
-//     }
-
-//     $(window).on("resize", function () {
-//       trevlo_stretch();
-//     });
-//   })(jQuery);
-
-
-
 //habitacion
 const multipleItemCarousel = document.querySelector('#carouselExample')
 

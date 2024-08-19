@@ -219,7 +219,7 @@ p{
     width: 100%;
 }
 #second-section .left{
-    background-image: url('/assets/img/palmeras_verde_fuerte.png');
+    background-image: url('/assets/img/palmeras_verde_fuerte.webp');
     background-size: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat;
@@ -264,11 +264,8 @@ p{
 #carousel-section{
 
 }
-.card-btns{
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    margin-top: 1rem;
+.carousel-inner{
+    padding: 1rem;
 }
 
 .img-wrapper{
@@ -318,9 +315,30 @@ p{
     color: var(--light-color);
 }
 
+.card{
+    border: none;
+    margin: 0 0.5rem;
+    box-shadow: 2px 6px 8px 0 rgba(22,22,26, .18);
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 6vh;
+    height: 6vh;
+    background-color: var(--orange-color);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
 /*PACKAGE*/
 .header-package {
-    background-image: url('/img/textura_alrga_verde.png');
+    background-image: url('/assets/img/textura_alrga_verde.webp');
     height: 300px;
     color: white;
     padding-top: 4rem;
@@ -375,7 +393,7 @@ p{
 }
 
 .slider1 .slides:nth-child(3) {
-    left: calc(50% + 240px);
+    left: calc(70% + 240px);
     background-size: cover;
 }
 
@@ -516,11 +534,6 @@ p{
     transition: all 500ms ease;
     cursor: pointer;
 }
-/*
-.social-media-links a:hover {
-    background: #fff;
-    color: #cc2b2b;
-} */
 
 .social-media-links a {
     margin-bottom: -15px;
@@ -571,13 +584,61 @@ p{
     background: #3b5998;
 }
 
+/* room show */
+.skin_banner{
+    width: 100%;
+    /* position: absolute;
+    top: 50%;
+    left: 0; */
+    z-index: -1;
+
+}
+.section-top{
+    margin-top: 125px;
+}
+.miga-pan *{
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.miga-pan strong{
+    font-weight: 600;
+}
+.miga-pan a{
+    color: var(--orange-color);
+    text-decoration: none;
+}
+.icons-color-container{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.icons-color-container *{
+    font-size: 25px;
+}
+.icons-color-container i{
+    color: var(--green-color);
+    padding: 1rem;
+    border: 3px solid var(--green-color);
+    border-radius: 50%;
+}
+.icons-color-container br{
+    height: 10px;
+}
+.icons-color-container span{
+    font-size: 16px;
+    line-height: 10px;
+}
+
+
 /* Responsive */
 @media (min-width: 276px) {
   .container{
       max-width: 540px;
   }
 }
-
 @media (min-width: 576px) {
     .container{
         max-width: 540px;
@@ -595,22 +656,7 @@ p{
         height: 23vw;
     }
 }
-.carousel-inner{
-    padding: 1rem;
-}
-.card{
-    border: none;
-    margin: 0 0.5rem;
-    box-shadow: 2px 6px 8px 0 rgba(22,22,26, .18);
-}
-.carousel-control-prev, .carousel-control-next{
-    width: 6vh;
-    height: 6vh;
-    background-color: var(--orange-color);
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
 
 @media screen and (max-width: 900px) {
     .slider1 {
@@ -661,49 +707,3 @@ p{
 }
 
 
-.skin_banner{
-    width: 100%;
-    /* position: absolute;
-    top: 50%;
-    left: 0; */
-    z-index: -1;
-
-}
-.section-top{
-    margin-top: 125px;
-}
-.miga-pan *{
-    font-family: "Oswald", sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    text-transform: uppercase;
-}
-.miga-pan strong{
-    font-weight: 600;
-}
-.miga-pan a{
-    color: var(--orange-color);
-    text-decoration: none;
-}
-.icons-color-container{
-    padding-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
-
-}
-.icons-color-container *{
-    font-size: 25px;
-}
-.icons-color-container i{
-    color: var(--green-color);
-    padding: 1rem;
-    border: 3px solid var(--green-color);
-    border-radius: 50%;
-}
-.icons-color-container br{
-    height: 10px;
-}
-.icons-color-container span{
-    font-size: 16px;
-    line-height: 10px;
-}

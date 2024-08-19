@@ -12,7 +12,7 @@
     @yield('content')
 
     <!-- Footer -->
-    <@include('frontend.partials.footer')
+    @include('frontend.partials.footer')
     <!-- Footer -->
 
     {{-- BOTON REDES SOCIALES --}}
