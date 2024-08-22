@@ -15,7 +15,7 @@ class HomeController extends Controller
     {
         // ultimos 3 post
         $page = Page::where('slug', 'sobre-nosotros')->first();
-        $posts = Post::take(3)->orderBy('created_at', 'desc')->get();
+        $posts = Post::take(4)->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->get();
         $specialPackages = SpecialPackage::take(3)->get();
 

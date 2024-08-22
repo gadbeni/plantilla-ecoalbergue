@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="row" style="background-color: white">
-            
+
             <div class="col-lg-6 mt-3 order-lg-2" >
                 <div class="ms-lg-5 details-text">
                     <h5>Paquete Especial</h5>
@@ -26,12 +26,12 @@
             </div>
             <div class="col-lg-6" style="position: relative;">
                 <img src="{{ asset('storage/'.$specialpackage->image) }}" alt="" class="img-fluid img-float"
-                
+
                 >
             </div>
         </div>
     </div>
-    <div class="skin_banner" style="background-image: url({{url('img/textura_alrga_verde.png')}})">
+    <div class="skin_banner" style="background-image: url({{url('/assets/img/textura_alrga_verde.webp')}})">
         <div class="container">
             <div class="row">
                 <div class="col offset-lg-6 ">
@@ -43,5 +43,4 @@
         </div>
     </div>
 </section>
-
 @endsection

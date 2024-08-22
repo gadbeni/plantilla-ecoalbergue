@@ -10,12 +10,12 @@
         <!-- Right -->
         <div>
             <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-4 ">
-                <i class="fab bi-facebook fs-2x display-6"></i>
+                <i class="fab fa-facebook fs-2x display-6"></i>
             </a>
             <a href="https://wa.me/59171124428" target="_blank" class="text-white me-4">
-                <i class="fab bi-whatsapp fs-2x display-6"></i>
+                <i class="fab fa-whatsapp fs-2x display-6"></i>
             </a>
-            <a href="https://www.instagram.com" class="text-white me-4">
+            <a href="https://www.instagram.com/aguaysal_ecoalbergue/" class="text-white me-4">
                 <i class="fab fa-instagram fs-2x display-6"></i>
             </a>
         </div>
@@ -33,7 +33,7 @@
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
-                    Aguaysal se encuentra en Santa Rosa del Yacuma, e la región del departamento del Beni, y está rodeado de naturaleza. El albergue está dentro del Área Protegida  Pampas del Yacuma.
+                    Aguaysal se encuentra en Santa Rosa del Yacuma, en la región del departamento del Beni, y está rodeado de naturaleza.
                 </p>
             </div>
             <!-- Grid column -->
@@ -41,14 +41,15 @@
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Institución</h6>
+                <h6 class="text-uppercase fw-bold">Información</h6>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
+
                 <p>
-                    <a href="destinations.html" class="text-dark">Destino</a>
+                    <a href="{{ route('about') }}" class="text-dark">Sobre Nosotros</a>
                 </p>
                 <p>
-                    <a href="#" class="text-dark">Sobre Nosotros</a>
+                    <a href="{{ route('post.index') }}" class="text-dark">Destino</a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -60,7 +61,10 @@
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
-                    <a href="tour-listing-1.html" class="text-dark">Listados de Tours</a>
+                    <a href="{{ route('room.public.index') }}" class="text-dark">Habitaciones</a>
+                </p>
+                <p>
+                    <a href="{{ route('specialpackage.public.index') }}" class="text-dark">Paquetes Espaciales</a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -78,10 +82,9 @@
                 </p>
                 <p><i class="fas fa-phone mr-3"></i> <a href="tel:{{setting('contacto.phone')}}"
                         class="text-dark">Teléfono{{setting('contacto.phone')}}</a></p>
-                <p><i class="fas fa-print mr-3"></i> <a href="https://wa.me/59171124428" target="_blank"
+                <p><i class="fas fa-phone mr-3"></i> <a href="https://wa.me/59171124428" target="_blank"
                         class="text-dark">WhatsApp: (591) 71124428</a></p>
-                <p><i class="fas fa-phone mr-3"></i> <a href="https://www.facebook.com/Aguaysalecoalbergue"
-                        target="_blank" class="text-dark">Agua y sal ecoalbergue</a></p>
+
             </div>
             <!-- Grid column -->
         </div>
@@ -91,7 +94,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         &copy; <span class="dynamic-year"></span> Copyright:
-        <a class="text-dark" href="https://mdbootstrap.com/">GADBENI</a>. Todos los derechos reservados.
+        <a class="text-dark" href="https://www.beni.gob.bo/index.php">GADBENI</a>. Todos los derechos reservados.
     </div>
     <!-- Copyright -->
 </footer>

@@ -89,6 +89,7 @@ p{
     width: 35px;
 }
 
+
 #btn-menu.active{
     /* transform: rotate(90deg); */
 }
@@ -104,6 +105,16 @@ p{
     transform: rotate(45deg) translate(-6px, -7px);
     background-color: var(--dark-color);
 }
+
+#btn-admin{
+    cursor: pointer;
+    transition: transform 0.3s 0.25s;
+}
+
+#btn-admin .btn-person a i{
+   color: var(--dark-color);
+}
+
 
 .logo{
     display: none;
@@ -398,7 +409,7 @@ p{
 }
 
 .slider1 .slides:nth-child(4) {
-    left: calc(50% + 500px);
+    left: calc(62% + 500px);
     background-size: cover;
 }
 

@@ -5,8 +5,8 @@
         <div class="row mb-5 d-none d-lg-block">
             <div class="col ">
                 <div class="miga-pan">
-                    <span><a href="/">Inicio</a> ></span>
-                    <span>Habitaciones ></span>
+                    <span><a href="{{ route('home') }}">Inicio</a> ></span>
+                    <span><a href="{{ route('room.public.index') }}">Habitaciones</a> ></span>
                     <span>
                         <strong>
                             {{ $room->title }}
@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="skin_banner" style="background-image: url({{url('img/textura_alrga_verde.png')}})">
+    <div class="skin_banner" style="background-image: url({{url('/assets/img/textura_alrga_verde.webp')}})">
         <div class="container">
             <div class="row">
                 <div class="col offset-lg-6 ">

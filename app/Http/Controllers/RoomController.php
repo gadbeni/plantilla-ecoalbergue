@@ -9,7 +9,7 @@ class RoomController extends Controller
 {
     //
     public function index(){
-        $rooms = Room::all();
+        $rooms = Room::take(6)->orderBy('created_at', 'desc')->paginate(6);
         return view('rooms.index', ['rooms' => $rooms]);
     }
     public function showPublicRoom($id){

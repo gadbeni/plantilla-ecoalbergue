@@ -25,6 +25,7 @@
             </div>
             @component('rooms.components.room-pagination', ['rooms' => $rooms])
             @endcomponent
+            <br>
         </div>
     </div>
     <!-- Blog Page End -->

@@ -30,6 +30,11 @@
                     <img src="{{Voyager::image($page->image)}}" alt="{{ $page->title }}"/>
             </div>
         </div>
+        <div class="container">
+            <div class="text-center my-5">
+                <a href="{{ route('about') }}" class="btn btn-outline-aguysal">Ver más sobre aguaysal</a>
+            </div>
+        </div>
     </section>
 
     <section id="carousel-section">
@@ -76,7 +81,7 @@
                             <h5 class="card-title h4 text-center">{{$room->title}}</h5>
                             <div class="card-btns">
                                 <a href="{{route('room.public.show', $room->id)}}" class="btn">Ver Detalles</a>
-                                <a href="#" class="btn">Reservar</a>
+                                <a href="https://wa.me/59171124428" class="btn">Reservar</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +129,7 @@
                                 <div class="card-btns">
                                     <a href="{{route('specialpackage.public.show', $package->id)}}" class="btn">Ver
                                         Detalles</a>
-                                    <a href="#" class="btn">Reservar</a>
+                                    <a href="https://wa.me/59171124428" class="btn">Reservar</a>
                                 </div>
                             </div>
                         </div>
@@ -160,12 +165,19 @@
                     <a href="{{ route('post.show', $post->slug) }}">ver mas</a>
                 </div>
             </div>
+
             @endforeach
 
         </div>
         <div class="buttons">
-            <span class="prev1"></span>
+            {{-- <span class="prev1"></span> --}}
             <span class="next1"></span>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="text-center my-5">
+            <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más blog</a>
         </div>
     </div>
 </main>

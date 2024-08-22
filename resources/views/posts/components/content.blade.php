@@ -1,13 +1,12 @@
-<section class="page-header">
-    <div class="page-header__bg"></div>
-    <!-- /.page-header__bg -->
-    <div class="container">
-        <h2 class="page-header__title wow animated fadeInLeft" data-wow-delay="0s" data-wow-duration="1500ms">Blog</h2>
-        <div class="page-header__breadcrumb-box">
-            <ul class="trevlo-breadcrumb">
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li>Blog</li>
-            </ul><!-- /.trevlo-breadcrumb -->
-        </div><!-- /.page-header__breadcrumb-box -->
-    </div><!-- /.container -->
+<section class="section-top" style="position: relative; margin-bottom: 70px; ">
+    <div class="container" >
+        <div class="row mb-5 d-none d-lg-block">
+            <div class="col ">
+                <div class="miga-pan">
+                    <span><a href="/">Inicio</a> ></span>
+                    <span>blog </span>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>

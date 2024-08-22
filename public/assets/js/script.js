@@ -13,11 +13,13 @@ document.addEventListener("DOMContentLoaded", function() {
 let btnMenu = document.getElementById('btn-menu');
 let menu = document.getElementById('menu');
 let navbar = document.querySelector('.navbar');
+let btnadmin = document.getElementById('btn-admin');
 
 btnMenu.addEventListener('click', function() {
     menu.classList.toggle('active');
     btnMenu.classList.toggle('active');
     navbar.classList.toggle('active');
+    btnadmin.classList.toggle('active');
 });
 
 
