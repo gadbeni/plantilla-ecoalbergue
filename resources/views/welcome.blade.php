@@ -161,8 +161,9 @@
                 <img src="{{Voyager::image($post->image)}}" class="slides" alt="{{ $post->title }}">
                 <div class="content1">
                     <div class="name">{{ $post->title }}</div>
-                    <div class="des">{!! $post->body !!} </div>
-                    <a href="{{ route('post.show', $post->slug) }}">ver mas</a>
+                    <div class="des">{{ $post->excerpt }} </div>
+                    <a href="{{ route('post.show', $post->slug) }}" type="button" class="btn btn-outline-success">ver mas</a>
+                    {{-- <a href="{{ route('post.show', $post->slug) }}">ver mas</a> --}}
                 </div>
             </div>
 

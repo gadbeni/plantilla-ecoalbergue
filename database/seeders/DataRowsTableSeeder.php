@@ -672,7 +672,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"resize":{"width":"1000","height":"null"},"quality":"70%","upsize":true,"thumbnails":[{"name":"medium","scale":"50%"},{"name":"small","scale":"25%"},{"name":"cropped","crop":{"width":"300","height":"250"}}]}',
+                'details' => '{"resize":{"width":"1000","height":null},"quality":"70%","upsize":true}',
                 'order' => 7,
             ),
             41 => 
@@ -992,7 +992,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"resize":{"width":"1000","height":null},"quality":"70%","upsize":true}',
                 'order' => 12,
             ),
             61 => 
@@ -1136,7 +1136,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"resize":{"width":"1000","height":null},"quality":"70%","upsize":true}',
                 'order' => 2,
             ),
             70 => 
@@ -1152,7 +1152,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 0,
                 'add' => 0,
                 'delete' => 0,
-                'details' => '{}',
+                'details' => '{"resize":{"width":"1000","height":null},"quality":"70%","upsize":true}',
                 'order' => 3,
             ),
             71 => 
@@ -1184,7 +1184,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"resize":{"width":"1000","height":null},"quality":"70%","upsize":true}',
                 'order' => 2,
             ),
             73 => 

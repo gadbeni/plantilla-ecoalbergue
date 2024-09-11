@@ -391,8 +391,7 @@ p{
     align-items: flex-end;
 }
 
-.slider1 .slides:nth-child(1),
-.slider1 .slides:nth-child(2) {
+.slider1 .slides:nth-child(1) {
     position: absolute;
     top: 0;
     left: 0;
@@ -400,6 +399,11 @@ p{
     height: 100%;
     transform: translateY(0);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0);
+    background-size: cover;
+}
+
+.slider1 .slides:nth-child(2) {
+    left: calc(70% + 240px);
     background-size: cover;
 }
 
@@ -451,7 +455,7 @@ p{
     height: 15px;
     border-top: 4px solid #fff;
     border-left: 4px solid #fff;
-    transform: rotate(315deg) translate(2px, 2px);
+    transform: rotate(45deg) translate(2px, 2px);
 }
 
 .buttons span:nth-child(2)::before {

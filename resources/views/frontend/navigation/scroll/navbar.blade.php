@@ -10,8 +10,8 @@
         </span>
     </div>
     <div>
-        <img class="logo-white" src="{{ asset('assets/img/white-logo.png')}}" alt="Logo" width="100px">
-        <img class="logo" src="{{ asset('assets/img/logo.png')}}" alt="Logo" width="100px">
+        <img class="logo-white" src="{{ asset('assets/img/white-logo.webp')}}" alt="Logo" width="100px">
+        <img class="logo" src="{{ asset('assets/img/logo.webp')}}" alt="Logo" width="100px">
     </div>
     <div class="lateral-header">
         <div id="btn-admin">
