@@ -162,6 +162,17 @@ class SettingsTableSeeder extends Seeder
                 'order' => 11,
                 'group' => 'Contacto',
             ),
+            13 => 
+            array (
+                'id' => 18,
+                'key' => 'system.logo-qr',
+                'display_name' => 'Logo del QR',
+                'value' => 'settings\\September2024\\QfhCzwNh5S6Cq7ojVWO0.webp',
+                'details' => NULL,
+                'type' => 'image',
+                'order' => 13,
+                'group' => 'System',
+            ),
         ));
         
         

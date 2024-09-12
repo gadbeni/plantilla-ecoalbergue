@@ -53,6 +53,10 @@ Route::get('maintenance', function () {
 
 Route::group(['prefix' => 'admin', 'middleware' => 'desarrollo.creativo'], function () {
     Voyager::routes();
+
+    Route::get('generate-qr', function () {
+        return view('generate-qr.browse');
+    });
 });
 
 // Clear cache
