@@ -94,7 +94,7 @@
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         &copy; <span class="dynamic-year"></span> Copyright:
-        <a class="text-dark" href="https://www.beni.gob.bo/index.php">GADBENI</a>. Todos los derechos reservados.
+        <a class="text-dark gadbeni" href="https://www.beni.gob.bo/index.php">GADBENI</a> Todos los derechos reservados.
     </div>
     <!-- Copyright -->
 </footer>

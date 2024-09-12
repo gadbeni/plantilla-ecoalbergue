@@ -151,6 +151,14 @@ p{
 .content-menu.active{
     display: block;
 }
+/* .bi-person::before {
+    content: "\f4e1";
+    color: white;
+} */
+
+.bi-person::before {
+    color: var(--light-color);
+}
 
 /* header2 */
 .header-scroll{
@@ -162,8 +170,11 @@ p{
 .navbar.active{
     box-shadow: none;
 }
-.header-scroll .bar1, .header-scroll .bar2, .header-scroll .bar3{
+.header-scroll .bar1, .header-scroll .bar2, .header-scroll .bar3 {
     background-color: var(--dark-color);
+}
+.header-scroll .bi-person::before{
+    color: var(--dark-color);
 }
 .header-scroll .logo, .navbar.active .logo{
     display: block;
@@ -453,9 +464,9 @@ p{
     position: absolute;
     width: 15px;
     height: 15px;
-    border-top: 4px solid #fff;
+    /* border-top: 4px solid #fff;
     border-left: 4px solid #fff;
-    transform: rotate(45deg) translate(2px, 2px);
+    transform: rotate(45deg) translate(2px, 2px); */
 }
 
 .buttons span:nth-child(2)::before {
@@ -493,11 +504,20 @@ p{
     transition-delay: 0.5s;
 }
 
+
+
 /*FOOTER*/
 .main-footer {
     background-color: var(--light-green);
     padding-top: 70px;
     z-index: 1;
+}
+
+.text-dark{
+    text-decoration: none;
+}
+.text-dark .gadbeni{
+    font-weight: bold;
 }
 
 .main-footer .text-reset {
@@ -649,8 +669,15 @@ p{
 
 
 /* Responsive */
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .header-package{
+        height: 200px;
+    }
+  }
+
 @media (min-width: 276px) {
-  .container{
+    .container{
       max-width: 540px;
   }
 }

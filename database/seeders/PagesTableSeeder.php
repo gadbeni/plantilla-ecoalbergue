@@ -16,9 +16,9 @@ class PagesTableSeeder extends Seeder
     {
         
 
-        \DB::table('Pages')->delete();
+        \DB::table('pages')->delete();
         
-        \DB::table('Pages')->insert(array (
+        \DB::table('pages')->insert(array (
             0 => 
             array (
                 'id' => 1,
