@@ -23,29 +23,30 @@ Route::get('login', function () {
     return redirect('admin/login');
 })->name('login');
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('sobre-nosotros', [PagesController::class, 'about'])->name('about');
+Route::middleware(['log'])->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('sobre-nosotros', [PagesController::class, 'about'])->name('about');
 
 
-Route::controller(PostController::class)->group(
-    function () {
-        Route::get('blog', [PostController::class, 'index'])->name('post.index');
-        Route::get('blog/{slug}', [PostController::class, 'show'])->name('post.show');
-    }
-);
-Route::controller(RoomController::class)->group(
-    function () {
-        Route::get('habitaciones', [RoomController::class, 'index'])->name('room.public.index');
-        Route::get('habitaciones/{id}', [RoomController::class, 'showPublicRoom'])->name('room.public.show');
-    }
-);
-Route::controller(SpecialPackageController::class)->group(
-    function () {
-        Route::get('paquetes-especiales', [SpecialPackageController::class, 'index'])->name('specialpackage.public.index');
-        Route::get('paquetes-especiales/{id}', [SpecialPackageController::class, 'showPublicPackage'])->name('specialpackage.public.show');
-    }
-);
-
+    Route::controller(PostController::class)->group(
+        function () {
+            Route::get('blog', [PostController::class, 'index'])->name('post.index');
+            Route::get('blog/{slug}', [PostController::class, 'show'])->name('post.show');
+        }
+    );
+    Route::controller(RoomController::class)->group(
+        function () {
+            Route::get('habitaciones', [RoomController::class, 'index'])->name('room.public.index');
+            Route::get('habitaciones/{id}', [RoomController::class, 'showPublicRoom'])->name('room.public.show');
+        }
+    );
+    Route::controller(SpecialPackageController::class)->group(
+        function () {
+            Route::get('paquetes-especiales', [SpecialPackageController::class, 'index'])->name('specialpackage.public.index');
+            Route::get('paquetes-especiales/{id}', [SpecialPackageController::class, 'showPublicPackage'])->name('specialpackage.public.show');
+        }
+    );
+});
 
 Route::get('maintenance', function () {
     return view('errors.maintenance');

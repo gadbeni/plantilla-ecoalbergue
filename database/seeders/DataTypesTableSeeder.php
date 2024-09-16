@@ -181,6 +181,24 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2024-07-23 11:22:53',
                 'updated_at' => '2024-09-10 12:46:00',
             ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'requests',
+                'slug' => 'requests',
+                'display_name_singular' => 'Peticion',
+                'display_name_plural' => 'Peticiones',
+                'icon' => 'voyager-search',
+                'model_name' => 'App\\Models\\Request',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2024-09-16 10:52:28',
+                'updated_at' => '2024-09-16 10:52:28',
+            ),
         ));
         
         

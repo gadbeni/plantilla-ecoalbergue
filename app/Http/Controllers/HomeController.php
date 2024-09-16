@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
 use App\Models\Room;
 use App\Models\SpecialPackage;
+use App\Models\Request as RequestModel;
 
 class HomeController extends Controller
 {
@@ -18,7 +19,10 @@ class HomeController extends Controller
         $posts = Post::take(4)->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->get();
         $specialPackages = SpecialPackage::take(3)->get();
+        $count = [
+            'visitas' => RequestModel::count(),
+        ];
 
-        return view('welcome', compact(['page', 'posts','rooms','specialPackages']));
+        return view('welcome', compact(['page', 'posts','rooms','specialPackages', 'count']));
     }
 }

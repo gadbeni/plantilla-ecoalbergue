@@ -15,6 +15,18 @@
             <p>{{ setting('site.subtitle') }}</p>
         </div>
     </section>
+    {{-- <style>
+        #counter {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 50px;
+            text-align: center;
+        }
+    </style>
+    <div id="counter">
+        <h2>Contador de Visitas</h2>
+        {{ $count['visitas'] }}
+    </div> --}}
 
     <section id="second-section">
         <div class="full-container-max flex">

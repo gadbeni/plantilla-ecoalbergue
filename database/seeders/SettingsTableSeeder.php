@@ -167,7 +167,7 @@ class SettingsTableSeeder extends Seeder
                 'id' => 18,
                 'key' => 'system.logo-qr',
                 'display_name' => 'Logo del QR',
-                'value' => 'settings\\September2024\\QfhCzwNh5S6Cq7ojVWO0.webp',
+                'value' => '',
                 'details' => NULL,
                 'type' => 'image',
                 'order' => 13,
