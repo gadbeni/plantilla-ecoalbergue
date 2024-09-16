@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('images')->nullable(); // Considera usar JSON si planeas almacenar múltiples imágenes
             $table->string('title');
             $table->text('description')->nullable();
+            $table->enum('language', ['es', 'en'])->default('es');
             $table->timestamps();
             $table->softDeletes();
         });

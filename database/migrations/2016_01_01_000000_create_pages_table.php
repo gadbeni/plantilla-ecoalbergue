@@ -25,6 +25,7 @@ class CreatePagesTable extends Migration
             $table->text('meta_description')->nullable();
             $table->text('meta_keywords')->nullable();
             $table->enum('status', Page::$statuses)->default(Page::STATUS_INACTIVE);
+            $table->enum('language', ['es', 'en'])->default('es');
             $table->timestamps();
         });
     }
