@@ -64,7 +64,7 @@
                     <a href="{{ route('room.public.index') }}" class="text-dark">Habitaciones</a>
                 </p>
                 <p>
-                    <a href="{{ route('specialpackage.public.index') }}" class="text-dark">Paquetes Espaciales</a>
+                    {{-- <a href="{{ route('specialpackage.public.index') }}" class="text-dark">Paquetes Espaciales</a> --}}
                 </p>
             </div>
             <!-- Grid column -->

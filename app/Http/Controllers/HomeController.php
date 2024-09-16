@@ -19,6 +19,9 @@ class HomeController extends Controller
         $posts = Post::take(4)->where('language','es')->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->where('language','es')->get();
         $specialPackages = SpecialPackage::take(3)->get();
+        $count = [
+            'visitas' => RequestModel::count(),
+        ];
 
         return view('welcome', compact(['page', 'posts','rooms','specialPackages']));
     }
@@ -28,9 +31,7 @@ class HomeController extends Controller
         $posts = Post::take(4)->where('language','en')->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->where('language','en')->get();
         $specialPackages = SpecialPackage::take(3)->get();
-        $count = [
-            'visitas' => RequestModel::count(),
-        ];
+        
 
         return view('welcome', compact(['page', 'posts','rooms','specialPackages', 'count']));
     }
