@@ -16,13 +16,9 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
-<meta name="description"
-    content="Escapate a un paraíso tropical de relajación y rejuvenecimiento. Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
-
 <!--facebook open graph-->
-<meta property="og:title" content="Escapate a un paraíso tropical de relajación y rejuvenecimiento" />
-<meta property="og:description" content="Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
+{{-- <meta property="og:title" content="Escapate a un paraíso tropical de relajación y rejuvenecimiento" />
+<meta property="og:description" content="Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." /> --}}
 <meta property="og:image" content="{{ asset('assets/images/logo.png') }}" />
 
 
@@ -32,4 +28,4 @@
 <link rel="stylesheet" href="{{ asset('assets/css/medium.css')}}" media="(min-width: 768px)">
 <!-- Para pantallas de ancho ≥992px -->
 <link rel="stylesheet" href="{{ asset('assets/css/large.css')}}" media="(min-width: 992px)">
-<title>AGUAYSAL</title>
+

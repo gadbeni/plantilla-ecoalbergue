@@ -4,6 +4,6 @@
     </div>
 </div>
 <div id="menu" class="content-menu">
-    @include('frontend.navigation.scroll.menu')
+    {{menu('main', 'frontend.navigation.scroll.menu')}}
 </div>
 <script src="{{ asset('assets/js/scriptpage.js') }}"></script>

@@ -4,5 +4,6 @@
     </div>
 </div>
 <div id="menu" class="content-menu">
-    @include('frontend.navigation.scroll.menu')
+    {{-- @include('frontend.navigation.scroll.menu') --}}
+    {{menu('main', 'frontend.navigation.scroll.menu')}}
 </div>

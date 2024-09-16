@@ -25,6 +25,7 @@ Route::get('login', function () {
 
 Route::middleware(['log'])->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
+    Route::get('/en', [HomeController::class, 'indexEn'])->name('en.home');
     Route::get('sobre-nosotros', [PagesController::class, 'about'])->name('about');
 
 

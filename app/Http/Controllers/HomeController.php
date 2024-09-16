@@ -23,7 +23,7 @@ class HomeController extends Controller
             'visitas' => RequestModel::count(),
         ];
 
-        return view('welcome', compact(['page', 'posts','rooms','specialPackages']));
+        return view('welcome', compact(['page', 'posts','rooms','specialPackages', 'count']));
     }
     public function indexEn(){
         // ultimos 3 post
@@ -31,8 +31,10 @@ class HomeController extends Controller
         $posts = Post::take(4)->where('language','en')->orderBy('created_at', 'desc')->get();
         $rooms = Room::take(4)->where('language','en')->get();
         $specialPackages = SpecialPackage::take(3)->get();
-        
+        $count = [
+            'visitas' => RequestModel::count(),
+        ];
 
-        return view('welcome', compact(['page', 'posts','rooms','specialPackages', 'count']));
+        return view('en.welcome', compact(['page', 'posts','rooms','specialPackages', 'count']));
     }
 }
