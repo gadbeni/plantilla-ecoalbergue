@@ -21,6 +21,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->integer('capacity');
             $table->string('bed_type');
+            $table->enum('language', ['es', 'en'])->default('es');
             $table->timestamps();
             $table->softDeletes();
         });
