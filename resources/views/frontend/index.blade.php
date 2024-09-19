@@ -10,7 +10,9 @@
 
 <body>
     <header>
-        @include('frontend.navigation.header')
+        @section('header')
+            @include('frontend.navigation.header', ['menu' => 'main', 'className' => 'header-scroll'])
+        @show
     </header>
 
     @yield('content')

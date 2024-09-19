@@ -1,5 +1,9 @@
 @extends('frontend.index')
 
+@section('header')
+    @include('frontend.navigation.header', ['menu' => 'main', 'className' => ''])
+@endsection 
+
 @section('content')
 <main>
     <section id="hero">

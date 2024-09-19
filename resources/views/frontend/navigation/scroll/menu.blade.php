@@ -11,12 +11,6 @@
             <li><a href="https://wa.me/59171124428">Contacto</a></li> --}}
         </ul>
     </nav>
-    {{-- <hr>
-    <ul>
-        <li><a href="https://wa.me/59171124428">Contact us</a></li>
-        <li><a href="{{ route('home') }}">Art Gallery</a></li>
-        <li><a href="{{ route('about') }}">Abouts Us</a></li>
-    </ul> --}}
     <div class="content-language">
         <div>
             <a href="{{ route('home') }}">Español</a>

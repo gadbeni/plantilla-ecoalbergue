@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        {{-- @include('frontend.navigation.header') --}}
+        @include('frontend.navigation.header',['menu' => 'mainEn', 'className' => ''])
     </header>
 
     @yield('content')

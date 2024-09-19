@@ -98,6 +98,9 @@
     .icons-image .item-image{
         font-size: 2rem;
     }
+    #carouselPackage  {
+        margin-bottom: 25rem;
+    }
 }
 .img-float{
     position: absolute;

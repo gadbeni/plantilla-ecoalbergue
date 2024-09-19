@@ -1,4 +1,4 @@
-@extends('frontend.index2')
+@extends('frontend.index')
 
 @section('content')
     @include('posts.components.content')

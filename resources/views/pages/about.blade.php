@@ -1,4 +1,4 @@
-@extends('frontend.index2')
+@extends('frontend.index')
 
 @section('content')
     <section class="section-top" style="position: relative; margin-bottom: 70px; ">
