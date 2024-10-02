@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 // btn menu header
 let btnMenu = document.getElementById('btn-menu');
 let menu = document.getElementById('menu');
@@ -20,22 +21,6 @@ btnMenu.addEventListener('click', function() {
     btnMenu.classList.toggle('active');
     navbar.classList.toggle('active');
     btnadmin.classList.toggle('active');
-});
-
-//ultimo POST
-let next = document.querySelector(".next1");
-let prev = document.querySelector(".prev1");
-let slider = document.querySelector(".slider1");
-
-
-next.addEventListener('click', () => {
-    let slides = document.querySelectorAll(".slides");
-    slider.appendChild(slides[0]);
-});
-
-prev.addEventListener('click', () => {
-    let slides = document.querySelectorAll(".slides");
-    slider.prepend(slides[slides.length - 1]);
 });
 
 // next.addEventListener('click', () => {
@@ -51,9 +36,6 @@ prev.addEventListener('click', () => {
 //     slider.prepend(lastSlide);
 //     slides[slides.length - 1].remove();
 // });
-
-
-
 
 //habitacion
 const multipleItemCarousel = document.querySelector('#carouselExample')
@@ -100,6 +82,22 @@ $(document).ready(function() {
 
     // Ejecutar al cambiar el tamaño de la ventana
     $(window).resize(adjustCarousel);
+});
+
+//ultimo POST
+let next = document.querySelector(".next1");
+let prev = document.querySelector(".prev1");
+let slider = document.querySelector(".slider1");
+
+
+next.addEventListener('click', () => {
+    let slides = document.querySelectorAll(".slides");
+    slider.appendChild(slides[0]);
+});
+
+prev.addEventListener('click', () => {
+    let slides = document.querySelectorAll(".slides");
+    slider.prepend(slides[slides.length - 1]);
 });
 
 
@@ -149,6 +147,7 @@ $(document).ready(function() {
     // Ejecutar al cambiar el tamaño de la ventana
     $(window).resize(adjustCarousel);
 });
+
 
 
 
