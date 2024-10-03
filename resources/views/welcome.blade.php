@@ -2,7 +2,7 @@
 
 @section('header')
     @include('frontend.navigation.header', ['menu' => 'main', 'className' => ''])
-@endsection 
+@endsection
 
 @section('content')
 <main>
@@ -39,11 +39,12 @@
                 <div>
                     <h4>{{ $page->title }}</h4>
                     <h4>DESCRIPCIÓN DEL ALOJAMIENTO</h4>
-                     <p>{!! $page->body !!}</p>
+                    <p>{!! \Illuminate\Support\Str::limit($page->body, 650, '...') !!}</p>
+                     {{-- <p>{!! $page->body !!}</p> --}}
                 </div>
             </div>
             <div class="right">
-                    <img src="{{Voyager::image($page->image)}}" alt="{{ $page->title }}"/>
+                    <img src="{{Voyager::image($page->thumbnail('medium'))}}" alt="{{ $page->title }}"/>
             </div>
         </div>
         <div class="container">
@@ -72,7 +73,7 @@
                     >
                     <div class="card">
                         <div class="img-wrapper">
-                            <img src="{{Voyager::image($room->image)}}" class="card-img-top" alt="...">
+                            <img src="{{Voyager::image($room->thumbnail('medium'))}}" class="card-img-top" alt="...">
                             <div class="icons-image">
                                 <div class="item-image">
                                     <i class="fa-solid fa-user"></i>
@@ -136,7 +137,7 @@
                     >
                     <div class="card">
                         <div class="img-wrapper">
-                            <img src="{{Voyager::image($package->image)}}" class="card-img-top" alt="...">
+                            <img src="{{Voyager::image($package->thumbnail('medium'))}}" class="card-img-top" alt="...">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
@@ -172,10 +173,10 @@
         <div class="slider1">
             @foreach ($posts as $post)
             <div class="slides">
-                <img src="{{Voyager::image($post->image)}}" class="slides" alt="{{ $post->title }}">
+                <img src="{{Voyager::image($post->thumbnail('medium'))}}" class="slides" alt="{{ $post->title }}">
                 <div class="content1">
                     <div class="name">{{ $post->title }}</div>
-                    <div class="des">{{ $post->excerpt }} </div>
+                    {{-- <div class="des">{{ $post->excerpt }} </div> --}}
                     <a href="{{ route('post.show', $post->slug) }}" type="button" class="btn btn-outline-success">ver mas</a>
                     {{-- <a href="{{ route('post.show', $post->slug) }}">ver mas</a> --}}
                 </div>

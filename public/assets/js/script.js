@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 // btn menu header
 let btnMenu = document.getElementById('btn-menu');
 let menu = document.getElementById('menu');
@@ -128,6 +129,7 @@ $(document).ready(function() {
     // Ejecutar al cambiar el tamaño de la ventana
     $(window).resize(adjustCarousel);
 });
+
 
 
 

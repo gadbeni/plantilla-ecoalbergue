@@ -25,8 +25,13 @@
                             data-wow-duration="1500ms">
                             <h3 class="destination-details__card-title destination-details__title">{{$page->title}}</h3>
                             @if ($page->image)
-                                <img src="{{Voyager::image($page->image)}}" alt="{{$page->title}}">
+                                {{-- <img src="{{Voyager::image($page->thumbnail('medium'))}}" alt="{{$page->title}}"> --}}
+                                {{-- <img src="{{Voyager::image($post->thumbnail('medium'))}}" class="slides" alt="{{ $post->title }}"> --}}
+                                <img src="{{Voyager::image($page->image)}}"  alt="{{$page->title}}">
+                                {{-- <img src="{{Voyager::image($page->thumbnail('medium'))}}" alt="{{ $page->title }}"/> --}}
+
                             @endif
+
                          </div><!-- /.destination-details__card-img -->
                         <div class="destination-details__card-content">
                             <p class="destination-details__card-text wow animated fadeInUp" data-wow-delay="0.1s"
