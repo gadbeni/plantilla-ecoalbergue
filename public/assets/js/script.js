@@ -24,7 +24,6 @@ btnMenu.addEventListener('click', function() {
 
 //ultimo POST
 let next = document.querySelector(".next1");
-let prev = document.querySelector(".prev1");
 let slider = document.querySelector(".slider1");
 
 
@@ -32,26 +31,6 @@ next.addEventListener('click', () => {
     let slides = document.querySelectorAll(".slides");
     slider.appendChild(slides[0]);
 });
-
-prev.addEventListener('click', () => {
-    let slides = document.querySelectorAll(".slides");
-    slider.prepend(slides[slides.length - 1]);
-});
-
-// next.addEventListener('click', () => {
-//     let slides = document.querySelectorAll(".slides");
-//     let firstSlide = slides[0].cloneNode(true);
-//     slider.appendChild(firstSlide);
-//     slides[0].remove();
-// });
-
-// prev.addEventListener('click', () => {
-//     let slides = document.querySelectorAll(".slides");
-//     let lastSlide = slides[slides.length - 1].cloneNode(true);
-//     slider.prepend(lastSlide);
-//     slides[slides.length - 1].remove();
-// });
-
 
 
 

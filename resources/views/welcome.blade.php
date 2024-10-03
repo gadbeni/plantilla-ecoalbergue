@@ -184,7 +184,7 @@
         </div>
         <div class="buttons">
             {{-- <span class="prev1"></span> --}}
-            <span class="next1"><i class="bi bi-plus fs-2x display-6 text-white"></i></span>
+            <span class="next1"><i class="bi bi-arrow-right-short fs-2x display-6 text-white"></i></span>
         </div>
 
     </div>
