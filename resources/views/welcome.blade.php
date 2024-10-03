@@ -105,7 +105,7 @@
                 </div>
                 @endforeach
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <button id="carousel-control-prev" class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
@@ -151,11 +151,11 @@
                 </div>
                 @endforeach
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselPackage" data-bs-slide="prev">
+            <button id="#carousel-control-prev1" class="carousel-control-prev" type="button" data-bs-target="#carouselPackage" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button id="carousel-control-next" class="carousel-control-next" type="button"
+            <button id="carousel-control-next1" class="carousel-control-next" type="button"
                 data-bs-target="#carouselPackage" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
