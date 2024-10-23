@@ -56,8 +56,8 @@
 
     <section id="carousel-section">
         <div class="container">
-            <span class="pre-title-section">Sea nuestro</span>
-            <span class="title-section">Huésped</span>
+            <span class="pre-title-section">Conoce nuestras</span>
+            <span class="title-section">Cabañas</span>
         </div>
     </section>
 
