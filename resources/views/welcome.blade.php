@@ -151,7 +151,7 @@
                 </div>
                 @endforeach
             </div>
-            <button id="#carousel-control-prev1" class="carousel-control-prev" type="button" data-bs-target="#carouselPackage" data-bs-slide="prev">
+            <button id="carousel-control-prev1" class="carousel-control-prev" type="button" data-bs-target="#carouselPackage" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>

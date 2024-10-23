@@ -43,7 +43,7 @@ if(window.matchMedia('(min-width: 576px)').matches){
         interval: false,
         touch: false
     })
-    var carouselWidth = $('.carousel-inner')[0].scrollWidth;
+    var carouselWidth = $('#carousel-inner')[0].scrollWidth;
     var cardWidth = $('.carousel-item').width();
 
     var scrollPosition = 0;
@@ -53,7 +53,7 @@ if(window.matchMedia('(min-width: 576px)').matches){
             console.log('next');
             console.log(scrollPosition);
             scrollPosition = scrollPosition + cardWidth;
-            $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
+            $('#carousel-inner').animate({scrollLeft: scrollPosition}, 600);
         }
 
     });
@@ -61,7 +61,7 @@ if(window.matchMedia('(min-width: 576px)').matches){
         if (scrollPosition  > 0) {
             console.log('next');
             scrollPosition -= cardWidth;
-            $('.carousel-inner').animate({scrollLeft: scrollPosition}, 600);
+            $('#carousel-inner').animate({scrollLeft: scrollPosition}, 600);
         }
 
     });
@@ -92,24 +92,31 @@ if(window.matchMedia('(min-width: 576px)').matches){
         touch: false
     })
     var carouselWidthPa = $('#carousel-inner1')[0].scrollWidth;
-    var cardWidthPa = $('.carousel-item').width();
+    var cardWidthPa = $('#carousel-inner1 .carousel-item').width();
 
     var scrollPositionPa = 0;
 
     $('#carousel-control-next1').on('click', function() {
+        console.log("entro");
+        console.log(scrollPositionPa,carouselWidthPa, cardWidthPa)
+        console.log(scrollPositionPa  < (carouselWidthPa - (cardWidthPa * 4)));
+        
+        
         if (scrollPositionPa  < (carouselWidthPa - (cardWidthPa * 4))) {
+
             console.log('next');
             console.log(scrollPositionPa);
             scrollPositionPa = scrollPositionPa + cardWidthPa;
-            $('.carousel-inner1').animate({scrollLeft: scrollPositionPa}, 600);
+            $('#carousel-inner1').animate({scrollLeft: scrollPositionPa}, 600);
         }
 
     });
     $('#carousel-control-prev1').on('click', function() {
+        console.log('entra prev');
         if (scrollPositionPa  > 0) {
-            console.log('next');
+            console.log('prev');
             scrollPositionPa -= cardWidthPa;
-            $('.carousel-inner1').animate({scrollLeft: scrollPositionPa}, 600);
+            $('#carousel-inner1').animate({scrollLeft: scrollPositionPa}, 600);
         }
 
     });
