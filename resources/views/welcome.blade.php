@@ -195,7 +195,7 @@
         <section style="">
             <div class="container full-container-max my-5">
                 <div class="row">
-                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Galeria de imagenes</h2>
+                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Galería de imagenes</h2>
                 </div>
                 <div class="row">
                     @foreach ( $galleries as $gallery )

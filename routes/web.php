@@ -51,6 +51,7 @@ Route::middleware(['log'])->group(function () {
     Route::controller(GalleryController::class)->group(
         function () {
             Route::get('gallery/{id}', [GalleryController::class, 'getGallery'])->name('get.gallery');
+            Route::get('gallerybox/{id}', [GalleryController::class, 'galleryLightbox'])->name('gallery.box');
         }
     );
 });

@@ -5,7 +5,7 @@
     <title> Eco Albergue Turístico | AGUAYSAL</title>
     <meta name="description"
     content="Escapate a un paraíso tropical de relajación y rejuvenecimiento. Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
-
+    @yield('css')
 </head>
 
 <body>
@@ -26,6 +26,7 @@
 
     @include('frontend.partials.scripts')
 
+    @yield('js')
 </body>
 
 </html>

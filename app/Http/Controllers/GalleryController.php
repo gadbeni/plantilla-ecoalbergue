@@ -17,4 +17,12 @@ class GalleryController extends Controller
 
         return view('gallery/show', compact(['gallery', 'images']));
     }
+    public function galleryLightbox($id)
+    {
+        // ultimos 3 post
+        $gallery = Gallery::find($id);
+        $images = json_decode($gallery->images, true);
+
+        return view('gallery/lightbox', compact(['gallery', 'images']));
+    }
 }
