@@ -24,14 +24,14 @@ btnMenu.addEventListener('click', function() {
 });
 
 //ultimo POST
-let next = document.querySelector(".next1");
-let slider = document.querySelector(".slider1");
+// let next = document.querySelector(".next1");
+// let slider = document.querySelector(".slider1");
 
 
-next.addEventListener('click', () => {
-    let slides = document.querySelectorAll(".slides");
-    slider.appendChild(slides[0]);
-});
+// next.addEventListener('click', () => {
+//     let slides = document.querySelectorAll(".slides");
+//     slider.appendChild(slides[0]);
+// });
 
 
 

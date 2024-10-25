@@ -7,6 +7,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\RoomController;
 use App\Http\Controller\PackageController;
 use App\Http\Controllers\SpecialPackageController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,11 @@ Route::middleware(['log'])->group(function () {
             Route::get('paquetes-especiales/{id}', [SpecialPackageController::class, 'showPublicPackage'])->name('specialpackage.public.show');
         }
     );
+    Route::controller(GalleryController::class)->group(
+        function () {
+            Route::get('gallery/{id}', [GalleryController::class, 'getGallery'])->name('get.gallery');
+        }
+    );
 });
 
 Route::get('maintenance', function () {
@@ -62,7 +68,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'desarrollo.creativo'], funct
 });
 
 // Clear cache
-Route::get('/admin/clear-cache', function() {
+Route::get('/admin/clear-cache', function () {
     Artisan::call('optimize:clear');
     return redirect('/admin/profile')->with(['message' => 'Cache eliminada.', 'alert-type' => 'success']);
 })->name('clear.cache');

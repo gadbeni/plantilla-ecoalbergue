@@ -23,10 +23,15 @@ class PermissionRoleTableSeeder extends Seeder
 
         $role = Role::where('name', 'administrador')->firstOrFail();
         $permissions = Permission::whereRaw("   `key` = 'browse_admin' or
-                                                table_name = 'settings' or
+                                                table_name = 'pages' or
+                                                table_name = 'posts' or
+                                                table_name = 'categories' or
+                                                table_name = 'rooms' or
+                                                table_name = 'special_packages' or
+                                                table_name = 'galleries' or
                                                 table_name = 'users'")->get();
         $role->permissions()->sync($permissions->pluck('id')->all());
-        
+
         $role = Role::where('name', 'editor')->firstOrFail();
         $permissions = Permission::whereRaw("   `key` = 'browse_admin' or
                                                 `key` = 'browse_pages' or

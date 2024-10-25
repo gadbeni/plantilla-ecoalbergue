@@ -66,9 +66,9 @@
             <div id="carousel-inner" class="carousel-inner">
                 @foreach ($rooms as $room)
                 <div @if ($loop->first)
-                    class="carousel-item active"
+                    class="my-carousel-item carousel-item active"
                     @else
-                    class="carousel-item"
+                    class="my-carousel-item carousel-item"
                     @endif
                     >
                     <div class="card">
@@ -130,9 +130,9 @@
             <div id="carousel-inner1" class="carousel-inner">
                 @foreach ($specialPackages as $package)
                 <div @if ($loop->first)
-                    class="carousel-item active"
+                    class="my-carousel-item carousel-item active"
                     @else
-                    class="carousel-item"
+                    class="my-carousel-item carousel-item"
                     @endif
                     >
                     <div class="card">
@@ -169,22 +169,19 @@
     </section>
 
     {{-- POST --}}
-    <div class="container1  full-container-max">
+    {{-- <div class="container1  full-container-max">
         <div class="slider1">
             @foreach ($posts as $post)
             <div class="slides">
                 <img src="{{Voyager::image($post->thumbnail('medium'))}}" class="slides" alt="{{ $post->title }}">
                 <div class="content1">
                     <div class="name">{{ $post->title }}</div>
-                    {{-- <div class="des">{{ $post->excerpt }} </div> --}}
                     <a href="{{ route('post.show', $post->slug) }}" type="button" class="btn btn-outline-success">ver mas</a>
-                    {{-- <a href="{{ route('post.show', $post->slug) }}">ver mas</a> --}}
                 </div>
             </div>
             @endforeach
         </div>
         <div class="buttons">
-            {{-- <span class="prev1"></span> --}}
             <span class="next1"><i class="bi bi-arrow-right-short fs-2x display-6 text-white"></i></span>
         </div>
 
@@ -193,6 +190,27 @@
         <div class="text-center my-5">
             <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más blog</a>
         </div>
-    </div>
+    </div> --}}
+    @if ($galleries->isNotEmpty())
+        <section style="">
+            <div class="container full-container-max my-5">
+                <div class="row">
+                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Galeria de imagenes</h2>
+                </div>
+                <div class="row">
+                    @foreach ( $galleries as $gallery )
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p>{{$gallery->thumbnail('medium')}}</p>
+                        <a href="{{route('get.gallery',$gallery->id)}}">
+                            <img src="{{Voyager::image($gallery->thumbnail('medium','featured_image'))}}" alt="" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
+                        </a>
+                        <h4 class="text-center my-3">{{$gallery->title}}</h4>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
+    
 </main>
 @endsection

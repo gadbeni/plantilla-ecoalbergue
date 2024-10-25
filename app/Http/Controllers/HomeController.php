@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use TCG\Voyager\Models\Post;
 use App\Models\Room;
 use App\Models\SpecialPackage;
+use App\Models\Gallery;
 use App\Models\Request as RequestModel;
 
 class HomeController extends Controller
@@ -22,8 +23,9 @@ class HomeController extends Controller
         $count = [
             'visitas' => RequestModel::count(),
         ];
+        $galleries = Gallery::all();
 
-        return view('welcome', compact(['page', 'posts', 'rooms', 'specialPackages', 'count']));
+        return view('welcome', compact(['page', 'posts', 'rooms', 'specialPackages', 'galleries', 'count']));
     }
     public function indexEn()
     {
