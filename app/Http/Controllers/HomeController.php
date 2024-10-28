@@ -23,9 +23,11 @@ class HomeController extends Controller
         $count = [
             'visitas' => RequestModel::count(),
         ];
-        $galleries = Gallery::all();
+        $galleries = Gallery::where('type', 'lugar')->get();
+        // dd($galleries);
+        $visitors = Gallery::where('type', 'visitantes')->get();
 
-        return view('welcome', compact(['page', 'posts', 'rooms', 'specialPackages', 'galleries', 'count']));
+        return view('welcome', compact(['page', 'posts', 'rooms', 'specialPackages', 'galleries', 'visitors', 'count']));
     }
     public function indexEn()
     {

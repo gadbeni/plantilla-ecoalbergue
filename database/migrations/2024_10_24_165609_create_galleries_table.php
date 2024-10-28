@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('description')->nullable();
             $table->string('featured_image'); // Imagen destacada
             $table->text('images')->nullable();
+            $table->string('type')->default('lugar')->nullable(); // $table->enum('type', ['lugar', 'visitantes'])->default('lugar')->nullable();
             $table->timestamps();
         });
     }

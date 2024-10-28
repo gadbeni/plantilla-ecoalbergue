@@ -191,11 +191,34 @@
             <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más blog</a>
         </div>
     </div> --}}
+    
+
+    @if ($visitors->isNotEmpty())
+        <section style="">
+            <div class="container full-container-max my-5">
+                <div class="row">
+                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Nuestros visitantes</h2>
+                </div>
+                <div class="row">
+                    @foreach ( $visitors as $item )
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <p>{{$item->thumbnail('medium')}}</p>
+                        <a href="{{route('get.gallery',$item->id)}}">
+                            <img src="{{Voyager::image($item->thumbnail('medium','featured_image'))}}" alt="" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
+                        </a>
+                        <h4 class="text-center my-3">{{$item->title}}</h4>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @endif
+
     @if ($galleries->isNotEmpty())
         <section style="">
             <div class="container full-container-max my-5">
                 <div class="row">
-                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Galería de imagenes</h2>
+                    <h2 class="pt-5 pb-3 text-center" style="font-size: 60px">Lugares Turisticos</h2>
                 </div>
                 <div class="row">
                     @foreach ( $galleries as $gallery )

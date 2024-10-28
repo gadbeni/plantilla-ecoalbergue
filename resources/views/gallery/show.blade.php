@@ -11,7 +11,7 @@
                 <div class="row">
                     <div class="col-12 col-md-3 order-1 mb-5 mb-md-0">
                         
-                        <a href="{{route('gallery.box',$gallery->id)}}" class="btn btn-outline-secondary">Toda la gálería</a>
+                        <a href="{{route('gallery.box',$gallery->id)}}" class="btn btn-outline-secondary">Toda la galería</a>
                         <div class="mt-4">
                             {!! $gallery->description !!}
                         </div>

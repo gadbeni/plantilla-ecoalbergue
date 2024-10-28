@@ -13,6 +13,7 @@ class Gallery extends Model
     protected $fillable = [
         'title',
         'featured_image',
-        'images'
+        'images',
+        'type',
     ];
 }
