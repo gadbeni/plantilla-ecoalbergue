@@ -1,5 +1,11 @@
 @extends('frontend.index')
 
+@section('meta')
+<meta name="description"
+    content="EcoAlbergue Turístico AGUAYSAL. Un paraíso tropical de relajación y rejuvenecimiento en BENI BOLIVIA. 
+    Descubre joyas escondidas de bienestar en nuestras selvas y maravillas." />
+@endsection    
+
 @section('header')
     @include('frontend.navigation.header', ['menu' => 'main', 'className' => ''])
 @endsection
@@ -19,25 +25,17 @@
             <p>{{ setting('site.subtitle') }}</p>
         </div>
     </section>
-    {{-- <style>
-        #counter {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 50px;
-            text-align: center;
-        }
-    </style>
-    <div id="counter">
-        <h2>Contador de Visitas</h2>
-        {{ $count['visitas'] }}
-    </div> --}}
-
+    <section class="m-5">
+        <div class="full-container-max flex">
+            <h2>¿QUÉ ES EL ECO ALBERGUE “AGUAYSAL” EN BENI BOLIVIA?</h2>
+            <p>Es un proyecto de inversión que se crea a partir de la idea de exhibir a nivel nacional e internacional las riquezas ecológicas que tienen las Pampas del Yacuma, que al ser las menos exploradas a nivel mundial, se convierten en un potencial destino turístico de alta afluencia, apoyándose en la observación de especies endémicas de la región en su hábitat natural, como ser el Mono Lucachi, la Paraba Barba Azul y lagunas que forman parte del Sitio RAMSAR Yata.</p>
+        </div>
+    </section>
     <section id="second-section">
         <div class="full-container-max flex">
             <div class="left">
-                <h2></h2>
                 <div>
-                    <h4>{{ $page->title }}</h4>
+                    <h3 class="h4">{{ $page->title }}</h3>
                     <h4>DESCRIPCIÓN DEL ALOJAMIENTO</h4>
                     <p>{!! \Illuminate\Support\Str::limit($page->body, 650, '...') !!}</p>
                      {{-- <p>{!! $page->body !!}</p> --}}
@@ -73,7 +71,7 @@
                     >
                     <div class="card">
                         <div class="img-wrapper">
-                            <img src="{{Voyager::image($room->thumbnail('medium'))}}" class="card-img-top" alt="...">
+                            <img src="{{Voyager::image($room->thumbnail('medium'))}}" class="card-img-top" alt="{{$room->title}}">
                             <div class="icons-image">
                                 <div class="item-image">
                                     <i class="fa-solid fa-user"></i>
@@ -137,7 +135,7 @@
                     >
                     <div class="card">
                         <div class="img-wrapper">
-                            <img src="{{Voyager::image($package->thumbnail('medium'))}}" class="card-img-top" alt="...">
+                            <img src="{{Voyager::image($package->thumbnail('medium'))}}" class="card-img-top" alt="{{ $package->title }}">
                         </div>
                         <div class="card-body">
                             <h5 class="card-title h4 text-center">{{ $package->title }}</h5>
@@ -167,30 +165,6 @@
             </div>
         </div> --}}
     </section>
-
-    {{-- POST --}}
-    {{-- <div class="container1  full-container-max">
-        <div class="slider1">
-            @foreach ($posts as $post)
-            <div class="slides">
-                <img src="{{Voyager::image($post->thumbnail('medium'))}}" class="slides" alt="{{ $post->title }}">
-                <div class="content1">
-                    <div class="name">{{ $post->title }}</div>
-                    <a href="{{ route('post.show', $post->slug) }}" type="button" class="btn btn-outline-success">ver mas</a>
-                </div>
-            </div>
-            @endforeach
-        </div>
-        <div class="buttons">
-            <span class="next1"><i class="bi bi-arrow-right-short fs-2x display-6 text-white"></i></span>
-        </div>
-
-    </div>
-    <div class="container">
-        <div class="text-center my-5">
-            <a href="{{ route('post.index') }}" class="btn btn-outline-aguysal">Ver más blog</a>
-        </div>
-    </div> --}}
     
 
     @if ($visitors->isNotEmpty())
@@ -204,7 +178,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <p>{{$item->thumbnail('medium')}}</p>
                         <a href="{{route('get.gallery',$item->id)}}">
-                            <img src="{{Voyager::image($item->thumbnail('medium','featured_image'))}}" alt="" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
+                            <img src="{{Voyager::image($item->thumbnail('medium','featured_image'))}}" alt="{{$item->title}}" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
                         </a>
                         <h4 class="text-center my-3">{{$item->title}}</h4>
                     </div>
@@ -225,7 +199,7 @@
                     <div class="col-12 col-md-6 col-lg-4">
                         <p>{{$gallery->thumbnail('medium')}}</p>
                         <a href="{{route('get.gallery',$gallery->id)}}">
-                            <img src="{{Voyager::image($gallery->thumbnail('medium','featured_image'))}}" alt="" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
+                            <img src="{{Voyager::image($gallery->thumbnail('medium','featured_image'))}}" alt="{{$gallery->title}}" style="width: 100%; height: 350px; object-fit: cover; border-radius:18px">
                         </a>
                         <h4 class="text-center my-3">{{$gallery->title}}</h4>
                     </div>
@@ -234,6 +208,24 @@
             </div>
         </section>
     @endif
+    <section class="m-5">
+        <div class="full-container-max flex">
+            <h2>¿DONDE SE ENCUENTRA EL ECO ALBERGUE  “AGUAYSAL”?</h2>
+            <p>
+                Ubicado a 31 km de Santa Rosa del Yacuma, Beni, Bolivia, dentro del Área Protegida Municipal Pampas del Yacuma que alberga especies endémicas y diversidad de fauna silvestre.
+            </p>
+            <p>
+                El eco albergue está compuesto de 8 cabañas turísticas totalmente equipadas, con baño privado, televisores de plasma, aires acondicionados, un área administrativa, un centro de interpretación, área de restauración que también funciona como centro de reuniones, boulevard interior, 3 churrasqueras. Tiene una capacidad instalada para 24 visitantes.
+            </p>
+            <h3>TIPO DE TURISMO A REALIZAR COMO ECO ALBERGUE TURISTICO AGUAYSAL</h3>
+            <ul>
+                <li>Avi turismo: (nicho de mercado del eco turismo) avistamiento de aves en su entorno natural.</li>
+                <li>Turismo de estancias: es la actividad turística que se realiza en un espacio rural o natural. Entre sus actividades se incluyen: contacto con la naturaleza, ambrosía al amanecer, paseos a caballo, pesca deportiva, y disfrutar de los increíbles paisajes en los alrededores de las estancias.</li>
+                <li>Turismo comunitario: es aquella forma de turismo que busca sumergirse en la cultura, tradición y estilo de vida de las comunidades locales. Es una experiencia turística que se basa, por tanto, en vivir experiencias inmersivas para comprender en profundidad la forma de vida de los habitantes locales.</li>
+                <li>Turismo de convenciones: es aquel que atrae las visitas de un número significativo de turistas que viaja por motivos de negocios, congresos académicos, conferencias y otras reuniones, organizadas en diferentes hoteles o centros de convenciones</li>
+            </ul>
+        </div>
+    </section>
     
 </main>
 @endsection
