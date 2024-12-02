@@ -36,7 +36,7 @@
             <div class="row">
                 <div class="col offset-lg-6 ">
                     <div class="d-flex justify-content-center justify-content-lg-end py-5">
-                        <a href="" class="btn btn-light">RESERVAR AHORA</a>
+                        <a href="https://wa.me/{{setting('contacto.whatsapp')}}" target="_blank" class="btn btn-light">RESERVAR AHORA</a>
                     </div>
                 </div>
             </div>
