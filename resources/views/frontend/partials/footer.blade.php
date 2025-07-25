@@ -12,7 +12,7 @@
             <a href="https://www.facebook.com/Aguaysalecoalbergue" target="_blank" class="text-white me-4 ">
                 <i class="fab fa-facebook fs-2x display-6"></i>
             </a>
-            <a href="https://wa.me/59171124428" target="_blank" class="text-white me-4">
+            <a href="https://wa.me/{{setting('contacto.whatsapp')}}" target="_blank" class="text-white me-4">
                 <i class="fab fa-whatsapp fs-2x display-6"></i>
             </a>
             <a href="https://www.instagram.com/aguaysal_ecoalbergue/" class="text-white me-4">
@@ -82,8 +82,8 @@
                 </p>
                 <p><i class="fas fa-phone mr-3"></i> <a href="tel:{{setting('contacto.phone')}}"
                         class="text-dark">Teléfono{{setting('contacto.phone')}}</a></p>
-                <p><i class="fas fa-phone mr-3"></i> <a href="https://wa.me/59171124428" target="_blank"
-                        class="text-dark">WhatsApp: (591) 71124428</a></p>
+                <p><i class="fas fa-phone mr-3"></i> <a href="https://wa.me/{{setting('contacto.whatsapp')}}" target="_blank"
+                        class="text-dark">WhatsApp: {{setting('contacto.whatsapp')}}</a></p>
 
             </div>
             <!-- Grid column -->

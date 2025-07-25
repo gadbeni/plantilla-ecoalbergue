@@ -8,7 +8,7 @@
             {{-- <li><a href="{{ route('home') }}">Inicio</a></li>
             <li><a href="{{ route('about') }}">Nosotros</a></li>
             <li><a href="{{ route('room.public.index') }}">Servicios</a></li>
-            <li><a href="https://wa.me/59171124428">Contacto</a></li> --}}
+            <li><a href="https://wa.me/{{setting('contacto.whatsapp')}}">Contacto</a></li> --}}
         </ul>
     </nav>
     <div class="content-language">

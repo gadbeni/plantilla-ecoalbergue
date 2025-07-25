@@ -96,7 +96,7 @@
                             <h5 class="card-title h4 text-center">{{$room->title}}</h5>
                             <div class="card-btns">
                                 <a href="{{route('room.public.show', $room->id)}}" class="btn">Ver Detalles</a>
-                                <a href="https://wa.me/59171124428" class="btn">Reservar</a>
+                                <a href="https://wa.me/{{setting('contacto.whatsapp')}}" class="btn">Reservar</a>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                             <div class="card-btns">
                                 <a href="{{route('specialpackage.public.show', $package->id)}}" class="btn">Ver
                                     Detalles</a>
-                                <a href="https://wa.me/59171124428" class="btn">Reservar</a>
+                                <a href="https://wa.me/{{setting('contacto.whatsapp')}}" class="btn">Reservar</a>
                             </div>
                         </div>
                     </div>
